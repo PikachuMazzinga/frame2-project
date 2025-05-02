@@ -80,17 +80,17 @@ fabric.properties
 .idea/vcs.xml
 
 # rmxp files
-*.dat
-Data/Actors.rxdata
-Data/Animations.rxdata
-Data/PluginScripts.rxdata
-Data/Armors.rxdata
-Data/Enemies.rxdata
-Data/Items.rxdata
-Data/MapInfos.rxdata
-Data/Skills.rxdata
-Data/States.rxdata
-Data/Weapons.rxdata
+# *.dat
+# Data/Actors.rxdata
+# Data/Animations.rxdata
+# Data/PluginScripts.rxdata
+# Data/Armors.rxdata
+# Data/Enemies.rxdata
+# Data/Items.rxdata
+# Data/MapInfos.rxdata
+# Data/Skills.rxdata
+# Data/States.rxdata
+# Data/Weapons.rxdata
 .idea/inspectionProfiles/Project_Default.xml
 .idea/misc.xml
 traceback.log
