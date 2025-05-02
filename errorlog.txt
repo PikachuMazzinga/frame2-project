@@ -1,0 +1,88 @@
+
+=================
+
+[2025-01-16 12:28:31 +0100]
+[Pokémon Essentials version 21.1]
+
+Script error in event 5 (coords 25,5), map 3 (Player's house)
+Exception: NameError
+Message: undefined local variable or method `testFmod' for #<Interpreter @event_id: 5>
+
+***Full script:
+testFmod
+
+Backtrace:
+(eval):1:in `execute_script'
+003_Interpreter.rb:140:in `eval'
+003_Interpreter.rb:140:in `execute_script'
+004_Interpreter_Commands.rb:1177:in `command_355'
+004_Interpreter_Commands.rb:116:in `execute_command'
+003_Interpreter.rb:132:in `block in update'
+003_Interpreter.rb:86:in `loop'
+003_Interpreter.rb:86:in `update'
+002_Scene_Map.rb:167:in `block in update'
+002_Scene_Map.rb:166:in `loop'
+
+=================
+
+[2025-01-16 12:29:23 +0100]
+[Pokémon Essentials version 21.1]
+
+Script error in event 5 (coords 25,5), map 3 (Player's house)
+Exception: NameError
+Message: undefined local variable or method `testFmod' for #<Interpreter @event_id: 5>
+
+***Full script:
+testFmod
+
+Backtrace:
+(eval):1:in `execute_script'
+003_Interpreter.rb:140:in `eval'
+003_Interpreter.rb:140:in `execute_script'
+004_Interpreter_Commands.rb:1177:in `command_355'
+004_Interpreter_Commands.rb:116:in `execute_command'
+003_Interpreter.rb:132:in `block in update'
+003_Interpreter.rb:86:in `loop'
+003_Interpreter.rb:86:in `update'
+002_Scene_Map.rb:167:in `block in update'
+002_Scene_Map.rb:166:in `loop'
+
+=================
+
+[2025-01-16 12:34:39 +0100]
+[Pokémon Essentials version 21.1]
+
+Exception: NoMethodError
+Message: undefined method `+' for nil:NilClass
+
+Backtrace:
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:88:in `update'
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:77:in `block in pbFreeTextNoWindow'
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:68:in `loop'
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:68:in `pbFreeTextNoWindow'
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:40:in `update'
+002_Scene_Map.rb:237:in `block in main'
+002_Scene_Map.rb:235:in `loop'
+002_Scene_Map.rb:235:in `main'
+999_Main.rb:41:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+
+=================
+
+[2025-01-16 12:35:40 +0100]
+[Pokémon Essentials version 21.1]
+
+Exception: NoMethodError
+Message: undefined method `+' for nil:NilClass
+
+Backtrace:
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:88:in `update'
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:77:in `block in pbFreeTextNoWindow'
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:68:in `loop'
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:68:in `pbFreeTextNoWindow'
+[Easy Debug Terminal] 000_Easy Debug Terminal.rb:40:in `update'
+002_Scene_Map.rb:237:in `block in main'
+002_Scene_Map.rb:235:in `loop'
+002_Scene_Map.rb:235:in `main'
+999_Main.rb:41:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'

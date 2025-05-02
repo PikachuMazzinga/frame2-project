@@ -1,0 +1,3 @@
+Name      = Easy Debug Terminal
+Version   = 1.2
+Credits   = ENLS
