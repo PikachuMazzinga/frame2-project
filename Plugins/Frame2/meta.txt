@@ -1,0 +1,5 @@
+﻿Name       = Frame2
+Version    = 1.0.0
+Essentials = 21.1
+Website    = https://github.com/PikachuMazzinga/frame2-project
+Credits    = PikachuMazzinga, Brawligator
