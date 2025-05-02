@@ -7,74 +7,6 @@
 # Game Jam 10 time constrains, if you're looking copy for in your game, either
 # wait for the full release or contact me in private on the forum or on discord. 
 #-------------------------------------------------------------------------------
-  
-module GameData
-  class Species
-
-    def self.check_anim_sprite(pkmn, back = false, species = nil)
-      species = pkmn.species if !species
-      species = GameData::Species.get(species).species
-      return (back) ? self.back_anim_sprite_filename(species, pkmn.form, pkmn.gender, pkmn.shiny?, pkmn.shadowPokemon?)
-                    : self.front_anim_sprite_filename(species, pkmn.form, pkmn.gender, pkmn.shiny?, pkmn.shadowPokemon?)
-    end
-
-    def self.ow_sprite_filename(species, form = 0, gender = 0, shiny = false, shadow = false)
-      ret = self.check_graphic_file("Graphics/Characters/", species, form, gender, shiny, shadow, "PkmnOw")
-      ret = "Graphics/Characters/PkmnOw/000" if nil_or_empty?(ret)
-      return ret
-    end
-
-    def self.front_anim_sprite_filename(species, form = 0, gender = 0, shiny = false, shadow = false)
-      return self.check_graphic_file("Graphics/Pokemon/", species, form, gender, shiny, shadow, "Front/Anim")
-    end
-
-    def self.back_anim_sprite_filename(species, form = 0, gender = 0, shiny = false, shadow = false)
-      return self.check_graphic_file("Graphics/Pokemon/", species, form, gender, shiny, shadow, "Back/Anim")
-    end
-
-    def self.front_anim_sprite_bitmap(species, form = 0, gender = 0, shiny = false, shadow = false)
-      filename = self.front_anim_sprite_filename(species, form, gender, shiny, shadow)
-      return (filename) ? AnimatedBitmap.new(filename) : dummy_bitmap(false)
-    end
-
-    def self.back_anim_sprite_bitmap(species, form = 0, gender = 0, shiny = false, shadow = false)
-      filename = self.back_anim_sprite_filename(species, form, gender, shiny, shadow)
-      return (filename) ? AnimatedBitmap.new(filename) : dummy_bitmap(true)
-    end
-
-    def self.anim_sprite_bitmap_from_pokemon(pkmn, back = false, species = nil)
-      species = pkmn.species if !species
-      species = GameData::Species.get(species).species   # Just to be sure it's a symbol
-      return self.egg_sprite_bitmap(species, pkmn.form) if pkmn.egg?
-      if back
-        ret = self.back_anim_sprite_bitmap(species, pkmn.form, pkmn.gender, pkmn.shiny?, pkmn.shadowPokemon?)
-      else
-        ret = self.front_anim_sprite_bitmap(species, pkmn.form, pkmn.gender, pkmn.shiny?, pkmn.shadowPokemon?)
-      end
-      # alter_bitmap_function = MultipleForms.getFunction(species, "alterBitmap")
-      # if ret && alter_bitmap_function
-      #   new_ret = ret.copy
-      #   ret.dispose
-      #   new_ret.each { |bitmap| alter_bitmap_function.call(pkmn, bitmap) }
-      #   ret = new_ret
-      # end
-      return ret
-    end
-
-    def self.sprite_name_from_pokemon(pkmn, back = false, anim = false)
-      if back
-        return self.back_sprite_filename(pkmn.species, pkmn.form, pkmn.gender, pkmn.shiny?, pkmn.shadowPokemon?, anim ? "/Anim" : "")
-      else
-        return self.front_sprite_filename(pkmn.species, pkmn.form, pkmn.gender, pkmn.shiny?, pkmn.shadowPokemon?, anim ? "/Anim" : "")
-      end
-    end
-
-    def self.dummy_bitmap(back)
-      return (back) ? AnimatedBitmap.new("Graphics/Pokemon/_back") : AnimatedBitmap.new("Graphics/Pokemon/_front")
-    end
-
-  end
-end
 
 class PokemonIntroAnimation < Battle::Scene::Animation
 
@@ -82,42 +14,54 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     return @back ? pos.abs : pos
   end
 
-  def initialize(sprites,viewport,pkmn,_iconBitmap,back = false)
+  def initialize(sprites,viewport,pkmn,back = false)
     @pkmn = pkmn
-    @_iconBitmap = _iconBitmap
+    # @_iconBitmap = _iconBitmap
     @back = back
-    
-    # @spriteFrame1 = GameData::Species.sprite_bitmap_from_pokemon(@pkmn,back)
-    # @spriteFrame2 = GameData::Species.anim_sprite_bitmap_from_pokemon(@pkmn,back)
-    # @spriteFrame2 = @spriteFrame1 if @spriteFrame2 == nil
 
     @nameFrame1 = GameData::Species.sprite_name_from_pokemon(pkmn, back, false)
     @nameFrame2 = GameData::Species.sprite_name_from_pokemon(pkmn, back, true)
     @nameFrame2 = @nameFrame1 if @nameFrame2 == nil
-
-    # echoln "1: #{@nameFrame1}"
-    # echoln "2: #{@nameFrame2}"
     
-    @animData = PokemonIntroAnimationSettings::ANIMATION_DATA[@pkmn.species]
+    @animData = PokemonIntroAnimationSettings::ANIMATION_DATA[@pkmn.species] || PokemonIntroAnimationSettings::DEFAULT_BEHAVIOUR
 
-    @animType = @animData[0]
-    @animFreq = @animData[1]
+    @animType = @animData[@back ? 2 : 0]
+    @animFreq = @animData[@back ? 3 : 1]
 
-    @animType = @animData[2] if @back
-    @animFreq = @animData[3] if @back
-
-    @animType = @animData[0] if @animType == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BAHAVIOR_ON_BACK
-    @animFreq = @animData[1] if @animFreq == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BAHAVIOR_ON_BACK
-
-
+    @animType = @animData[0] if @animType == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
+    @animFreq = @animData[1] if @animFreq == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
+    
     super(sprites,viewport)
   end
 
   def createProcesses
     batSprite  = @sprites[0]
-    battler    = addSprite(batSprite,PictureOrigin::Bottom) 
-    starting_x = batSprite.x
-    starting_y = batSprite.y 
+    
+    case batSprite.offset
+    when PictureOrigin::CENTER, PictureOrigin::LEFT, PictureOrigin::RIGHT
+      batSprite.y += batSprite.height / 2
+    when PictureOrigin::BOTTOM, PictureOrigin::BOTTOM_LEFT, PictureOrigin::BOTTOM_RIGHT
+      # do nothing
+    when PictureOrigin::TOP, PictureOrigin::TOP_LEFT, PictureOrigin::TOP_RIGHT
+      batSprite.y += batSprite.height
+    end
+    case batSprite.offset
+    when PictureOrigin::LEFT, PictureOrigin::TOP_LEFT, PictureOrigin::BOTTOM_LEFT
+      batSprite.x += batSprite.width / 2
+    when PictureOrigin::CENTER, PictureOrigin::TOP, PictureOrigin::BOTTOM
+      # do nothing
+    when PictureOrigin::RIGHT, PictureOrigin::TOP_RIGHT, PictureOrigin::BOTTOM_RIGHT
+      batSprite.x -= batSprite.width / 2
+    end
+
+    batSprite.setOffset(PictureOrigin::BOTTOM) if batSprite.respond_to?(:setOffset)
+    battler    = addSprite(batSprite, PictureOrigin::BOTTOM)
+    
+    @battler = battler
+    
+    @starting_x = starting_x = batSprite.x
+    @starting_y = starting_y = batSprite.y 
+    
   
     path_A = @nameFrame1
     path_B = @nameFrame2
@@ -152,7 +96,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       maxAngle = 15
 
       new_y = starting_y - (batSprite.height)/2
-      battler.setOrigin(0,PictureOrigin::Center)
+      battler.setOrigin(0,PictureOrigin::CENTER)
       battler.setXY(0,starting_x, new_y)
 
       y_values.each_with_index do |v,i|
@@ -167,7 +111,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       maxAngle = 15
 
       new_y = starting_y - (batSprite.height)/2
-      battler.setOrigin(0,PictureOrigin::Center)
+      battler.setOrigin(0,PictureOrigin::CENTER)
       battler.setXY(0,starting_x, new_y)
 
       x_values.each_with_index do |v,i|
@@ -279,11 +223,11 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       end
     
     when "RotateTop" # WIP - DO NOT SPAM Z IN SUMMARY OR IT WILL GO TO SPACE
-      battler.setOrigin(0,PictureOrigin::Top)
+      battler.setOrigin(0,PictureOrigin::TOP)
       battler.setXY(0,starting_x, starting_y - batSprite.height)
       totalDuration = 30
       maxAngle = 15
-      battler.setOrigin(totalDuration,PictureOrigin::Bottom)
+      battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
       battler.setXY(totalDuration,starting_x, starting_y)
       for i in 0...totalDuration do
         battler.setAngle(i, Math.sin(i*(Math::PI*2)/totalDuration)*maxAngle)
@@ -317,8 +261,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     when "Explosion"
       zoom_values = [100, 100, 95, 100, 90, 95, 90, 95, 87.5, 95, 87.5, 95, 87.5, 95, 90, 95, 100, 95, 100, 100, 102.5, 100, 105, 100, 110, 105, 110, 105, 110, 105, 110, 105, 110, 100, 105, 100, 102.5, 100, 100, 100]
       totalDuration = zoom_values.length
-      # battler.setOrigin(0,PictureOrigin::Center)
-      # battler.setOrigin(totalDuration,PictureOrigin::Bottom)
+      # battler.setOrigin(0,PictureOrigin::CENTER)
+      # battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
       zoom_values.each_with_index do |v,i|
         battler.setZoomXY(i, v, v)
         battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
@@ -353,7 +297,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       totalDuration = zoom_values.length
       
       new_y = starting_y - (batSprite.height)/2
-      battler.setOrigin(0,PictureOrigin::Center)
+      battler.setOrigin(0,PictureOrigin::CENTER)
       battler.setXY(0,starting_x, new_y)
 
       zoom_values.each_with_index do |v,i|
@@ -365,8 +309,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     when "ZoomDouble"      
       zoom_values = [100, 100, 100, 100, 100, 100, 95, 90, 88, 86, 88, 90, 92, 95, 100, 102, 105, 107.5, 108, 107.5, 105, 102, 100, 95, 92, 90, 88, 90, 92, 95, 100, 100, 100]
       totalDuration = zoom_values.length
-      # battler.setOrigin(0,PictureOrigin::Center)
-      # battler.setOrigin(totalDuration,PictureOrigin::Bottom)
+      # battler.setOrigin(0,PictureOrigin::CENTER)
+      # battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
       zoom_values.each_with_index do |v,i|
         battler.setZoomXY(i, v, v)
         battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
@@ -421,7 +365,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       maxAngle = 360
 
       new_y = starting_y - (batSprite.height)/2
-      battler.setOrigin(0,PictureOrigin::Center)
+      battler.setOrigin(0,PictureOrigin::CENTER)
       battler.setXY(0,starting_x, new_y)
 
       x_values.each_with_index do |v,i|
@@ -434,45 +378,43 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       # do nothing?
 
     end
+    
+    @totalDuration = totalDuration
 
     # totalDuration += 1
     # reset battler's attributes at the end
     battler.setAngle(totalDuration, 0)
-    # battler.setZoomXY(totalDuration, 100, 100)
+    battler.setZoomXY(totalDuration, 100, 100)
     battler.setName(totalDuration, path_A)
-    battler.setOrigin(totalDuration,PictureOrigin::Bottom)
+    battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
     battler.setXY(totalDuration, starting_x, starting_y)
-    # battler.setColor(totalDuration,Color.new(0,0,0,0))
+    battler.setColor(totalDuration,Color.new(0,0,0,0))
+  end
+  
+  def dispose
+    reset_sprite
+    @tempSprites.each { |s| s&.dispose }
+  end
+  
+  def reset_sprite
+    batSprite  = @sprites[0]
+    batSprite.x = @starting_x
+    batSprite.y = @starting_y
+    batSprite.name = @nameFrame1
+    batSprite.setOffset(PictureOrigin::BOTTOM) if batSprite.respond_to?(:setOffset)
+    batSprite.color = Color.new(0,0,0,0)
+    batSprite.zoom_x = batSprite.zoom_y = 1
+    batSprite.angle = 0
   end
 
-  def getAnimSprite(animDuration = 30, i = 0)
-    @_iconBitmap = getAnimationFrameChar(@animFreq, animDuration, i) == "B" ? @spriteFrame2 : @spriteFrame1
-    return @_iconBitmap.bitmap
-  end
+  # def getAnimSprite(animDuration = 30, i = 0)
+  #   @_iconBitmap = getAnimationFrameChar(@animFreq, animDuration, i) == "B" ? @spriteFrame2 : @spriteFrame1
+  #   return @_iconBitmap.bitmap
+  # end
 
   def getAnimationFrameChar(animFreq = nil, animDuration = 30, i = 0)
     return "B" if animFreq == nil || animFreq == ""
     return animFreq.chars[((i.to_f/animDuration)*animFreq.length).to_i]
-  end
-
-end
-
-class Battle::Scene::BattlerSprite < RPG::Sprite
-
-  # This method plays the battle entrance animation of a Pokémon. By default
-  # this is just playing the Pokémon's cry, but you can expand on it. The
-  # recommendation is to create a PictureEx animation and push it into
-  # the @battleAnimations array.
-  def pbPlayIntroAnimation(pictureEx = nil)
-    
-    @pkmn.play_cry if @pkmn
-
-    # Play Intro animation
-    if PokemonIntroAnimationSettings::ENABLED_IN_BATTLE && PokemonIntroAnimationSettings::ANIMATION_DATA[@pkmn.species] != nil
-      pkmn_anim = PokemonIntroAnimation.new([self],@viewport,@pkmn,@_iconBitmap,@index%2 == 0)
-      @battleAnimations.push(pkmn_anim)
-    end
-
   end
 
 end

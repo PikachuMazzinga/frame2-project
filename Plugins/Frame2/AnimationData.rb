@@ -6,42 +6,60 @@ module PokemonIntroAnimationSettings
 
     ENABLED_IN_BATTLE  = true
     ENABLED_IN_SUMMARY = true
+    
+    # Default animation for Pokémon that don't have a specified one.
+    # Can be set to nil have the default behaviour be no animation.
+    DEFAULT_BEHAVIOUR = ["ShakeSmall", "ABA", nil, nil]
 
-    # Unused in the final version but it's a nice list
-    # TODO : Maybe convert into an enum?
-    DEFAULT_DURATION = 30
-    DURATION_DATA = {}
-    #             Anim                  Time in uhhh ??
-    DURATION_DATA["GIF"]               = DEFAULT_DURATION
-    DURATION_DATA["StretchVertical"]   = 20
-    DURATION_DATA["StretchHorizontal"] = 20
-    DURATION_DATA["FlyVertical"]       = 35
-    DURATION_DATA["FlyHorizontal"]     = 35
-    DURATION_DATA["SlideVertical"]     = 35
-    DURATION_DATA["SlideHorizontal"]   = 35
-    DURATION_DATA["StompSmall"]        = 20
-    DURATION_DATA["StompBig"]          = 25
-    DURATION_DATA["StompDouble"]       = DEFAULT_DURATION
-    DURATION_DATA["ShakeSmall"]        = 25
-    DURATION_DATA["ShakeBig"]          = 40
-    DURATION_DATA["HopSmall"]          = 20
-    DURATION_DATA["HopBig"]            = DEFAULT_DURATION
-    DURATION_DATA["HopAround"]         = DEFAULT_DURATION 
-    DURATION_DATA["RotateBottom"]      = DEFAULT_DURATION
-    DURATION_DATA["RotateTop"]         = DEFAULT_DURATION
-    DURATION_DATA["RotateJump"]        = DEFAULT_DURATION
-    DURATION_DATA["Explosion"]         = 38
-    DURATION_DATA["Bounce"]            = DEFAULT_DURATION
-    DURATION_DATA["Boing"]             = DEFAULT_DURATION
-    DURATION_DATA["Fluid"]             = DEFAULT_DURATION
-    DURATION_DATA["ZoomDouble"]        = DEFAULT_DURATION
-    DURATION_DATA["BlinkYellow"]       = DEFAULT_DURATION
-    DURATION_DATA["Glide"]             = DEFAULT_DURATION
-
-    DEFAULT_FRONT_BAHAVIOR_ON_BACK = true
+    DEFAULT_FRONT_BEHAVIOUR_ON_BACK = true
 
     ANIMATION_DATA = {}
-    
+    # J10 DATA
+    #              Name 	       Anim                    	Frequency       	    Anim (Back)	Frequency (Back)
+    ANIMATION_DATA[:DRAGALGE]   = ["RotateBottom",          "BABABABA",             nil,        nil] # MADE UP
+    ANIMATION_DATA[:TINKATON]   = ["HopBig",                "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:LYCANROC]   = ["ShakeBig",              "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:HELIOLISK]  = ["BlinkYellow",           "BABA",                 nil,        nil] # MADE UP
+    ANIMATION_DATA[:BEARTIC]    = ["StompDouble",           "BABBA",                nil,        nil] # MADE UP
+    ANIMATION_DATA[:AURORUS]    = ["StompBig",              "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:TYRANTRUM]  = ["StompDouble",           "BABBA",                nil,        nil] # MADE UP
+    ANIMATION_DATA[:SALAZZLE]   = ["ShakeSmall",            "ABA",                  nil,        nil] # MADE UP
+    ANIMATION_DATA[:WHIMSICOTT] = ["HopSmall",              "ABABA",                nil,        nil] # MADE UP
+    ANIMATION_DATA[:GALVANTULA] = ["BlinkYellow",           "BABA",                 nil,        nil] # MADE UP
+    ANIMATION_DATA[:URSALUNA]   = ["StretchHorizontal",     "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:GRIMMSNARL] = ["StretchHorizontal",     "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:CHANDELURE] = ["RotateTop",             "BABABABABABABABABABA", nil,        nil] # MADE UP
+    ANIMATION_DATA[:GOLISOPOD]  = ["StompDouble",           "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:TOXTRICITY] = ["BlinkYellow",           "BABA",                 nil,        nil] # MADE UP
+    ANIMATION_DATA[:NOIVERN]    = ["ShakeBig",              "BBBAAAAA",             nil,        nil] # MADE UP
+    ANIMATION_DATA[:TREVENANT]  = ["StompBig",              "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:DARMANITAN] = ["Bounce",                "BABABABA",             nil,        nil] # MADE UP
+    ANIMATION_DATA[:VOLCARONA]  = ["RotateBottom",          "ABBBABABA",            nil,        nil] # MADE UP
+    ANIMATION_DATA[:KOMMOO]     = ["StompBig",              "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:HYDRAPPLE]  = ["Bounce",                "BABA",                 nil,        nil] # MADE UP
+    ANIMATION_DATA[:MIMIKYU]    = ["Bounce",                "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:REGIELEKI]  = ["HopBig",                "ABABA",                nil,        nil] # MADE UP
+    ANIMATION_DATA[:REGIDRAGO]  = ["ShakeBig",              "ABA",                  nil,        nil] # MADE UP
+    ANIMATION_DATA[:TAPUKOKO]   = ["HopBig",                "ABABA",                nil,        nil] # MADE UP
+    ANIMATION_DATA[:TAPULELE]   = ["RotateBottom",          "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:TAPUBULU]   = ["StompDouble",           "BABA",                 nil,        nil] # MADE UP
+    ANIMATION_DATA[:TAPUFINI]   = ["Bounce",                "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:DIANCIE]    = ["ZoomDouble",            "BABAAA",               nil,        nil] # MADE UP
+    ANIMATION_DATA[:ESPATHRA]   = ["ShakeBig",              "BABBAA",               nil,        nil] # MADE UP
+    ANIMATION_DATA[:ZOROARK]    = ["ShakeBig",              "BABBAA",               nil,        nil] # MADE UP
+    ANIMATION_DATA[:BASCULEGION]= ["ShakeBig",              "BABBAA",               nil,        nil] # MADE UP
+    ANIMATION_DATA[:BARBARACLE] = ["StretchHorizontal",     "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:SCRAFTY]    = ["StretchVertical",       "ABBBA",                nil,        nil] # MADE UP
+    ANIMATION_DATA[:OVERQWIL]   = ["HopBig",                "ABABA",                nil,        nil] # MADE UP
+    ANIMATION_DATA[:FERROTHORN] = ["TotateTop",             "BBBA",                 nil,        nil] # MADE UP
+    ANIMATION_DATA[:GOODRA]     = ["Bounce",                "BA",                   nil,        nil] # MADE UP
+    ANIMATION_DATA[:DRAMPA]     = ["StompBig",              "BABA",                 nil,        nil] # MADE UP
+    ANIMATION_DATA[:COPPERAJAH] = ["StompDouble",           "BABA",                 nil,        nil] # MADE UP
+    ANIMATION_DATA[:CLODSIRE]   = ["StretchVertical",       "B",                    nil,        nil] # MADE UP
+    ANIMATION_DATA[:HAXORUS]    = ["StompDouble",           "BABA",                 nil,        nil] # MADE UP
+    ANIMATION_DATA[:HYDREIGON]  = ["Explosion",             "BA",                   nil,        nil] # MADE UP
+
+
 # =begin
     # REAL DATA FROM HGSS
     #              Name 	       Anim                    	Frequency       	    Anim (Back)	Frequency (Back)
@@ -965,36 +983,37 @@ module PokemonIntroAnimationSettings
     ANIMATION_DATA[:TINKATON]       = ["HopBig",                "BABA",                 nil,        nil]
     ANIMATION_DATA[:DIPPLIN]        = ["DoAFlip",               "BABA",                 nil,        nil]
     ANIMATION_DATA[:HYDRAPPLE]      = ["Bounce",                "BA",                   nil,        nil]
-
-# FAKEMON      
-    ANIMATION_DATA[:CHROMANDER]     = ["StretchVertical",       "BBA",                  nil,        nil]   
-    ANIMATION_DATA[:MOSSDILE]       = ["StompSmall",            "BA",                   nil,        nil]   
-    ANIMATION_DATA[:BRAWLIGATOR]    = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:MELTOAD]        = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:KRAKATOAD]      = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:WATER1]         = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:WATER2]         = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:DRAG1]          = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:DRAG2]          = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:TOPO1]          = ["StretchVertical",       "BABABABABA",           nil,        nil]   
-    ANIMATION_DATA[:TOPO2]          = ["StompBig",              "ABBBA",                nil,        nil]   
-    ANIMATION_DATA[:WADUST]         = ["HopAround",             "BABAAAAAAAA",          nil,        nil]   
-    ANIMATION_DATA[:LEPOPLAR]       = ["Bounce",                "BBBAA",                nil,        nil]   
-    ANIMATION_DATA[:BIRD1]          = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:BIRD2]          = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:BIRD3]          = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:SWEEPIP]        = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:IMPERRO]        = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:DRACULAUGH]     = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:INAIBAAT]       = ["RotateTop",             "BABABABABABABAAA",     nil,        nil]   
-    ANIMATION_DATA[:OBARAIN]        = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:LOUDOG]         = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:BAUBAND]        = ["StretchVertical",       "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:SCARECLAW]      = ["HopSmall",              "BABAAA",               nil,        nil]   
-    ANIMATION_DATA[:SCARECRUEL]     = ["HopBig",                "ABABA",                nil,        nil]   
-    ANIMATION_DATA[:PEPPREE]        = ["BlinkRed",              "BABA",                 nil,        nil]
-    ANIMATION_DATA[:AKAMELEON]      = ["BlinkRed",              "BABA",                 nil,        nil]
-    ANIMATION_DATA[:TORRIDON]       = ["BlinkRed",              "BABA",                 nil,        nil]    
-    ANIMATION_DATA[:SHARPATAK]      = ["FlyHorizontal",         "BBBA",                 nil,        nil]    
+    ANIMATION_DATA[:GREATTUSK]      = ["StompBig",              "BAAA",                 nil,        nil]   
+    ANIMATION_DATA[:SCREAMTAIL]     = ["Bounce",                "B",                    nil,        nil]
+    ANIMATION_DATA[:BRUTEBONNET]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:FLUTTERMANE]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:SLITHERWING]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:SANDYSHOCKS]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONTREADS]     = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONBUNDLE]     = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONHANDS]      = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONJUGULIS]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONMOTH]       = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONTHORNS]     = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:WOCHIEN]        = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:CHIENPAO]       = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:TINGLU]         = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:CHIYU]          = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:ROARINGMOON]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONVALIANT]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:KORAIDON]       = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:MIRAIDON]       = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:WALKINGWAKE]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONLEAVES]     = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:OKIDOGI]        = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:MUNKIDORI]      = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:FEZANDIPITI]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:OGERPON]        = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:GOUGINGFIRE]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:RAGINGBOLT]     = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONBOULDER]    = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:IRONCROWN]      = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:TERAPAGOS]      = ["StretchHorizontal",     "BABA",                 nil,        nil]
+    ANIMATION_DATA[:PECHARUNT]      = ["StretchHorizontal",     "BABA",                 nil,        nil]
 
 end

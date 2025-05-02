@@ -306,6 +306,10 @@ class PokemonSummary_Scene
       return
     end
     @sprites["pokemon"].setPokemonBitmap(@pokemon)
+    
+    # FRAME2 PROJECT ADDITION
+    @sprites["pokemon"]&.pbPlayIntroAnimation
+    
     @sprites["pokeicon"].pokemon = @pokemon
     @sprites["itemicon"].item = @pokemon.item_id
     overlay = @sprites["overlay"].bitmap
@@ -1277,6 +1281,10 @@ class PokemonSummary_Scene
       if Input.trigger?(Input::ACTION)
         pbSEStop
         @pokemon.play_cry
+
+        # FRAME2 PROJECT ADDITION
+        @sprites["pokemon"]&.pbPlayIntroAnimation
+        
       elsif Input.trigger?(Input::BACK)
         pbPlayCloseMenuSE
         break
