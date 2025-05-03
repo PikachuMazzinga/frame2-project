@@ -68,6 +68,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     
     # gif frame duration / PictureEx frame duration
     speedUp = (30.0/1000) / (1.0/20)
+    speedUp = 1 if $DEBUG && Input.press?(Input::CTRL)
     
     case @animType
     when "GIF"
