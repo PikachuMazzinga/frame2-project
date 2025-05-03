@@ -133,9 +133,9 @@ module GameData
   class Species
     def self.sprite_name_from_pokemon(pkmn, back = false, anim = false)
       if back
-        return self.check_graphic_file("Graphics/Pokemon/", pkmn.species, pkmn.form, pkmn.gender, pkmn.shiny?, pkmn.shadowPokemon?, "Back" + (anim ? "/Anim" : ""))
+        return self.check_graphic_file("Graphics/Pokemon/", pkmn.species, pkmn.form, pkmn.gender, false, pkmn.shadowPokemon?, "Back" + (pkmn.shiny? ? " shiny" : "") + (anim ? "/Frame2" : ""))
       else
-        return self.check_graphic_file("Graphics/Pokemon/", pkmn.species, pkmn.form, pkmn.gender, pkmn.shiny?, pkmn.shadowPokemon?, "Front" + (anim ? "/Anim" : ""))
+        return self.check_graphic_file("Graphics/Pokemon/", pkmn.species, pkmn.form, pkmn.gender, false, pkmn.shadowPokemon?, "Front" + (pkmn.shiny? ? " shiny" : "") + (anim ? "/Frame2" : ""))
       end
     end
     
