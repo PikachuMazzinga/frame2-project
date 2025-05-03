@@ -57,8 +57,6 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     batSprite.setOffset(PictureOrigin::BOTTOM) if batSprite.respond_to?(:setOffset)
     battler    = addSprite(batSprite, PictureOrigin::BOTTOM)
     
-    @battler = battler
-    
     @starting_x = starting_x = batSprite.x
     @starting_y = starting_y = batSprite.y 
     
@@ -67,7 +65,10 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     path_B = @nameFrame2
 
     totalDuration = 0
-
+    
+    # gif frame duration / PictureEx frame duration
+    speedUp = (30.0/1000) / (1.0/20)
+    
     case @animType
     when "GIF"
       totalDuration = 30 # d=====(￣▽￣*) source : trust me bro
@@ -78,16 +79,16 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       zoom_values = [100, 102.5, 105, 106, 105, 107.5, 105, 110, 107.5, 110, 110, 105, 110, 107.5, 105, 102.5, 103, 101, 100, 100, 100]
       totalDuration = zoom_values.length
       zoom_values.each_with_index do |v,i|
-        battler.setZoomXY(i, 100, v)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setZoomXY(i*speedUp, 100, v)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "StretchHorizontal"
       zoom_values = [100, 102.5, 105, 106, 105, 107.5, 105, 110, 107.5, 110, 110, 105, 110, 107.5, 105, 102.5, 103, 101, 100, 100, 100]
       totalDuration = zoom_values.length
       zoom_values.each_with_index do |v,i|
-        battler.setZoomXY(i, v + (v-100), 100)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setZoomXY(i*speedUp, v + (v-100), 100)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "FlyVertical" # WIP - math hard, brain hurty
@@ -100,9 +101,9 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       battler.setXY(0,starting_x, new_y)
 
       y_values.each_with_index do |v,i|
-        battler.setAngle(i, Math.sin(i*(Math::PI*4)/totalDuration)*maxAngle)
-        battler.setXY(i, starting_x, new_y + fixN(v*2))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setAngle(i*speedUp, Math.sin(i*(Math::PI*4)/totalDuration)*maxAngle)
+        battler.setXY(i*speedUp, starting_x, new_y + fixN(v*2))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "FlyHorizontal" # WIP - math hard, brain hurty
@@ -115,94 +116,98 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       battler.setXY(0,starting_x, new_y)
 
       x_values.each_with_index do |v,i|
-        battler.setAngle(i, Math.sin(i*(Math::PI*4)/totalDuration)*maxAngle)
-        battler.setXY(i, starting_x + (v*2), new_y)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setAngle(i*speedUp, Math.sin(i*(Math::PI*4)/totalDuration)*maxAngle)
+        battler.setXY(i*speedUp, starting_x + (v*2), new_y)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "SlideVertical"
       y_values = [0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 0, 0]
       totalDuration = y_values.length
       y_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x, starting_y + fixN(v*2))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x, starting_y + fixN(v*2))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "SlideHorizontal"
       x_values = [0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 0, 0]
       totalDuration = x_values.length
       x_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x + (v*2), starting_y)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x + (v*2), starting_y)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "StompSmall"
       y_values = [0, 2, -1, 3, -2, 3, -1, 4, -1, 4, -1, 3, -1, 2, 0, 2, 0, 3, 1, 0, 0]
       totalDuration = y_values.length
       y_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x, starting_y + fixN(v*2))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x, starting_y + fixN(v*2))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "StompBig"
       y_values = [0, 0, 0, 0, 0, 0, 2, -1, 3, -2, 3, -1, 4, -1, 4, -1, 3, -1, 2, 0, 2, 0, 3, 1, 0, 0]
       totalDuration = y_values.length
       y_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x, starting_y + fixN(v*2))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x, starting_y + fixN(v*2))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "StompDouble"
       y_values = [0, 0, 0, 0, 0, 0, 3, -5, 2, 0, -3, 3, -3, 0, 1, -2, 0, 0, 0, 3, -5, 2, 0, -3, 3, -3, 0, 1, -2, 0, 0]
       totalDuration = y_values.length
       y_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x, starting_y + fixN(v*2))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x, starting_y + fixN(v*2))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "ShakeSmall"
       x_values = [0, 0, 0, -2, 1, -3, 2, -3, 2, -3, 2, -3, 2, 1, 0, -1, 1, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       totalDuration = x_values.length
       x_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x + (v*2), starting_y)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x + (v*2), starting_y)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "ShakeBig"
       x_values = [0, 0, 0, -1, 1, -2, 2, -3, 3, -4, 4, -4, 4, -5, 5, -5, 5, -5, 5, -6, 6, -5, 5, -5, 5, -4, 4, -3, 3, -3, 3, -2, 2, -1, 1, 0, 0, 0, 0, 0, 0]
       totalDuration = x_values.length
       x_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x + (v*2), starting_y)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x + (v*2), starting_y)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "HopSmall"
       y_values = [0, 0, 0, 0, 0, 0, 0, 0, -4, -6, -4, 0, -4, -6, -4, 0, -6, -9, -6, 0, 0, 0]
       totalDuration = y_values.length
       y_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x, starting_y + fixN(v*2))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x, starting_y + fixN(v*2))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "HopBig"
-      totalDuration = 36  
-      battler.moveCurve( 1, 10, starting_x,    starting_y, 
+      totalDuration = 36
+      
+      battler.moveCurve( 1*speedUp, 10*speedUp, 
+                                starting_x,    starting_y, 
                                 starting_x-16,  fixN(starting_y-32), 
                                 starting_x-32, starting_y)
-      battler.moveCurve(13, 10, starting_x-32, starting_y, 
+      battler.moveCurve(13*speedUp, 10*speedUp, 
+                                starting_x-32, starting_y, 
                                 starting_x,    fixN(starting_y-32), 
                                 starting_x+16,  starting_y)
-      battler.moveCurve(25, 10, starting_x+16,  starting_y, 
+      battler.moveCurve(25*speedUp, 10*speedUp, 
+                                starting_x+16,  starting_y, 
                                 starting_x+16,  fixN(starting_y-16), 
                                 starting_x,    starting_y)
 
-      battler.moveZoomXY(8, 5, 110, 90)
-      battler.moveZoomXY(13, 5, 90, 110)
-      battler.moveZoomXY(18, 5, 100, 100)
-      battler.moveZoomXY(23, 4, 110, 90)
-      battler.moveZoomXY(27, 4, 100, 100)
+      battler.moveZoomXY( 8*speedUp, 5*speedUp, 110, 90)
+      battler.moveZoomXY(13*speedUp, 5*speedUp, 90, 110)
+      battler.moveZoomXY(18*speedUp, 5*speedUp, 100, 100)
+      battler.moveZoomXY(23*speedUp, 4*speedUp, 110, 90)
+      battler.moveZoomXY(27*speedUp, 4*speedUp, 100, 100)
       for i in 0...totalDuration do
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "HopAround"
@@ -210,52 +215,80 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       x_values = [0, 0, 0, 0, 0, 0, 0, 0, -4, -6, -8, -8, -4, 0, 4, 8, 6, 4, 2, 0, 0, 0]
       totalDuration = y_values.length
       y_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x + (x_values[i]*2), starting_y + fixN(v*2))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x + (x_values[i]*2), starting_y + fixN(v*2))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "RotateBottom"
       totalDuration = 30
       maxAngle = 15
       for i in 0...totalDuration do
-        battler.setAngle(i, Math.sin(i*(Math::PI*2)/totalDuration)*maxAngle)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setAngle(i*speedUp, Math.sin(i*(Math::PI*2)/totalDuration)*maxAngle)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
-    when "RotateTop" # WIP - DO NOT SPAM Z IN SUMMARY OR IT WILL GO TO SPACE
+    when "RotateTop" 
       battler.setOrigin(0,PictureOrigin::TOP)
       battler.setXY(0,starting_x, starting_y - batSprite.height)
       totalDuration = 30
       maxAngle = 15
-      battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
-      battler.setXY(totalDuration,starting_x, starting_y)
+      battler.setOrigin(totalDuration*speedUp,PictureOrigin::BOTTOM)
+      battler.setXY(totalDuration*speedUp,starting_x, starting_y)
       for i in 0...totalDuration do
-        battler.setAngle(i, Math.sin(i*(Math::PI*2)/totalDuration)*maxAngle)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setAngle(i*speedUp, Math.sin(i*(Math::PI*2)/totalDuration)*maxAngle)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "RotateJump"
-      totalDuration = 36  
-      battler.moveAngle( 1, 10, 10)
-      battler.moveCurve( 1, 10, starting_x,    starting_y, 
-                                starting_x-16,  fixN(starting_y-32), 
-                                starting_x-32, starting_y)
-      battler.moveAngle(13, 10, -10)
-      battler.moveCurve(13, 10, starting_x-32, starting_y, 
-                                starting_x,    fixN(starting_y-32), 
-                                starting_x+16,  starting_y)
-      battler.moveAngle(25, 10, 0)
-      battler.moveCurve(25, 10, starting_x+16,  starting_y, 
-                                starting_x+16,  fixN(starting_y-16), 
-                                starting_x,    starting_y)
+      totalDuration = 80
+      angle = 15
+      slide = 8
 
-      battler.moveZoomXY(8, 5, 110, 90)
-      battler.moveZoomXY(13, 5, 90, 110)
-      battler.moveZoomXY(18, 5, 100, 100)
-      battler.moveZoomXY(23, 4, 110, 90)
-      battler.moveZoomXY(27, 4, 100, 100)
+      battler.moveCurve( 0*speedUp, 7*speedUp,
+                         starting_x,    starting_y,
+                         starting_x+slide/2,  fixN(starting_y-48),
+                         starting_x+slide, starting_y)
+      
+      battler.moveCurve( 8*speedUp, 12*speedUp,
+                         starting_x+slide,    starting_y,
+                         starting_x,  fixN(starting_y-48),
+                         starting_x-slide, starting_y)
+
+      battler.moveCurve( 20*speedUp, 12*speedUp,
+                         starting_x-slide,    starting_y,
+                         starting_x,  fixN(starting_y-48),
+                         starting_x+slide, starting_y)
+
+      battler.moveCurve( 32*speedUp, 12*speedUp,
+                         starting_x+slide,    starting_y,
+                         starting_x,  fixN(starting_y-48),
+                         starting_x-slide, starting_y)
+
+      battler.moveCurve( 44*speedUp, 12*speedUp,
+                         starting_x-slide,    starting_y,
+                         starting_x,  fixN(starting_y-48),
+                         starting_x+slide, starting_y)
+
+      battler.moveCurve( 56*speedUp, 12*speedUp,
+                         starting_x+slide,    starting_y,
+                         starting_x,  fixN(starting_y-48),
+                         starting_x-slide, starting_y)
+
+      battler.moveCurve( 68*speedUp, 12*speedUp,
+                         starting_x-slide,    starting_y,
+                         starting_x-slide/2,  fixN(starting_y-36),
+                         starting_x, starting_y)
+
+      battler.moveAngle(  0*speedUp, 7*speedUp, angle)
+      battler.moveAngle(  8*speedUp, 11*speedUp,-angle)
+      battler.moveAngle( 20*speedUp, 11*speedUp,angle)
+      battler.moveAngle( 32*speedUp, 11*speedUp,-angle)
+      battler.moveAngle( 44*speedUp, 11*speedUp,angle)
+      battler.moveAngle( 56*speedUp, 11*speedUp,-angle)
+      battler.moveAngle( 68*speedUp, 11*speedUp,0)
+      
       for i in 0...totalDuration do
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "Explosion"
@@ -264,8 +297,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       # battler.setOrigin(0,PictureOrigin::CENTER)
       # battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
       zoom_values.each_with_index do |v,i|
-        battler.setZoomXY(i, v, v)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setZoomXY(i*speedUp, v, v)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "Bounce"
@@ -275,9 +308,9 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
       totalDuration = y_values.length
       y_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x, starting_y + fixN(v*2))
-        battler.setZoomXY(i, zoom_x_values[i], zoom_y_values[i])
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x, starting_y + fixN(v*2))
+        battler.setZoomXY(i*speedUp, zoom_x_values[i], zoom_y_values[i])
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "Boing"
@@ -287,9 +320,9 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
       totalDuration = y_values.length*2
       y_values.each_with_index do |v,i|
-        battler.moveXY(i*2, 2, starting_x, starting_y + fixN(v*2))
-        battler.moveZoomXY(i*2, 2, zoom_x_values[i], zoom_y_values[i])
-        battler.setName(i*2, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.moveXY(i*speedUp*2, 2, starting_x, starting_y + fixN(v*2))
+        battler.moveZoomXY(i*speedUp*2, 2, zoom_x_values[i], zoom_y_values[i])
+        battler.setName(i*speedUp*2, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "Fluid"
@@ -302,8 +335,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
       zoom_values.each_with_index do |v,i|
         u = i > 3 ? zoom_values[i-3] : 100
-        battler.setZoomXY(i, (v*2)-100, (u*2)-100)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setZoomXY(i*speedUp, (v*2)-100, (u*2)-100)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "ZoomDouble"      
@@ -312,8 +345,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       # battler.setOrigin(0,PictureOrigin::CENTER)
       # battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
       zoom_values.each_with_index do |v,i|
-        battler.setZoomXY(i, v, v)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setZoomXY(i*speedUp, v, v)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "Glide"
@@ -322,8 +355,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       x_values.each_with_index do |v,i|
         k = Math.sin(i*(Math::PI*2)/totalDuration) * 20
         j = Math.cos(i*(Math::PI*2)/totalDuration) * 20
-        battler.setXY(i, starting_x + j, starting_y + fixN(k))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x + j, starting_y + fixN(k))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "BlinkYellow"
@@ -332,9 +365,9 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       color_values   = [ 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0]
       totalDuration = x_values.length
       x_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x + (v*2), starting_y)
-        battler.setColor(i, color_values[i] == 0 ? Color.new(0, 0, 0, 0) : Color.new(255, 255, 0, 255))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x + (v*2), starting_y)
+        battler.setColor(i*speedUp, color_values[i] == 0 ? Color.new(0, 0, 0, 0) : Color.new(255, 255, 0, 255))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
 
     # Custom / Unused in HGSS
@@ -344,9 +377,9 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 80, 80, 32, 32, 0, 0, 0, 0, 0]
       totalDuration = x_values.length
       x_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x + (v*2), starting_y)
-        battler.setColor(i, Color.new(255, 0, 0, color_values[i]))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x + (v*2), starting_y)
+        battler.setColor(i*speedUp, Color.new(255, 0, 0, color_values[i]))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "BlinkBlue"
@@ -354,9 +387,9 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 80, 80, 32, 32, 0, 0, 0, 0, 0]
       totalDuration = x_values.length
       x_values.each_with_index do |v,i|
-        battler.setXY(i, starting_x + (v*2), starting_y)
-        battler.setColor(i, color_values[i] == 0 ? Color.new(0, 0, 0, 0) : Color.new(0, 0, 255, 255))
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY(i*speedUp, starting_x + (v*2), starting_y)
+        battler.setColor(i*speedUp, color_values[i] == 0 ? Color.new(0, 0, 0, 0) : Color.new(0, 0, 255, 255))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
     when "DoAFlip"
@@ -369,9 +402,9 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       battler.setXY(0,starting_x, new_y)
 
       x_values.each_with_index do |v,i|
-        battler.setAngle(i, Math.sin(i*(Math::PI/2)/totalDuration)*maxAngle)
-        battler.setXY(i, starting_x + (v*4), new_y)
-        battler.setName(i, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setAngle(i*speedUp, Math.sin(i*(Math::PI/2)/totalDuration)*maxAngle)
+        battler.setXY(i*speedUp, starting_x + (v*4), new_y)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
 
     else
@@ -379,10 +412,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
     end
     
-    @totalDuration = totalDuration
-
-    # totalDuration += 1
     # reset battler's attributes at the end
+    totalDuration *= speedUp
     battler.setAngle(totalDuration, 0)
     battler.setZoomXY(totalDuration, 100, 100)
     battler.setName(totalDuration, path_A)

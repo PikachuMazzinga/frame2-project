@@ -3,6 +3,24 @@
 # There are only two lines of modified code outside of the files in this folder:
 # Two additions to 006_UI_Summary to show how to play the animation in the Summary.
 
+
+alias :anim_getCubicPoint2 :getCubicPoint2 
+def getCubicPoint2(src, t)
+  t = 1 if t > 1
+  anim_getCubicPoint2(src, t)
+end
+
+alias :anim_setPictureSprite :setPictureSprite 
+def setPictureSprite(sprite, picture, iconSprite = false)
+  picture.frameUpdates.each do |type|
+    if type == Processes::CURVE
+      sprite.x = picture.x.round
+      sprite.y = picture.y.round
+    end
+  end
+  anim_setPictureSprite(sprite, picture, iconSprite)
+end
+
 class Battle::Scene
   def pbFrameUpdate(cw = nil)
     cw&.update
