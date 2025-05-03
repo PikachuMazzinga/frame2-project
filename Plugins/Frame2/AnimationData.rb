@@ -234,7 +234,7 @@ module PokemonIntroAnimationSettings
     ANIMATION_DATA[:CROBAT]     = ["FlyVertical",           "BBAABABABABA",         nil,        nil]
     ANIMATION_DATA[:CHINCHOU]   = ["FlyVertical",           "ABA",                  nil,        nil]
     ANIMATION_DATA[:LANTURN]    = ["FlyHorizontal",         "ABABA",                nil,        nil]
-    ANIMATION_DATA[:PICHU]      = ["RotateJump",            "BABABA",               nil,        nil]
+    ANIMATION_DATA[:PICHU]      = ["RotateJump",            "ABABABA",              nil,        nil]
     ANIMATION_DATA[:CLEFFA]     = ["Bounce",                "ABA",                  nil,        nil]
     ANIMATION_DATA[:IGGLYBUFF]  = ["RotateBottom",          "ABABA",                nil,        nil]
     ANIMATION_DATA[:TOGEPI]     = ["HopAround",             "ABABA",                nil,        nil]

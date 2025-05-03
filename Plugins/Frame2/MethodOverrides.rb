@@ -21,6 +21,130 @@ def setPictureSprite(sprite, picture, iconSprite = false)
   anim_setPictureSprite(sprite, picture, iconSprite)
 end
 
+# This override only changes the third line of the method, removing the to_i:
+# this_frame = ((time_now - @timer_start) * 20).to_i -> this_frame = ((time_now - @timer_start) * 20)
+# This is to fix the base behaviour, which would otherwise skip over certain animation frames.
+# Fully overriding this method is unfortunately the only way of changing this behaviour via plugin, so keep in mind
+# that if your project has otherwise changed PictureEx.update this will override those changes.
+class PictureEx
+  def update
+    time_now = System.uptime
+    @timer_start = time_now if !@timer_start
+    this_frame = ((time_now - @timer_start) * 20)#.to_i   # 20 frames per second
+    procEnded = false
+    @frameUpdates.clear
+    @processes.each_with_index do |process, i|
+      # Skip processes that aren't due to start yet
+      next if process[1] > this_frame
+      # Set initial values if the process has just started
+      if !process[3]   # Not started yet
+        process[3] = true   # Running
+        case process[0]
+        when Processes::XY
+          process[5] = @x
+          process[6] = @y
+        when Processes::DELTA_XY
+          process[5] = @x
+          process[6] = @y
+          process[7] += @x
+          process[8] += @y
+        when Processes::CURVE
+          process[5][0] = @x
+          process[5][1] = @y
+        when Processes::Z
+          process[5] = @z
+        when Processes::ZOOM
+          process[5] = @zoom_x
+          process[6] = @zoom_y
+        when Processes::ANGLE
+          process[5] = @angle
+        when Processes::TONE
+          process[5] = @tone.clone
+        when Processes::COLOR
+          process[5] = @color.clone
+        when Processes::HUE
+          process[5] = @hue
+        when Processes::OPACITY
+          process[5] = @opacity
+        end
+      end
+      # Update process
+      @frameUpdates.push(process[0]) if !@frameUpdates.include?(process[0])
+      start_time = @timer_start + (process[1] / 20.0)
+      duration = process[2] / 20.0
+      case process[0]
+      when Processes::XY, Processes::DELTA_XY
+        @x = lerp(process[5], process[7], duration, start_time, time_now)
+        @y = lerp(process[6], process[8], duration, start_time, time_now)
+      when Processes::CURVE
+        @x, @y = getCubicPoint2(process[5], (time_now - start_time) / duration)
+      when Processes::Z
+        @z = lerp(process[5], process[6], duration, start_time, time_now)
+      when Processes::ZOOM
+        @zoom_x = lerp(process[5], process[7], duration, start_time, time_now)
+        @zoom_y = lerp(process[6], process[8], duration, start_time, time_now)
+      when Processes::ANGLE
+        @angle = lerp(process[5], process[6], duration, start_time, time_now)
+      when Processes::TONE
+        @tone.red = lerp(process[5].red, process[6].red, duration, start_time, time_now)
+        @tone.green = lerp(process[5].green, process[6].green, duration, start_time, time_now)
+        @tone.blue = lerp(process[5].blue, process[6].blue, duration, start_time, time_now)
+        @tone.gray = lerp(process[5].gray, process[6].gray, duration, start_time, time_now)
+      when Processes::COLOR
+        @color.red = lerp(process[5].red, process[6].red, duration, start_time, time_now)
+        @color.green = lerp(process[5].green, process[6].green, duration, start_time, time_now)
+        @color.blue = lerp(process[5].blue, process[6].blue, duration, start_time, time_now)
+        @color.alpha = lerp(process[5].alpha, process[6].alpha, duration, start_time, time_now)
+      when Processes::HUE
+        @hue = lerp(process[5], process[6], duration, start_time, time_now)
+      when Processes::OPACITY
+        @opacity = lerp(process[5], process[6], duration, start_time, time_now)
+      when Processes::VISIBLE
+        @visible = process[5]
+      when Processes::BLEND_TYPE
+        @blend_type = process[5]
+      when Processes::SE
+        pbSEPlay(process[5], process[6], process[7])
+      when Processes::NAME
+        @name = process[5]
+      when Processes::ORIGIN
+        @origin = process[5]
+      when Processes::SRC
+        @src_rect.x = process[5]
+        @src_rect.y = process[6]
+      when Processes::SRC_SIZE
+        @src_rect.width  = process[5]
+        @src_rect.height = process[6]
+      when Processes::CROP_BOTTOM
+        @cropBottom = process[5]
+      end
+      # Erase process if its duration has elapsed
+      if process[1] + process[2] <= this_frame
+        callback(process[4]) if process[4]
+        @processes[i] = nil
+        procEnded = true
+      end
+    end
+    # Clear out empty spaces in @processes array caused by finished processes
+    @processes.compact! if procEnded
+    @timer_start = nil if @processes.empty? && @rotate_speed == 0
+    # Add the constant rotation speed
+    if @rotate_speed != 0
+      @frameUpdates.push(Processes::ANGLE) if !@frameUpdates.include?(Processes::ANGLE)
+      @auto_angle = @rotate_speed * (time_now - @timer_start)
+      while @auto_angle < 0
+        @auto_angle += 360
+      end
+      @auto_angle %= 360
+      @angle += @rotate_speed
+      while @angle < 0
+        @angle += 360
+      end
+      @angle %= 360
+    end
+  end
+end
+
 class Battle::Scene
   def pbFrameUpdate(cw = nil)
     cw&.update

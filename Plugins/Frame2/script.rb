@@ -280,13 +280,13 @@ class PokemonIntroAnimation < Battle::Scene::Animation
                          starting_x-slide/2,  fixN(starting_y-36),
                          starting_x, starting_y)
 
-      battler.moveAngle(  0*speedUp, 7*speedUp, angle)
-      battler.moveAngle(  8*speedUp, 11*speedUp,-angle)
-      battler.moveAngle( 20*speedUp, 11*speedUp,angle)
-      battler.moveAngle( 32*speedUp, 11*speedUp,-angle)
-      battler.moveAngle( 44*speedUp, 11*speedUp,angle)
-      battler.moveAngle( 56*speedUp, 11*speedUp,-angle)
-      battler.moveAngle( 68*speedUp, 11*speedUp,0)
+      battler.moveAngle(      0*speedUp,  7*speedUp, angle)
+      battler.moveAngle( ( 8+1)*speedUp, 11*speedUp,-angle)
+      battler.moveAngle( (20+1)*speedUp, 11*speedUp,angle)
+      battler.moveAngle( (32+1)*speedUp, 11*speedUp,-angle)
+      battler.moveAngle( (44+1)*speedUp, 11*speedUp,angle)
+      battler.moveAngle( (56+1)*speedUp, 11*speedUp,-angle)
+      battler.moveAngle( (68+1)*speedUp, 11*speedUp,0)
       
       for i in 0...totalDuration do
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
