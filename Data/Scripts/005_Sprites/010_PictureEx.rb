@@ -362,7 +362,7 @@ class PictureEx
   def update
     time_now = System.uptime
     @timer_start = time_now if !@timer_start
-    this_frame = ((time_now - @timer_start) * 20).to_i   # 20 frames per second
+    this_frame = ((time_now - @timer_start) * 20)   # 20 frames per second
     procEnded = false
     @frameUpdates.clear
     @processes.each_with_index do |process, i|
