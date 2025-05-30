@@ -194,35 +194,42 @@ class PokemonEvolutionScene
 
   def pbEvolutionSuccess
     $stats.evolution_count += 1
-    # Play cry of evolved species
-    cry_time = GameData::Species.cry_length(@newspecies, @pokemon.form)
-    Pokemon.play_cry(@newspecies, @pokemon.form)
     
-    # FRAME2 PROJECT ADDITION
-    @sprites["rsprite2"].pbPlayIntroAnimation
-    
-    timer_start = System.uptime
-    loop do
-      Graphics.update
-      pbUpdate
-      break if System.uptime - timer_start >= cry_time
-    end
-    pbBGMStop
-    # Success jingle/message
-    pbMEPlay("Evolution success")
+    oldspeciesname = @pokemon.name
     newspeciesname = GameData::Species.get(@newspecies).name
-    pbMessageDisplay(@sprites["msgwindow"],
-                     "\\se[]" + _INTL("Congratulations! Your {1} evolved into {2}!",
-                                      @pokemon.name, newspeciesname) + "\\wt[80]") { pbUpdate }
-    @sprites["msgwindow"].text = ""
+
     # Check for consumed item and check if Pokémon should be duplicated
     pbEvolutionMethodAfterEvolution
+
     # Modify Pokémon to make it evolved
     was_fainted = @pokemon.fainted?
     @pokemon.species = @newspecies
     @pokemon.hp = 0 if was_fainted
     @pokemon.calc_stats
     @pokemon.ready_to_evolve = false
+    
+    # Play cry of evolved species
+    cry_time = GameData::Species.cry_length(@newspecies, @pokemon.form)
+    Pokemon.play_cry(@newspecies, @pokemon.form)
+        
+    # FRAME2 PROJECT ADDITION
+    @sprites["rsprite2"].pbPlayIntroAnimation
+
+    timer_start = System.uptime
+    loop do
+      Graphics.update
+      pbUpdate
+      break if System.uptime - timer_start >= cry_time
+    end
+
+    pbBGMStop
+    # Success jingle/message
+    pbMEPlay("Evolution success")
+    pbMessageDisplay(@sprites["msgwindow"],
+                     "\\se[]" + _INTL("Congratulations! Your {1} evolved into {2}!",
+                      oldspeciesname, newspeciesname) + "\\wt[80]") { pbUpdate }
+    @sprites["msgwindow"].text = ""
+
     # See and own evolved species
     was_owned = $player.owned?(@newspecies)
     $player.pokedex.register(@pokemon)
