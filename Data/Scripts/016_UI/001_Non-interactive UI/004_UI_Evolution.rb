@@ -197,6 +197,10 @@ class PokemonEvolutionScene
     # Play cry of evolved species
     cry_time = GameData::Species.cry_length(@newspecies, @pokemon.form)
     Pokemon.play_cry(@newspecies, @pokemon.form)
+    
+    # FRAME2 PROJECT ADDITION
+    @sprites["rsprite2"].pbPlayIntroAnimation
+    
     timer_start = System.uptime
     loop do
       Graphics.update

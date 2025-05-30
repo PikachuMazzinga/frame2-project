@@ -97,6 +97,10 @@ class PokemonEggHatch_Scene
     # Finish scene
     cry_duration = GameData::Species.cry_length(@pokemon)
     @pokemon.play_cry
+    
+    # FRAME2 PROJECT ADDITION
+    @sprites["pokemon"].pbPlayIntroAnimation
+    
     updateScene(cry_duration + 0.1)
     pbBGMStop
     pbMEPlay("Evolution success")
