@@ -236,7 +236,7 @@ module Battle::Scene::Animation::BallAnimationMixin
     battler.setVisible(delay, true)
     battler.setOpacity(delay, 255)
     battler.moveXY(delay, 5, battlerX, battlerY)
-    battler.moveZoom(delay, 5, 100, [batSprite, :pbPlayIntroAnimation])
+    battler.moveZoom(delay, 6, 100, [batSprite, :pbPlayIntroAnimation])
     # NOTE: As soon as the battler sprite finishes zooming, and just as it
     #       starts changing its tone to normal, it plays its intro animation.
     color.alpha = 0
