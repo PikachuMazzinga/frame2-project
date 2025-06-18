@@ -157,6 +157,20 @@ class Battle::Scene
   end
 end
 
+module Battle::Scene::Animation::BallAnimationMixin
+  # the number 6 in the moveZoom function is the only thing changed from base essentials
+  def battlerAppear(battler, delay, battlerX, battlerY, batSprite, color)
+    battler.setVisible(delay, true)
+    battler.setOpacity(delay, 255)
+    battler.moveXY(delay, 5, battlerX, battlerY)
+    battler.moveZoom(delay, 6, 100, [batSprite, :pbPlayIntroAnimation])
+    # NOTE: As soon as the battler sprite finishes zooming, and just as it
+    #       starts changing its tone to normal, it plays its intro animation.
+    color.alpha = 0
+    battler.moveColor(delay + 5, 10, color)
+  end
+end
+
 class PokemonSprite < Sprite
   attr_reader :offset
   # Sets the icon's filename.  Alias for setBitmap.
