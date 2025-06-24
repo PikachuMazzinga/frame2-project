@@ -68,13 +68,11 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     
     # gif frame duration / PictureEx frame duration
     speedUp = (30.0/1000) / (1.0/20)
-    speedUp = 1 if $DEBUG && Input.press?(Input::CTRL)
+
+    # uncomment this to check slower animations
+    # speedUp = 1 if $DEBUG && Input.press?(Input::CTRL)
     
     case @animType
-    when "GIF"
-      totalDuration = 30 # d=====(￣▽￣*) source : trust me bro
-      battler.setName(0, path_B)
-      battler.setName(totalDuration, path_A)
     
     when "StretchVertical"
       zoom_values = [100, 102.5, 105, 106, 105, 107.5, 105, 110, 107.5, 110, 110, 105, 110, 107.5, 105, 102.5, 103, 101, 100, 100, 100]
@@ -92,7 +90,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
-    when "FlyVertical" # WIP - math hard, brain hurty
+    when "FlyVertical"
       y_values = [0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 0, 0]
       totalDuration = y_values.length
       maxAngle = 15
@@ -107,7 +105,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
-    when "FlyHorizontal" # WIP - math hard, brain hurty
+    when "FlyHorizontal"
       x_values = [0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 0, 0]
       totalDuration = x_values.length
       maxAngle = 15
@@ -350,7 +348,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
-    when "Glide"
+    when "Glide" # intended for Gligar but unused
       x_values = [0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1, 0, 0, 0, 0]
       totalDuration = x_values.length
       x_values.each_with_index do |v,i|
@@ -373,7 +371,12 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
     # Custom / Unused in HGSS
     
-    when "BlinkRed"
+    when "GIF" # for Crystal-like animations
+      totalDuration = 30 # d=====(￣▽￣*) source : trust me bro
+      battler.setName(0, path_B)
+      battler.setName(totalDuration, path_A)
+
+    when "BlinkRed" # mainly used for backsprites in DPPT
       x_values       = [0, 0, 0, -2, 1, -3, 2, -3, 2, -3, 2, -3, 2, 1, 0, -1, 1, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 80, 80, 32, 32, 0, 0, 0, 0, 0]
       totalDuration = x_values.length
@@ -383,7 +386,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
-    when "BlinkBlue"
+    when "BlinkBlue" # mainly used for backsprites in DPPT
       x_values       = [0, 0, 0, -2, 1, -3, 2, -3, 2, -3, 2, -3, 2, 1, 0, -1, 1, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 80, 80, 32, 32, 0, 0, 0, 0, 0]
       totalDuration = x_values.length
@@ -393,7 +396,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
-    when "DoAFlip"
+    when "DoAFlip" # just a silly one, define yours next
       x_values = [0, -1, -2, -3, -4, -5, -6, -7, -8, -8, -9, -9, -9, -10, -10, -10, -10, -10, -9, -9, -9, -8, -8, -7, -6, -5, -4, -3, -2, -1, -0, 2, 1, 0, 0, 0, 0]
       totalDuration = x_values.length
       maxAngle = 360
