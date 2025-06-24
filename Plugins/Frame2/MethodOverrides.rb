@@ -3,13 +3,14 @@
 # There are only two lines of modified code outside of the files in this folder:
 # Two additions to 006_UI_Summary to show how to play the animation in the Summary.
 
-
+# Clamp the value of t before doing the math to avoid weird behaviours
 alias :anim_getCubicPoint2 :getCubicPoint2 
 def getCubicPoint2(src, t)
   t = 1 if t > 1
   anim_getCubicPoint2(src, t)
 end
 
+# Fix to base PictureEx behaviour: Curve used to not update the coordinated of the sprite
 alias :anim_setPictureSprite :setPictureSprite 
 def setPictureSprite(sprite, picture, iconSprite = false)
   picture.frameUpdates.each do |type|
@@ -145,20 +146,9 @@ class PictureEx
   end
 end
 
-class Battle::Scene
-  def pbFrameUpdate(cw = nil)
-    cw&.update
-    @battle.battlers.each_with_index do |b, i|
-      next if !b
-      @sprites["dataBox_#{i}"]&.update
-      # @sprites["pokemon_#{i}"]&.update
-      @sprites["shadow_#{i}"]&.update
-    end
-  end
-end
-
+# The number 6 in the moveZoom function is the only thing changed from base essentials
+# It now waits one more frame to avoid playing the animation while the sprite is still not fully in position
 module Battle::Scene::Animation::BallAnimationMixin
-  # the number 6 in the moveZoom function is the only thing changed from base essentials
   def battlerAppear(battler, delay, battlerX, battlerY, batSprite, color)
     battler.setVisible(delay, true)
     battler.setOpacity(delay, 255)
@@ -171,9 +161,11 @@ module Battle::Scene::Animation::BallAnimationMixin
   end
 end
 
+# This adds animations to PokemonSprites, as well as the name attribute to behave correctly with PictureEx.
+# These changes allow you to call pbPlayIntroAnimation to PokemonSprites just as you would with a BattlerSprite.
 class PokemonSprite < Sprite
   attr_reader :offset
-  # Sets the icon's filename.  Alias for setBitmap.
+  # Sets the sprite's filename.  Alias for setBitmap.
   def name
     @name
   end
@@ -190,11 +182,6 @@ class PokemonSprite < Sprite
     @anim&.dispose
     @anim = nil
     @anim = PokemonIntroAnimation.new([self],@viewport,@pokemon,false)
-    # loop do
-    #   anim.update
-    #   Graphics.update
-    #   break if anim.animDone?
-    # end
   end
 
   alias :anim_update :update unless method_defined?(:anim_update)
@@ -208,7 +195,6 @@ class PokemonSprite < Sprite
       @anim = nil
     end
   end
-
 
   alias :anim_setPokemonBitmap :setPokemonBitmap unless method_defined?(:anim_setPokemonBitmap)
   def setPokemonBitmap(pokemon, back = false)
@@ -227,10 +213,10 @@ class PokemonSprite < Sprite
   end
 end
 
+# Same as PokemonSprite, name and setBitmap are needed to work seamlessly with PictureEx.
 class Battle::Scene::BattlerSprite < RPG::Sprite
   attr_reader :offset
   
-  # Sets the icon's filename.  Alias for setBitmap.
   def name
     @name
   end
@@ -238,7 +224,6 @@ class Battle::Scene::BattlerSprite < RPG::Sprite
     setBitmap(value)
   end
 
-  # Sets the icon's filename.
   def setBitmap(file,hue=0)
     self.bitmap = nil
     @name=file
@@ -252,9 +237,7 @@ class Battle::Scene::BattlerSprite < RPG::Sprite
     end
   end
 
-
   alias :anim_pbPlayIntroAnimation :pbPlayIntroAnimation unless method_defined?(:anim_pbPlayIntroAnimation)
-
   def pbPlayIntroAnimation(pictureEx = nil)
     anim_pbPlayIntroAnimation(pictureEx)
 
@@ -264,6 +247,35 @@ class Battle::Scene::BattlerSprite < RPG::Sprite
     end
   end
 
+  # Lines 4 and 5 of this method have beeh commented out.
+  # This is to avoid overriding the second frame's bitmap during update.
+  def update
+    return if !@_iconBitmap
+    @updating = true
+    # Update bitmap
+    # @_iconBitmap.update
+    # self.bitmap = @_iconBitmap.bitmap
+    # Pokémon sprite bobbing while Pokémon is selected
+    @spriteYExtra = 0
+    if @selected == 1 && COMMAND_BOBBING_DURATION    # When choosing commands for this Pokémon
+      bob_delta = System.uptime % COMMAND_BOBBING_DURATION   # 0-COMMAND_BOBBING_DURATION
+      bob_frame = (4 * bob_delta / COMMAND_BOBBING_DURATION).floor
+      case bob_frame
+      when 1 then @spriteYExtra = 2
+      when 3 then @spriteYExtra = -2
+      end
+    end
+    self.x       = self.x
+    self.y       = self.y
+    self.visible = @spriteVisible
+    # Pokémon sprite blinking when targeted
+    if @selected == 2 && @spriteVisible && TARGET_BLINKING_DURATION
+      blink_delta = System.uptime % TARGET_BLINKING_DURATION   # 0-TARGET_BLINKING_DURATION
+      blink_frame = (3 * blink_delta / TARGET_BLINKING_DURATION).floor
+      self.visible = (blink_frame != 0)
+    end
+    @updating = false
+  end
 end
 
 
