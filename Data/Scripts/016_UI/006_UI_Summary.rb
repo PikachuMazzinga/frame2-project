@@ -308,7 +308,7 @@ class PokemonSummary_Scene
     @sprites["pokemon"].setPokemonBitmap(@pokemon)
     
     # FRAME2 PROJECT ADDITION
-    @sprites["pokemon"]&.pbPlayIntroAnimation
+    # @sprites["pokemon"]&.pbPlayIntroAnimation
     
     @sprites["pokeicon"].pokemon = @pokemon
     @sprites["itemicon"].item = @pokemon.item_id
@@ -928,6 +928,7 @@ class PokemonSummary_Scene
     @sprites["itemicon"].item = @pokemon.item_id
     pbSEStop
     @pokemon.play_cry
+    @sprites["pokemon"]&.pbPlayIntroAnimation
   end
 
   def pbMoveSelection
@@ -1273,6 +1274,7 @@ class PokemonSummary_Scene
 
   def pbScene
     @pokemon.play_cry
+    @sprites["pokemon"]&.pbPlayIntroAnimation
     loop do
       Graphics.update
       Input.update
