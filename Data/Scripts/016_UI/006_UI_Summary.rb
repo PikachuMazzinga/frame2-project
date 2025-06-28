@@ -305,10 +305,9 @@ class PokemonSummary_Scene
       drawPageOneEgg
       return
     end
-    @sprites["pokemon"].setPokemonBitmap(@pokemon)
     
-    # FRAME2 PROJECT ADDITION
-    # @sprites["pokemon"]&.pbPlayIntroAnimation
+    # FRAME2 PROJECT CHANGE - This is not needed and interfered with the animation playing
+    # @sprites["pokemon"].setPokemonBitmap(@pokemon)
     
     @sprites["pokeicon"].pokemon = @pokemon
     @sprites["itemicon"].item = @pokemon.item_id
@@ -928,6 +927,8 @@ class PokemonSummary_Scene
     @sprites["itemicon"].item = @pokemon.item_id
     pbSEStop
     @pokemon.play_cry
+
+    # FRAME2 PROJECT ADDITION
     @sprites["pokemon"]&.pbPlayIntroAnimation
   end
 
@@ -1274,7 +1275,10 @@ class PokemonSummary_Scene
 
   def pbScene
     @pokemon.play_cry
+    
+    # FRAME2 PROJECT ADDITION
     @sprites["pokemon"]&.pbPlayIntroAnimation
+    
     loop do
       Graphics.update
       Input.update
