@@ -1,7 +1,18 @@
+################################################################################
+#                    Mothods Overriden from base Essentials                    #
+################################################################################
 
-# NOTES TO ADD TO DOCUMENTATION LATER:
-# There are only two lines of modified code outside of the files in this folder:
-# Two additions to 006_UI_Summary to show how to play the animation in the Summary.
+# Compatibility layer for v20 versions that still use SpriteWrapper
+if Essentials::VERSION && Essentials::VERSION.to_f < 20.1
+  class SpriteWrapper
+    def height
+      @sprite.height
+    end
+    def width
+      @sprite.width
+    end
+  end
+end
 
 # Clamp the value of t before doing the math to avoid weird behaviours
 alias :anim_getCubicPoint2 :getCubicPoint2
@@ -165,7 +176,7 @@ end
 
 # This adds animations to PokemonSprites, as well as the name attribute to behave correctly with PictureEx.
 # These changes allow you to call pbPlayIntroAnimation to PokemonSprites just as you would with a BattlerSprite.
-class PokemonSprite < Sprite
+class PokemonSprite
   attr_reader :offset
   # Sets the sprite's filename.  Alias for setBitmap.
   def name
@@ -216,7 +227,7 @@ class PokemonSprite < Sprite
 end
 
 # Same as PokemonSprite, name and setBitmap are needed to work seamlessly with PictureEx.
-class Battle::Scene::BattlerSprite < RPG::Sprite
+class Battle::Scene::BattlerSprite
   attr_reader :offset
 
   def name
