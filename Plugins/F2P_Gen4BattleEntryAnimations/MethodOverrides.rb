@@ -189,12 +189,12 @@ class PokemonSprite
     self.bitmap = @_iconbitmap.bitmap
   end
 
-  def pbPlayIntroAnimation(pictureEx = nil)
+  def pbPlayIntroAnimation(pictureEx = nil, back = false)
     return if @pokemon.nil?
     # Play Intro animation
     @anim&.dispose
     @anim = nil
-    @anim = PokemonIntroAnimation.new([self],@viewport,@pokemon,false)
+    @anim = PokemonIntroAnimation.new([self],@viewport,@pokemon,back)
   end
 
   alias :anim_update :update unless method_defined?(:anim_update)
@@ -202,6 +202,7 @@ class PokemonSprite
   def update
     anim_update
     return if @anim.nil?
+    # echoln "#{name} : #{@anim}"
     @anim.update
     if @anim.animDone?
       @anim.dispose
@@ -256,7 +257,7 @@ class Battle::Scene::BattlerSprite
 
     # Play Intro animation
     if PokemonIntroAnimationSettings::ENABLED_IN_BATTLE && PokemonIntroAnimationSettings::DEFAULT_BEHAVIOUR != nil
-      @battleAnimations.push(PokemonIntroAnimation.new([self],@viewport,@pkmn,@index%2 == 0))
+      @battleAnimations.push(PokemonIntroAnimation.new([self],@viewport,@pkmn.species,@index%2 == 0))
     end
   end
 

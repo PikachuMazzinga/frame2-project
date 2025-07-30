@@ -159,8 +159,10 @@ class SpritePositioner
     @form = form
     species_data = GameData::Species.get_species_form(@species, @form)
     return if !species_data
-    @sprites["pokemon_0"].setSpeciesBitmap(@species, 0, @form, false, false, true)
-    @sprites["pokemon_1"].setSpeciesBitmap(@species, 0, @form)
+    pkmn = Pokemon.new(@species, 69)
+    pkmn.form = @form
+    @sprites["pokemon_0"].setPokemonBitmapSpecies(pkmn, @species, true)
+    @sprites["pokemon_1"].setPokemonBitmapSpecies(pkmn, @species)
     @sprites["shadow_1"].setBitmap(GameData::Species.shadow_filename(@species, @form))
   end
 
@@ -350,7 +352,7 @@ class SpritePositioner
       name = (sp.form == 0) ? sp.name : _INTL("{1} (form {2})", sp.real_name, sp.form)
       allspecies.push([sp.id, sp.species, sp.form, name]) if name && !name.empty?
     end
-    allspecies.sort! { |a, b| a[3] <=> b[3] }
+    # allspecies.sort! { |a, b| a[3] <=> b[3] }
     commands = []
     allspecies.each { |sp| commands.push(sp[3]) }
     cw.commands = commands
@@ -367,10 +369,14 @@ class SpritePositioner
         refresh
       end
       self.update
+      @sprites["pokemon_0"].update
       if Input.trigger?(Input::BACK)
         pbChangeSpecies(nil, nil)
         refresh
         break
+      elsif Input.trigger?(Input::SPECIAL)
+        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
+        @sprites["pokemon_1"].pbPlayIntroAnimation
       elsif Input.trigger?(Input::USE)
         pbChangeSpecies(allspecies[cw.index][1], allspecies[cw.index][2])
         ret = true

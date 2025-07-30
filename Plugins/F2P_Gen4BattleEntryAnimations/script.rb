@@ -14,16 +14,14 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     return @back ? pos.abs : pos
   end
 
-  def initialize(sprites,viewport,pkmn,back = false)
-    @pkmn = pkmn
-    # @_iconBitmap = _iconBitmap
+  def initialize(sprites, viewport, pkmn, back = false)
     @back = back
 
     @nameFrame1 = GameData::Species.sprite_name_from_pokemon(pkmn, back, false)
     @nameFrame2 = GameData::Species.sprite_name_from_pokemon(pkmn, back, true)
     @nameFrame2 = @nameFrame1 if @nameFrame2 == nil
     
-    @animData = PokemonIntroAnimationSettings::ANIMATION_DATA[@pkmn.species] || PokemonIntroAnimationSettings::DEFAULT_BEHAVIOUR
+    @animData = PokemonIntroAnimationSettings::ANIMATION_DATA[pkmn.species] || PokemonIntroAnimationSettings::DEFAULT_BEHAVIOUR
 
     @animType = @animData[@back ? 2 : 0]
     @animFreq = @animData[@back ? 3 : 1]
