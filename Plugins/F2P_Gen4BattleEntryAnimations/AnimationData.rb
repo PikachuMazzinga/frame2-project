@@ -1,3 +1,24 @@
+
+# module GameData
+#     class SpeciesMetrics
+#         attr_accessor :front_animation
+#         attr_accessor :back_animation
+    
+#         SCHEMA = {
+#           "SectionName"         => [:id,                    "eV", :Species],
+#           "BackSprite"          => [:back_sprite,           "ii"],
+#           "FrontSprite"         => [:front_sprite,          "ii"],
+#           "FrontSpriteAltitude" => [:front_sprite_altitude, "i"],
+#           "ShadowX"             => [:shadow_x,              "i"],
+#           "ShadowSize"          => [:shadow_size,           "u"],
+#           "FrontAnimation"      => [:front_animation,       "ii"],
+#           "BackAnimation"       => [:back_animation,        "ii"]
+#         }
+
+
+#     end
+# end
+
 #############################################################################
 # TODO: MOVE ALL THIS STUFF INTO A PBS (the Pokémon one or a dedicated one) #
 #############################################################################
@@ -564,7 +585,7 @@ module PokemonIntroAnimationSettings
     ANIMATION_DATA[:SWADLOON]   = ["ShakeSmall",            "B",                    nil,        nil]            
     ANIMATION_DATA[:LEAVANNY]   = ["StretchVertical",       "ABBA",                 nil,        nil]                
     ANIMATION_DATA[:VENIPEDE]   = ["HopSmall",              "BABA",                 nil,        nil]        
-    ANIMATION_DATA[:WHIRLIPEDE] = ["RotateBottom",          "BABABABA",             nil,        nil]            
+    ANIMATION_DATA[:WHIRLIPEDE] = ["Bounce",                "BBA",                  nil,        nil]            
     ANIMATION_DATA[:SCOLIPEDE]  = ["StompDouble",           "BABA",                 nil,        nil]            
     ANIMATION_DATA[:COTTONEE]   = ["FlyHorizontal",         "BABA",                 nil,        nil]            
     ANIMATION_DATA[:WHIMSICOTT] = ["HopSmall",              "BABA",                 nil,        nil]        
