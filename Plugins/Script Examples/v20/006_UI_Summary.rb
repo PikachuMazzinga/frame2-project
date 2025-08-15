@@ -912,7 +912,7 @@ class PokemonSummary_Scene
     @pokemon.play_cry
     
     # FRAME2 PROJECT ADDITION
-    @sprites["pokemon"]&.pbPlayIntroAnimation
+    @sprites["pokemon"]&.pbPlayIntroAnimation if !@pokemon.egg?
 
   end
 
@@ -1263,7 +1263,7 @@ class PokemonSummary_Scene
     @pokemon.play_cry
 
     # FRAME2 PROJECT ADDITION
-    @sprites["pokemon"]&.pbPlayIntroAnimation
+    @sprites["pokemon"]&.pbPlayIntroAnimation if !@pokemon.egg?
 
     loop do
       Graphics.update
@@ -1275,7 +1275,7 @@ class PokemonSummary_Scene
         @pokemon.play_cry
 
         # FRAME2 PROJECT ADDITION
-        @sprites["pokemon"]&.pbPlayIntroAnimation
+        @sprites["pokemon"]&.pbPlayIntroAnimation if !@pokemon.egg?
 
       elsif Input.trigger?(Input::BACK)
         pbPlayCloseMenuSE
