@@ -397,19 +397,19 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
     when "ThrustRight"
       x_values = [0, 0, 0, -2, 1, -3, 2, -3, 2, -3, 2, -3, 2, 1, 0, -1, 1, -2, 0, 0, 0, 0]
-      totalDuration = x_values.length
-      battler.moveXY(0, 2,starting_x - 20, starting_y)
-      battler.moveXY(3, 3,starting_x + 40, starting_y)
-      battler.moveXY(totalDuration, 3, starting_x, starting_y)
+      totalDuration = 8 + x_values.length
+      battler.moveXY(0, (2*speedUp),starting_x - 20, starting_y)
+      battler.moveXY((3*speedUp), (3*speedUp),starting_x + 40, starting_y)
+      battler.moveXY((totalDuration*speedUp), (3*speedUp), starting_x, starting_y)
       x_values.each_with_index do |v,i|
-        battler.setXY(7 + (i*speedUp), starting_x + 40 + (v*2), starting_y)
-        battler.setName(7 + (i*speedUp), getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+        battler.setXY((7+i)*speedUp, starting_x + 40 + (v*2), starting_y)
+        battler.setName((7+i)*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
 
     when "BlinkRed" # mainly used in DPPT
       color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 180, 80, 80, 32, 32, 0]
       totalDuration = color_values.length
-      l = totalDuration/10
+      l = (totalDuration/10)*speedUp
       battler.moveXY(l*0, l, starting_x - 10, starting_y)
       battler.moveXY(l*1, l, starting_x,      starting_y)
       battler.moveXY(l*2, l, starting_x + 10, starting_y)
@@ -426,7 +426,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     when "BlinkBlue" # mainly used in DPPT
       color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 180, 80, 80, 32, 32, 0]
       totalDuration = color_values.length
-      l = totalDuration/10
+      l = (totalDuration/10)*speedUp
       battler.moveXY(l*0, l, starting_x - 10, starting_y)
       battler.moveXY(l*1, l, starting_x,      starting_y)
       battler.moveXY(l*2, l, starting_x + 10, starting_y)
@@ -443,7 +443,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     when "BlinkGreen" 
       color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 180, 80, 80, 32, 32, 0]
       totalDuration = color_values.length
-      l = totalDuration/10
+      l = (totalDuration/10)*speedUp
       battler.moveXY(l*0, l, starting_x - 10, starting_y)
       battler.moveXY(l*1, l, starting_x,      starting_y)
       battler.moveXY(l*2, l, starting_x + 10, starting_y)
@@ -459,7 +459,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
     when "Wiggle"
       totalDuration = 20
-      l = totalDuration/8
+      l = (totalDuration/8)*speedUp
       battler.moveXY(l*0, l, starting_x - 10, starting_y + 10)
       battler.moveXY(l*1, l, starting_x,      starting_y)
       battler.moveXY(l*2, l, starting_x + 10, starting_y + 10)
@@ -474,7 +474,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
     when "Triangle" # <-- eelumynatie konfimedd?? *x-files intro plays*
       totalDuration = 20
-      l = totalDuration/6
+      l = (totalDuration/6)*speedUp
       battler.moveXY(l*0, l, starting_x + 10, starting_y + 20)
       battler.moveXY(l*1, l, starting_x - 10, starting_y + 20)
       battler.moveXY(l*2, l, starting_x, starting_y)
@@ -497,7 +497,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
     when "SquashHorizontal" # only for Surskit and Carvana
       totalDuration = 30
-      l = totalDuration/8
+      l = (totalDuration/8)*speedUp
       battler.moveXY(l*0, l, starting_x - 50, starting_y)
       battler.moveZoomXY(l*0, l, 75, 100)
       battler.moveXY(l*1, l, starting_x,      starting_y)
@@ -527,7 +527,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     
     when "DoABarrelRoll" # Emerald Pidgeot
       totalDuration = 30
-      l = totalDuration/3
+      l = (totalDuration/3)*speedUp
       # battler.setOrigin(0,PictureOrigin::CENTER)
       # battler.setXY(0,starting_x, starting_y - (batSprite.height)/2)
       battler.moveXY(l*0, l, starting_x + 50, starting_y - 50)
@@ -540,7 +540,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
     when "Shlorp" # WARNING: Very shlorpy
       totalDuration = 30
-      l = totalDuration/6
+      l = (totalDuration/6)*speedUp
       battler.moveZoomXY(l*0, l, 75, 150)
       battler.moveZoomXY(l*1, l, 100, 100)
       battler.moveZoomXY(l*2, l, 150, 75)
