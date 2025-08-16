@@ -1066,7 +1066,7 @@ BackAnimation = ShakeSmall,ABA
 #-------------------------------
 [VAPOREON]
 BackSprite = 4,0
-FrontSprite = -1,15
+FrontSprite = 12,19
 ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,ABA
@@ -1074,7 +1074,7 @@ BackAnimation = ShakeSmall,ABA
 #-------------------------------
 [JOLTEON]
 BackSprite = -4,0
-FrontSprite = -2,19
+FrontSprite = 0,19
 ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,ABA
@@ -1082,7 +1082,7 @@ BackAnimation = ShakeSmall,ABA
 #-------------------------------
 [FLAREON]
 BackSprite = -7,0
-FrontSprite = 4,17
+FrontSprite = 7,17
 ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,ABA
@@ -1146,9 +1146,9 @@ BackAnimation = ShakeSmall,ABA
 #-------------------------------
 [ARTICUNO]
 BackSprite = 8,0
-FrontSprite = 6,8
+FrontSprite = -1,7
 ShadowX = 0
-ShadowSize = 2
+ShadowSize = 3
 FrontAnimation = ShakeSmall,ABA
 BackAnimation = ShakeSmall,ABA
 #-------------------------------

@@ -359,9 +359,9 @@ class SpritePositioner
     cw.y = Graphics.height - cw.height
     allspecies = []
     GameData::Species.each do |sp|
-      name = (sp.form == 0) ? sp.name : _INTL("{1}", sp.form_name)
+      name = (sp.form == 0) ? sp.real_name : _INTL("{1} - {2}", sp.real_name, sp.form_name&.gsub(sp.real_name, "")&.gsub("  ", " "))
       num = IDConverter.number_by_fspecies(sp)
-      allspecies.push([sp.id, sp.species, sp.form, name, _INTL("{1}_{2}", '%04i' % num, sp.form)]) if name && !name.empty?
+      allspecies.push([sp.id, sp.species, sp.form, name, _INTL("{1}_{2}", '%05i' % num, '%03i' % sp.form)]) if name && !name.empty?
       # echoln _INTL("{1} > {2}_{3}", sp.real_name, '%04i' % num, sp.form)
     end
     allspecies.sort! { |a, b| a[4] <=> b[4]}

@@ -91,7 +91,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     when "FlyVertical"
       y_values = [0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 0, 0]
       totalDuration = y_values.length
-      maxAngle = 15
+      maxAngle = @back ? 10 : 15
 
       new_y = starting_y - (batSprite.height)/2
       battler.setOrigin(0,PictureOrigin::CENTER)
@@ -106,7 +106,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     when "FlyHorizontal"
       x_values = [0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1, 0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 0, 0]
       totalDuration = x_values.length
-      maxAngle = 15
+      maxAngle = @back ? 10 : 15
 
       new_y = starting_y - (batSprite.height)/2
       battler.setOrigin(0,PictureOrigin::CENTER)
@@ -218,7 +218,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     
     when "RotateBottom"
       totalDuration = 30
-      maxAngle = 15
+      maxAngle = @back ? 10 : 15
       for i in 0...totalDuration do
         battler.setAngle(i*speedUp, Math.sin(i*(Math::PI*2)/totalDuration)*maxAngle)
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
@@ -228,7 +228,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       battler.setOrigin(0,PictureOrigin::TOP)
       battler.setXY(0,starting_x, starting_y - batSprite.height)
       totalDuration = 30
-      maxAngle = 15
+      maxAngle = @back ? 10 : 15
       battler.setOrigin(totalDuration*speedUp,PictureOrigin::BOTTOM)
       battler.setXY(totalDuration*speedUp,starting_x, starting_y)
       for i in 0...totalDuration do
@@ -238,7 +238,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     
     when "RotateJump"
       totalDuration = 80
-      angle = 15
+      angle = @back ? 10 : 15
       slide = 8
 
       battler.moveCurve( 0*speedUp, 7*speedUp,
@@ -336,11 +336,17 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
+    when "Zoom"      
+      zoom_values = [100, 100, 100, 100, 102, 105, 107.5, 108, 107.5, 105, 102, 100, 95, 92, 95, 97, 99, 100]
+      totalDuration = zoom_values.length
+      zoom_values.each_with_index do |v,i|
+        battler.setZoomXY(i*speedUp, v, v)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+    
     when "ZoomDouble"      
       zoom_values = [100, 100, 100, 100, 100, 100, 95, 90, 88, 86, 88, 90, 92, 95, 100, 102, 105, 107.5, 108, 107.5, 105, 102, 100, 95, 92, 90, 88, 90, 92, 95, 100, 100, 100]
       totalDuration = zoom_values.length
-      # battler.setOrigin(0,PictureOrigin::CENTER)
-      # battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
       zoom_values.each_with_index do |v,i|
         battler.setZoomXY(i*speedUp, v, v)
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
@@ -367,47 +373,185 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
 
-    # Custom / Unused in HGSS
+    # Backsprite-only (not really but made with a backsprite in mind)
+
+    when "RotateBottomLeft"
+      totalDuration = 40
+      maxAngle = 15
+      battler.setOrigin(0,PictureOrigin::BOTTOM_LEFT)
+      battler.setXY(0, starting_x - batSprite.width / 2, starting_y)
+      for i in 0...totalDuration do
+        battler.setAngle(i*speedUp, -fixN(Math.sin(i*(Math::PI*2)/totalDuration)*maxAngle))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+      
+    when "RotateBottomRight"
+      totalDuration = 40
+      maxAngle = 15
+      battler.setOrigin(0,PictureOrigin::BOTTOM_RIGHT)
+      battler.setXY(0, starting_x + batSprite.width / 2, starting_y)
+      for i in 0...totalDuration do
+        battler.setAngle(i*speedUp, fixN(Math.sin(i*(Math::PI*2)/totalDuration)*maxAngle))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+
+    when "ThrustRight"
+      x_values = [0, 0, 0, -2, 1, -3, 2, -3, 2, -3, 2, -3, 2, 1, 0, -1, 1, -2, 0, 0, 0, 0]
+      totalDuration = x_values.length
+      battler.moveXY(0, 2,starting_x - 20, starting_y)
+      battler.moveXY(3, 3,starting_x + 40, starting_y)
+      battler.moveXY(totalDuration, 3, starting_x, starting_y)
+      x_values.each_with_index do |v,i|
+        battler.setXY(7 + (i*speedUp), starting_x + 40 + (v*2), starting_y)
+        battler.setName(7 + (i*speedUp), getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+
+    when "BlinkRed" # mainly used in DPPT
+      color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 180, 80, 80, 32, 32, 0]
+      totalDuration = color_values.length
+      l = totalDuration/10
+      battler.moveXY(l*0, l, starting_x - 10, starting_y)
+      battler.moveXY(l*1, l, starting_x,      starting_y)
+      battler.moveXY(l*2, l, starting_x + 10, starting_y)
+      battler.moveXY(l*3, l, starting_x,      starting_y)
+      battler.moveXY(l*4, l, starting_x - 10, starting_y)
+      battler.moveXY(l*5, l, starting_x,      starting_y)
+      battler.moveXY(l*6, l, starting_x + 10, starting_y)
+      battler.moveXY(l*7, l, starting_x,      starting_y)
+      color_values.each_with_index do |v,i|
+        battler.setColor(i*speedUp, Color.new(255, 0, 0, v))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+    
+    when "BlinkBlue" # mainly used in DPPT
+      color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 180, 80, 80, 32, 32, 0]
+      totalDuration = color_values.length
+      l = totalDuration/10
+      battler.moveXY(l*0, l, starting_x - 10, starting_y)
+      battler.moveXY(l*1, l, starting_x,      starting_y)
+      battler.moveXY(l*2, l, starting_x + 10, starting_y)
+      battler.moveXY(l*3, l, starting_x,      starting_y)
+      battler.moveXY(l*4, l, starting_x - 10, starting_y)
+      battler.moveXY(l*5, l, starting_x,      starting_y)
+      battler.moveXY(l*6, l, starting_x + 10, starting_y)
+      battler.moveXY(l*7, l, starting_x,      starting_y)
+      color_values.each_with_index do |v,i|
+        battler.setColor(i*speedUp, Color.new(0, 0, 255, v))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+    
+    when "BlinkGreen" 
+      color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 180, 80, 80, 32, 32, 0]
+      totalDuration = color_values.length
+      l = totalDuration/10
+      battler.moveXY(l*0, l, starting_x - 10, starting_y)
+      battler.moveXY(l*1, l, starting_x,      starting_y)
+      battler.moveXY(l*2, l, starting_x + 10, starting_y)
+      battler.moveXY(l*3, l, starting_x,      starting_y)
+      battler.moveXY(l*4, l, starting_x - 10, starting_y)
+      battler.moveXY(l*5, l, starting_x,      starting_y)
+      battler.moveXY(l*6, l, starting_x + 10, starting_y)
+      battler.moveXY(l*7, l, starting_x,      starting_y)
+      color_values.each_with_index do |v,i|
+        battler.setColor(i*speedUp, Color.new(0, 255, 0, v))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+
+    when "Wiggle"
+      totalDuration = 20
+      l = totalDuration/8
+      battler.moveXY(l*0, l, starting_x - 10, starting_y + 10)
+      battler.moveXY(l*1, l, starting_x,      starting_y)
+      battler.moveXY(l*2, l, starting_x + 10, starting_y + 10)
+      battler.moveXY(l*3, l, starting_x,      starting_y)
+      battler.moveXY(l*4, l, starting_x - 10, starting_y + 10)
+      battler.moveXY(l*5, l, starting_x,      starting_y)
+      battler.moveXY(l*6, l, starting_x + 10, starting_y + 10)
+      battler.moveXY(l*7, l, starting_x,      starting_y)
+      for i in 0...totalDuration do
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+
+    when "Triangle" # <-- eelumynatie konfimedd?? *x-files intro plays*
+      totalDuration = 20
+      l = totalDuration/6
+      battler.moveXY(l*0, l, starting_x + 10, starting_y + 20)
+      battler.moveXY(l*1, l, starting_x - 10, starting_y + 20)
+      battler.moveXY(l*2, l, starting_x, starting_y)
+      battler.moveXY(l*3, l, starting_x + 10, starting_y + 20)
+      battler.moveXY(l*4, l, starting_x - 10, starting_y + 20)
+      battler.moveXY(l*5, l, starting_x, starting_y)
+      for i in 0...totalDuration do
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+
+    when "ExplosionSmall" # shorter version of Explosion
+      zoom_values = [100, 100, 95, 100, 90, 95, 90, 95, 87.5, 95, 87.5, 95, 87.5, 95, 90, 95, 100, 95, 100, 100]
+      totalDuration = zoom_values.length
+      # battler.setOrigin(0,PictureOrigin::CENTER)
+      # battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
+      zoom_values.each_with_index do |v,i|
+        battler.setZoomXY(i*speedUp, v, v)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+
+    when "SquashHorizontal" # only for Surskit and Carvana
+      totalDuration = 30
+      l = totalDuration/8
+      battler.moveXY(l*0, l, starting_x - 50, starting_y)
+      battler.moveZoomXY(l*0, l, 75, 100)
+      battler.moveXY(l*1, l, starting_x,      starting_y)
+      battler.moveZoomXY(l*1, l, 100, 100)
+      battler.moveXY(l*2, l, starting_x + 50, starting_y)
+      battler.moveZoomXY(l*2, l, 75, 100)
+      battler.moveXY(l*3, l, starting_x,      starting_y)
+      battler.moveZoomXY(l*3, l, 100, 100)
+      battler.moveXY(l*4, l, starting_x - 50, starting_y)
+      battler.moveZoomXY(l*4, l, 75, 100)
+      battler.moveXY(l*5, l, starting_x,      starting_y)
+      battler.moveZoomXY(l*5, l, 100, 100)
+      battler.moveXY(l*6, l, starting_x + 50, starting_y)
+      battler.moveZoomXY(l*6, l, 75, 100)
+      battler.moveXY(l*7, l, starting_x,      starting_y)
+      battler.moveZoomXY(l*7, l, 100, 100)
+      for i in 0...totalDuration do
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+
+    # Custom / Jokes
     
     when "GIF" # for Crystal-like animations
       totalDuration = 30 # d=====(￣▽￣*) source : trust me bro
       battler.setName(0, path_B)
       battler.setName(totalDuration, path_A)
-
-    when "BlinkRed" # mainly used for backsprites in DPPT
-      x_values       = [0, 0, 0, -2, 1, -3, 2, -3, 2, -3, 2, -3, 2, 1, 0, -1, 1, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-      color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 80, 80, 32, 32, 0, 0, 0, 0, 0]
-      totalDuration = x_values.length
-      x_values.each_with_index do |v,i|
-        battler.setXY(i*speedUp, starting_x + (v*2), starting_y)
-        battler.setColor(i*speedUp, Color.new(255, 0, 0, color_values[i]))
-        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
-      end
     
-    when "BlinkBlue" # mainly used for backsprites in DPPT
-      x_values       = [0, 0, 0, -2, 1, -3, 2, -3, 2, -3, 2, -3, 2, 1, 0, -1, 1, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-      color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 180, 80, 80, 32, 32, 0, 0, 0, 0, 0]
-      totalDuration = x_values.length
-      x_values.each_with_index do |v,i|
-        battler.setXY(i*speedUp, starting_x + (v*2), starting_y)
-        battler.setColor(i*speedUp, color_values[i] == 0 ? Color.new(0, 0, 0, 0) : Color.new(0, 0, 255, 255))
+    when "DoABarrelRoll" # Emerald Pidgeot
+      totalDuration = 30
+      l = totalDuration/3
+      # battler.setOrigin(0,PictureOrigin::CENTER)
+      # battler.setXY(0,starting_x, starting_y - (batSprite.height)/2)
+      battler.moveXY(l*0, l, starting_x + 50, starting_y - 50)
+      battler.moveAngle(l*1, l, 360)
+      battler.moveXY(l*1, l, starting_x - 20, starting_y + 20)
+      battler.moveXY(l*2, l, starting_x,      starting_y)
+      for i in 0...totalDuration do
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
-    
-    when "DoAFlip" # just a silly one, define yours next
-      x_values = [0, -1, -2, -3, -4, -5, -6, -7, -8, -8, -9, -9, -9, -10, -10, -10, -10, -10, -9, -9, -9, -8, -8, -7, -6, -5, -4, -3, -2, -1, -0, 2, 1, 0, 0, 0, 0]
-      totalDuration = x_values.length
-      maxAngle = 360
 
-      new_y = starting_y - (batSprite.height)/2
-      battler.setOrigin(0,PictureOrigin::CENTER)
-      battler.setXY(0,starting_x, new_y)
-
-      x_values.each_with_index do |v,i|
-        battler.setAngle(i*speedUp, Math.sin(i*(Math::PI/2)/totalDuration)*maxAngle)
-        battler.setXY(i*speedUp, starting_x + (v*4), new_y)
+    when "Shlorp" # WARNING: Very shlorpy
+      totalDuration = 30
+      l = totalDuration/6
+      battler.moveZoomXY(l*0, l, 75, 150)
+      battler.moveZoomXY(l*1, l, 100, 100)
+      battler.moveZoomXY(l*2, l, 150, 75)
+      battler.moveZoomXY(l*3, l, 100, 100)
+      battler.moveZoomXY(l*4, l, 90, 110)
+      battler.moveZoomXY(l*5, l, 100, 100)
+      for i in 0...totalDuration do
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
+
+      # define yours next
 
     else
       # do nothing?
