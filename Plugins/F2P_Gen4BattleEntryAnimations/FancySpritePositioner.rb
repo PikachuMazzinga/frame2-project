@@ -144,7 +144,7 @@ class SpritePositioner
     bitmap2 = @sprites["pokemon_1"].bitmap
     new_back_y  = (bitmap1.height - (findBottom(bitmap1) + 1)) / 2
     new_front_y = (bitmap2.height - (findBottom(bitmap2) + 1)) / 2
-    new_front_y += 4   # Just because
+    # new_front_y += 4   # Just because
     if new_back_y != old_back_y || new_front_y != old_front_y || old_front_altitude != 0
       metrics_data.back_sprite[1]        = new_back_y
       metrics_data.front_sprite[1]       = new_front_y
@@ -159,8 +159,10 @@ class SpritePositioner
     @form = form
     species_data = GameData::Species.get_species_form(@species, @form)
     return if !species_data
-    @sprites["pokemon_0"].setSpeciesBitmap(@species, 0, @form, false, false, true)
-    @sprites["pokemon_1"].setSpeciesBitmap(@species, 0, @form)
+    pkmn = Pokemon.new(@species, 69)
+    pkmn.form = @form
+    @sprites["pokemon_0"].setPokemonBitmapSpecies(pkmn, @species, true)
+    @sprites["pokemon_1"].setPokemonBitmapSpecies(pkmn, @species)
     @sprites["shadow_1"].setBitmap(GameData::Species.shadow_filename(@species, @form))
   end
 
@@ -234,17 +236,25 @@ class SpritePositioner
       sprite = @sprites["pokemon_0"]
       xpos = metrics_data.back_sprite[0]
       ypos = metrics_data.back_sprite[1]
+      oldxpos = xpos
+      oldypos = ypos
     when 1
       sprite = @sprites["pokemon_1"]
       xpos = metrics_data.front_sprite[0]
       ypos = metrics_data.front_sprite[1]
+      oldxpos = xpos
+      oldypos = ypos
     when 3
       sprite = @sprites["shadow_1"]
       xpos = metrics_data.shadow_x
       ypos = 0
+      oldxpos = xpos
+      oldypos = ypos
+    when 5
+      sprite = @sprites["pokemon_1"]
+      anim_movement = metrics_data.front_animation[0]
+      anim_pattern  = metrics_data.front_animation[1]
     end
-    oldxpos = xpos
-    oldypos = ypos
     @sprites["info"].visible = true
     ret = false
     loop do
@@ -256,6 +266,7 @@ class SpritePositioner
       when 0 then @sprites["info"].setTextToFit("Ally Position = #{xpos},#{ypos}")
       when 1 then @sprites["info"].setTextToFit("Enemy Position = #{xpos},#{ypos}")
       when 3 then @sprites["info"].setTextToFit("Shadow Position = #{xpos}")
+      when 5 then @sprites["info"].setTextToFit("#{anim_movement} : #{anim_pattern}")
       end
       if (Input.repeat?(Input::UP) || Input.repeat?(Input::DOWN)) && param != 3
         ypos += (Input.repeat?(Input::DOWN)) ? 1 : -1
@@ -311,7 +322,8 @@ class SpritePositioner
        _INTL("Set Enemy Position"),
        _INTL("Set Shadow Size"),
        _INTL("Set Shadow Position"),
-       _INTL("Auto-Position Sprites")]
+       _INTL("Auto-Position Sprites"),
+       _INTL("Edit Animation Data")]
     )
     cw.x        = Graphics.width - cw.width
     cw.y        = Graphics.height - cw.height
@@ -347,10 +359,12 @@ class SpritePositioner
     cw.y = Graphics.height - cw.height
     allspecies = []
     GameData::Species.each do |sp|
-      name = (sp.form == 0) ? sp.name : _INTL("{1} (form {2})", sp.real_name, sp.form)
-      allspecies.push([sp.id, sp.species, sp.form, name]) if name && !name.empty?
+      name = (sp.form == 0) ? sp.name : _INTL("{1}", sp.form_name)
+      num = IDConverter.number_by_fspecies(sp)
+      allspecies.push([sp.id, sp.species, sp.form, name, _INTL("{1}_{2}", '%04i' % num, sp.form)]) if name && !name.empty?
+      # echoln _INTL("{1} > {2}_{3}", sp.real_name, '%04i' % num, sp.form)
     end
-    allspecies.sort! { |a, b| a[3] <=> b[3] }
+    allspecies.sort! { |a, b| a[4] <=> b[4]}
     commands = []
     allspecies.each { |sp| commands.push(sp[3]) }
     cw.commands = commands
@@ -367,10 +381,14 @@ class SpritePositioner
         refresh
       end
       self.update
+      @sprites["pokemon_0"].update
       if Input.trigger?(Input::BACK)
         pbChangeSpecies(nil, nil)
         refresh
         break
+      elsif Input.trigger?(Input::SPECIAL)
+        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
+        @sprites["pokemon_1"].pbPlayIntroAnimation
       elsif Input.trigger?(Input::USE)
         pbChangeSpecies(allspecies[cw.index][1], allspecies[cw.index][2])
         ret = true

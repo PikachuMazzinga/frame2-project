@@ -1,23 +1,58 @@
 
-# module GameData
-#     class SpeciesMetrics
-#         attr_accessor :front_animation
-#         attr_accessor :back_animation
+module GameData
+    class SpeciesMetrics
+        attr_accessor :front_animation
+        attr_accessor :back_animation
     
-#         SCHEMA = {
-#           "SectionName"         => [:id,                    "eV", :Species],
-#           "BackSprite"          => [:back_sprite,           "ii"],
-#           "FrontSprite"         => [:front_sprite,          "ii"],
-#           "FrontSpriteAltitude" => [:front_sprite_altitude, "i"],
-#           "ShadowX"             => [:shadow_x,              "i"],
-#           "ShadowSize"          => [:shadow_size,           "u"],
-#           "FrontAnimation"      => [:front_animation,       "ii"],
-#           "BackAnimation"       => [:back_animation,        "ii"]
-#         }
+        SCHEMA["FrontAnimation"] = [:front_animation,       "ss"]
+        SCHEMA["BackAnimation"]  = [:back_animation,        "ss"]
+
+        def self.get_species_form(species, form)
+            return nil if !species || !form
+            validate species => [Symbol, String]
+            validate form => Integer
+            raise _INTL("Undefined species {1}.", species) if !GameData::Species.exists?(species)
+            species = species.to_sym if species.is_a?(String)
+            if form > 0
+              trial = sprintf("%s_%d", species, form).to_sym
+              if !DATA.has_key?(trial)
+                self.register({:id => species}) if !DATA[species]
+                self.register({
+                  :id                    => trial,
+                  :species               => species,
+                  :form                  => form,
+                  :back_sprite           => DATA[species].back_sprite.clone,
+                  :front_sprite          => DATA[species].front_sprite.clone,
+                  :front_sprite_altitude => DATA[species].front_sprite_altitude,
+                  :shadow_x              => DATA[species].shadow_x,
+                  :shadow_size           => DATA[species].shadow_size,
+                  :front_animation       => DATA[species].front_animation,
+                  :back_animation        => DATA[species].back_animation
+                })
+              end
+              return DATA[trial]
+            end
+            self.register({:id => species}) if !DATA[species]
+            return DATA[species]
+          end
+
+          def initialize(hash)
+            @id                    = hash[:id]
+            @species               = hash[:species]               || @id
+            @form                  = hash[:form]                  || 0
+            @back_sprite           = hash[:back_sprite]           || [0, 0]
+            @front_sprite          = hash[:front_sprite]          || [0, 0]
+            @front_sprite_altitude = hash[:front_sprite_altitude] || 0
+            @shadow_x              = hash[:shadow_x]              || 0
+            @shadow_size           = hash[:shadow_size]           || 2
+            @pbs_file_suffix       = hash[:pbs_file_suffix]       || ""
+            @front_animation       = hash[:front_animation]       || ["ShakeSmall","ABA"]
+            @back_animation        = hash[:back_animation]        || ["ShakeSmall","ABA"]
+          end
 
 
-#     end
-# end
+    end
+end
 
 #############################################################################
 # TODO: MOVE ALL THIS STUFF INTO A PBS (the Pokémon one or a dedicated one) #
