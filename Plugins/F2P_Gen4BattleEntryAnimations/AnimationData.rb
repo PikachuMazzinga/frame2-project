@@ -46,8 +46,8 @@ module GameData
             @shadow_x              = hash[:shadow_x]              || 0
             @shadow_size           = hash[:shadow_size]           || 2
             @pbs_file_suffix       = hash[:pbs_file_suffix]       || ""
-            @front_animation       = hash[:front_animation]       || ["ShakeSmall","ABA"]
-            @back_animation        = hash[:back_animation]        || ["ShakeSmall","ABA"]
+            @front_animation       = hash[:front_animation]       || ["ShakeSmall", "ABBA"]
+            @back_animation        = hash[:back_animation]        || ["ShakeSmall", "ABBA"]
           end
 
 
@@ -65,7 +65,7 @@ module PokemonIntroAnimationSettings
     
     # Default animation for Pokémon that don't have a specified one.
     # Can be set to nil have the default behaviour be no animation.
-    DEFAULT_BEHAVIOUR = ["ShakeSmall", "ABA", nil, nil]
+    DEFAULT_BEHAVIOUR = ["ShakeSmall", "ABBA", nil, nil]
 
     DEFAULT_FRONT_BEHAVIOUR_ON_BACK = true
 
@@ -73,24 +73,24 @@ module PokemonIntroAnimationSettings
 
     # REAL DATA FROM HGSS
     #              Name 	       Anim                    	Pattern       	        Anim (Back)	Pattern (Back)
-    ANIMATION_DATA[:BULBASAUR]  = ["StretchVertical",       "ABA",                  nil,        nil]
-    ANIMATION_DATA[:IVYSAUR]    = ["StompSmall",            "BABA",                 nil,        nil]
-    ANIMATION_DATA[:VENUSAUR]   = ["StompBig",              "BA",                   nil,        nil]
+    ANIMATION_DATA[:BULBASAUR]  = ["StretchVertical",       "ABA",                  "RotateBottomLeft",        "ABA"]
+    ANIMATION_DATA[:IVYSAUR]    = ["StompSmall",            "BABA",                 "RotateBottomRight",       "ABA"]
+    ANIMATION_DATA[:VENUSAUR]   = ["StompBig",              "BA",                   "ThrustRight",        "ABA"]
     ANIMATION_DATA[:CHARMANDER] = ["HopAround",             "BABA",                 nil,        nil]
     ANIMATION_DATA[:CHARMELEON] = ["StompBig",              "BA",                   nil,        nil]
-    ANIMATION_DATA[:CHARIZARD]  = ["StompBig",              "BA",                   nil,        nil]
+    ANIMATION_DATA[:CHARIZARD]  = ["StompBig",              "BA",                   "BlinkRed",        "ABA"]
     ANIMATION_DATA[:SQUIRTLE]   = ["HopSmall",              "BABA",                 nil,        nil]
-    ANIMATION_DATA[:WARTORTLE]  = ["StompBig",              "BA",                   nil,        nil]
-    ANIMATION_DATA[:BLASTOISE]  = ["StompDouble",           "BABA",                 nil,        nil]
-    ANIMATION_DATA[:CATERPIE]   = ["StretchVertical",       "BA",                   nil,        nil]
-    ANIMATION_DATA[:METAPOD]    = ["ShakeSmall",            "BABAAABABA",           nil,        nil]
-    ANIMATION_DATA[:BUTTERFREE] = ["FlyVertical",           "BABAAABABA",           nil,        nil]
+    ANIMATION_DATA[:WARTORTLE]  = ["StompBig",              "BA",                   "Zoom",        "B"]
+    ANIMATION_DATA[:BLASTOISE]  = ["StompDouble",           "BABA",                 "BlinkBlue",        "ABA"]
+    ANIMATION_DATA[:CATERPIE]   = ["StretchVertical",       "BA",                   "Wiggle",        "ABA"]
+    ANIMATION_DATA[:METAPOD]    = ["ShakeSmall",            "BABAAABABA",           "SlideHorizontal",        "ABA"]
+    ANIMATION_DATA[:BUTTERFREE] = ["FlyVertical",           "BABAAABABA",           "Triangle",        "ABA"]
     ANIMATION_DATA[:WEEDLE]     = ["StretchVertical",       "BABA",                 nil,        nil]
     ANIMATION_DATA[:KAKUNA]     = ["HopSmall",              "BABBAAA",              nil,        nil]
     ANIMATION_DATA[:BEEDRILL]   = ["SlideVertical",         "BABBAAA",              nil,        nil]
     ANIMATION_DATA[:PIDGEY]     = ["StretchVertical",       "ABA",                  nil,        nil]
     ANIMATION_DATA[:PIDGEOTTO]  = ["StretchHorizontal",     "BABA",                 nil,        nil]
-    ANIMATION_DATA[:PIDGEOT]    = ["Explosion",             "BA",                   nil,        nil]
+    ANIMATION_DATA[:PIDGEOT]    = ["DoABarrelRoll",             "BA",                   "ExplosionSmall",        "ABA"]
     ANIMATION_DATA[:RATTATA]    = ["HopSmall",              "BABA",                 nil,        nil]
     ANIMATION_DATA[:RATICATE]   = ["StompBig",              "BA",                   nil,        nil]
     ANIMATION_DATA[:SPEAROW]    = ["HopSmall",              "BABA",                 nil,        nil]
@@ -160,7 +160,7 @@ module PokemonIntroAnimationSettings
     ANIMATION_DATA[:DODRIO]     = ["StretchVertical",       "BA",                   nil,        nil]
     ANIMATION_DATA[:SEEL]       = ["SlideHorizontal",       "BABA",                 nil,        nil]
     ANIMATION_DATA[:DEWGONG]    = ["StretchVertical",       "ABA",                  nil,        nil]
-    ANIMATION_DATA[:GRIMER]     = ["Fluid",                 "BABA",                 nil,        nil]
+    ANIMATION_DATA[:GRIMER]     = ["Shlorp",                 "BABA",                 "Shlorp",        "ABBA"]
     ANIMATION_DATA[:MUK]        = ["StompBig",              "BA",                   nil,        nil]
     ANIMATION_DATA[:SHELLDER]   = ["RotateBottom",          "BABA",                 nil,        nil]
     ANIMATION_DATA[:CLOYSTER]   = ["StompDouble",           "BABA",                 nil,        nil]
@@ -355,7 +355,7 @@ module PokemonIntroAnimationSettings
     ANIMATION_DATA[:RALTS]      = ["SlideHorizontal",       "BABABABABA",           nil,        nil]
     ANIMATION_DATA[:KIRLIA]     = ["HopAround",             "ABBA",                 nil,        nil]
     ANIMATION_DATA[:GARDEVOIR]  = ["StompBig",              "BA",                   nil,        nil]
-    ANIMATION_DATA[:SURSKIT]    = ["Bounce",                "ABA",                  nil,        nil]
+    ANIMATION_DATA[:SURSKIT]    = ["Bounce",                "ABA",                  "SquashHorizontal",        "ABBA"]
     ANIMATION_DATA[:MASQUERAIN] = ["SlideVertical",         "BABABA",               nil,        nil]
     ANIMATION_DATA[:SHROOMISH]  = ["HopAround",             "BAAA",                 nil,        nil]
     ANIMATION_DATA[:BRELOOM]    = ["Bounce",                "BABA",                 nil,        nil]

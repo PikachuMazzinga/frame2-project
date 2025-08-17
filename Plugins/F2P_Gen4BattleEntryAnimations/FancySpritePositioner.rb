@@ -232,28 +232,32 @@ class SpritePositioner
     end
     metrics_data = GameData::SpeciesMetrics.get_species_form(@species, @form)
     case param
-    when 0
+    when "0_0" # Set Back Position
       sprite = @sprites["pokemon_0"]
       xpos = metrics_data.back_sprite[0]
       ypos = metrics_data.back_sprite[1]
       oldxpos = xpos
       oldypos = ypos
-    when 1
+    when "0_1" # Set Front Position
       sprite = @sprites["pokemon_1"]
       xpos = metrics_data.front_sprite[0]
       ypos = metrics_data.front_sprite[1]
       oldxpos = xpos
       oldypos = ypos
-    when 3
+    when "1_0" # Set Shadow Position
       sprite = @sprites["shadow_1"]
       xpos = metrics_data.shadow_x
       ypos = 0
       oldxpos = xpos
       oldypos = ypos
-    when 5
+    when "2_0", "2_1"
       sprite = @sprites["pokemon_1"]
       anim_movement = metrics_data.front_animation[0]
       anim_pattern  = metrics_data.front_animation[1]
+    when "2_2", "2_3"
+      sprite = @sprites["pokemon_0"]
+      anim_movement = metrics_data.front_animation[2]
+      anim_pattern  = metrics_data.front_animation[3]
     end
     @sprites["info"].visible = true
     ret = false
@@ -263,10 +267,10 @@ class SpritePositioner
       Input.update
       self.update
       case param
-      when 0 then @sprites["info"].setTextToFit("Ally Position = #{xpos},#{ypos}")
-      when 1 then @sprites["info"].setTextToFit("Enemy Position = #{xpos},#{ypos}")
-      when 3 then @sprites["info"].setTextToFit("Shadow Position = #{xpos}")
-      when 5 then @sprites["info"].setTextToFit("#{anim_movement} : #{anim_pattern}")
+      when "0_0" then @sprites["info"].setTextToFit("Ally Position = #{xpos},#{ypos}")
+      when "0_1" then @sprites["info"].setTextToFit("Enemy Position = #{xpos},#{ypos}")
+      when "1_0" then @sprites["info"].setTextToFit("Shadow Position = #{xpos}")
+      when "2_0", "2_1", "2_2", "2_3" then @sprites["info"].setTextToFit("#{anim_movement} : #{anim_pattern}")
       end
       if (Input.repeat?(Input::UP) || Input.repeat?(Input::DOWN)) && param != 3
         ypos += (Input.repeat?(Input::DOWN)) ? 1 : -1
@@ -308,6 +312,9 @@ class SpritePositioner
         @metricsChanged = true if xpos != oldxpos || (param != 3 && ypos != oldypos)
         pbPlayDecisionSE
         break
+      elsif Input.trigger?(Input::SPECIAL)
+        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
+        @sprites["pokemon_1"].pbPlayIntroAnimation
       end
     end
     @sprites["info"].visible = false
@@ -318,12 +325,55 @@ class SpritePositioner
   def pbMenu
     refresh
     cw = Window_CommandPokemon.new(
+      [_INTL("Edit Sprite Positions"),
+       _INTL("Edit Sprite Shadow"),
+       _INTL("Edit Animation Data")]
+    )
+    cw.x        = Graphics.width - cw.width
+    cw.y        = Graphics.height - cw.height
+    cw.viewport = @viewport
+    ret = -1
+    loop do
+      Graphics.update
+      Input.update
+      cw.update
+      self.update
+      if Input.trigger?(Input::USE)
+        pbPlayDecisionSE
+        sub_ret = pbSubMenu(cw.index)
+        break if sub_ret == -1
+        ret = _INTL("{1}_{2}", cw.index, sub_ret)
+        break
+      elsif Input.trigger?(Input::BACK)
+        pbPlayCancelSE
+        break
+      elsif Input.trigger?(Input::SPECIAL)
+        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
+        @sprites["pokemon_1"].pbPlayIntroAnimation
+      end
+    end
+    cw.dispose
+    return ret
+  end
+
+  def pbSubMenu(index)
+    case index
+    when 0 
+      return pbPositionMenu
+    when 1 
+      return pbShadowMenu
+    when 2 
+      return pbAnimationMenu
+    end
+    return -1
+  end
+
+  def pbPositionMenu
+    refresh
+    cw = Window_CommandPokemon.new(
       [_INTL("Set Ally Position"),
        _INTL("Set Enemy Position"),
-       _INTL("Set Shadow Size"),
-       _INTL("Set Shadow Position"),
-       _INTL("Auto-Position Sprites"),
-       _INTL("Edit Animation Data")]
+       _INTL("Auto-Position Sprites")]
     )
     cw.x        = Graphics.width - cw.width
     cw.y        = Graphics.height - cw.height
@@ -341,6 +391,73 @@ class SpritePositioner
       elsif Input.trigger?(Input::BACK)
         pbPlayCancelSE
         break
+      elsif Input.trigger?(Input::SPECIAL)
+        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
+        @sprites["pokemon_1"].pbPlayIntroAnimation
+      end
+    end
+    cw.dispose
+    return ret
+  end
+
+  def pbShadowMenu
+    refresh
+    cw = Window_CommandPokemon.new(
+       [_INTL("Set Shadow Size"),
+        _INTL("Set Shadow Position")]
+    )
+    cw.x        = Graphics.width - cw.width
+    cw.y        = Graphics.height - cw.height
+    cw.viewport = @viewport
+    ret = -1
+    loop do
+      Graphics.update
+      Input.update
+      cw.update
+      self.update
+      if Input.trigger?(Input::USE)
+        pbPlayDecisionSE
+        ret = cw.index
+        break
+      elsif Input.trigger?(Input::BACK)
+        pbPlayCancelSE
+        break
+      elsif Input.trigger?(Input::SPECIAL)
+        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
+        @sprites["pokemon_1"].pbPlayIntroAnimation
+      end
+    end
+    cw.dispose
+    return ret
+  end
+
+  def pbAnimationMenu
+    refresh
+    cw = Window_CommandPokemon.new(
+      [_INTL("Set Front Animation"),
+       _INTL("Set Front Pattern"),
+       _INTL("Set Back Animation"),
+       _INTL("Set Back Pattern")]
+    )
+    cw.x        = Graphics.width - cw.width
+    cw.y        = Graphics.height - cw.height
+    cw.viewport = @viewport
+    ret = -1
+    loop do
+      Graphics.update
+      Input.update
+      cw.update
+      self.update
+      if Input.trigger?(Input::USE)
+        pbPlayDecisionSE
+        ret = cw.index
+        break
+      elsif Input.trigger?(Input::BACK)
+        pbPlayCancelSE
+        break
+      elsif Input.trigger?(Input::SPECIAL)
+        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
+        @sprites["pokemon_1"].pbPlayIntroAnimation
       end
     end
     cw.dispose
@@ -416,11 +533,11 @@ class SpritePositionerScreen
       break if !species
       loop do
         command = @scene.pbMenu
-        break if command < 0
+        break if command.to_s.include?("-1")
         loop do
           par = @scene.pbSetParameter(command)
           break if !par
-          command = (command + 1) % 3
+          # command = (command.to_i + 1) % 3
         end
       end
     end
