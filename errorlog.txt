@@ -86,3 +86,87 @@ Backtrace:
 002_Scene_Map.rb:235:in `main'
 999_Main.rb:41:in `mainFunctionDebug'
 999_Main.rb:18:in `block in mainFunction'
+
+=================
+
+[2025-08-18 04:04:01 +0200]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `setOrigin' for #<PokemonSprite>
+
+Backtrace:
+004_UI_Evolution.rb:87:in `pbEvolution'
+002_Item_Effects.rb:398:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:636:in `block in pbFadeOutInWithMusic'
+002_MessageConfig.rb:575:in `pbFadeOutIn'
+002_MessageConfig.rb:635:in `pbFadeOutInWithMusic'
+002_Item_Effects.rb:395:in `block (2 levels) in load_scripts_from_folder'
+005_Event_Handlers.rb:195:in `trigger'
+001_Item_Utilities.rb:86:in `triggerUseOnPokemon'
+001_Item_Utilities.rb:684:in `block (2 levels) in pbUseItem'
+001_Item_Utilities.rb:665:in `loop'
+
+=================
+
+[2025-08-18 04:05:13 +0200]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `origin=' for #<PokemonSprite>
+
+Backtrace:
+004_UI_Evolution.rb:87:in `pbEvolution'
+002_Item_Effects.rb:398:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:636:in `block in pbFadeOutInWithMusic'
+002_MessageConfig.rb:575:in `pbFadeOutIn'
+002_MessageConfig.rb:635:in `pbFadeOutInWithMusic'
+002_Item_Effects.rb:395:in `block (2 levels) in load_scripts_from_folder'
+005_Event_Handlers.rb:195:in `trigger'
+001_Item_Utilities.rb:86:in `triggerUseOnPokemon'
+001_Item_Utilities.rb:684:in `block (2 levels) in pbUseItem'
+001_Item_Utilities.rb:665:in `loop'
+
+=================
+
+[2025-08-21 01:18:49 +0200]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `species' for :ABRA:Symbol
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:331:in `sprite_name_from_pokemon'
+[[F2P] Gen 4 Battle Entry Animations] script.rb:20:in `initialize'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:260:in `new'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:260:in `pbPlayIntroAnimation'
+010_PictureEx.rb:153:in `call'
+010_PictureEx.rb:153:in `callback'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:136:in `block in update'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each_with_index'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `update'
+
+=================
+
+[2025-09-17 00:40:12 +0200]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `each' for nil:NilClass
+
+Backtrace:
+008_PokemonBag.rb:241:in `quantity'
+008_PokemonBag.rb:62:in `quantity'
+008_PokemonBag.rb:66:in `has?'
+005_UI_Party.rb:1206:in `pbPokemonScreen'
+001_UI_PauseMenu.rb:176:in `block (3 levels) in load_scripts_from_folder'
+002_MessageConfig.rb:575:in `pbFadeOutIn'
+001_UI_PauseMenu.rb:173:in `block (2 levels) in load_scripts_from_folder'
+001_UI_PauseMenu.rb:124:in `block in pbStartPokemonMenu'
+001_UI_PauseMenu.rb:117:in `loop'
+001_UI_PauseMenu.rb:117:in `pbStartPokemonMenu'
