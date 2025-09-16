@@ -52,13 +52,15 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       batSprite.x -= batSprite.width / 2
     end
 
-    batSprite.setOffset(PictureOrigin::BOTTOM) if batSprite.respond_to?(:setOffset)
+    # batSprite.setOffset(batSprite.offset) if batSprite.respond_to?(:setOffset)
+    # battler    = addSprite(batSprite, batSprite.offset)
     battler    = addSprite(batSprite, PictureOrigin::BOTTOM)
     
     @starting_x = starting_x = batSprite.x
     @starting_y = starting_y = batSprite.y 
     
-  
+    echoln batSprite.offset
+
     path_A = @nameFrame1
     path_B = @nameFrame2
 
@@ -70,6 +72,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     # uncomment this to check slower animations
     # speedUp = 1 if $DEBUG && Input.press?(Input::CTRL)
     
+# =begin
     case @animType
     
     when "StretchVertical"
@@ -557,6 +560,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       # do nothing?
 
     end
+# =end
     
     # reset battler's attributes at the end
     totalDuration *= speedUp
