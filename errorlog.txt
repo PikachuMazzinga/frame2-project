@@ -170,3 +170,24 @@ Backtrace:
 001_UI_PauseMenu.rb:124:in `block in pbStartPokemonMenu'
 001_UI_PauseMenu.rb:117:in `loop'
 001_UI_PauseMenu.rb:117:in `pbStartPokemonMenu'
+
+=================
+
+[2025-10-08 16:56:24 +0200]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `species' for :NIDORANmA:Symbol
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:331:in `sprite_name_from_pokemon'
+[[F2P] Gen 4 Battle Entry Animations] PokemonIntroAnimation.rb:20:in `initialize'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:260:in `new'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:260:in `pbPlayIntroAnimation'
+010_PictureEx.rb:153:in `call'
+010_PictureEx.rb:153:in `callback'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:136:in `block in update'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each_with_index'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `update'

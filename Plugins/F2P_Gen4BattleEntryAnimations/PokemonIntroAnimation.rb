@@ -1,11 +1,11 @@
 #-------------------------------------------------------------------------------
 # Battle Intro Animations
-# v0.1
-# By PikachuMazzinga
+# v1.1
+# By PikachuMazzinga and Brawligator
 #-------------------------------------------------------------------------------
-# This is very WIP and made to work with sticks and stones during Eevee Expo
-# Game Jam 10 time constrains, if you're looking copy for in your game, either
-# wait for the full release or contact me in private on the forum or on discord. 
+# This was made to work with sticks and stones during Eevee Expo Game Jam 10
+# time constrains, for troubleshooting feel free to reach out to either of us
+# on Discord https://discord.gg/9BWwdWGTqF or on Eevee Expo  
 #-------------------------------------------------------------------------------
 
 class PokemonIntroAnimation < Battle::Scene::Animation
