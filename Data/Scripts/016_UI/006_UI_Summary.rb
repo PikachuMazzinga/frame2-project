@@ -308,7 +308,7 @@ class PokemonSummary_Scene
     
     # FRAME2 PROJECT CHANGE - This is not needed and interfered with the animation playing
     # @sprites["pokemon"].setPokemonBitmap(@pokemon)
-    
+    @sprites["pokemon"]&.pbPlayIntroAnimation if @playanim
     @sprites["pokeicon"].pokemon = @pokemon
     @sprites["itemicon"].item = @pokemon.item_id
     overlay = @sprites["overlay"].bitmap
@@ -1284,6 +1284,7 @@ class PokemonSummary_Scene
       Input.update
       pbUpdate
       dorefresh = false
+      @playanim = false
       if Input.trigger?(Input::ACTION)
         pbSEStop
         @pokemon.play_cry
@@ -1314,6 +1315,7 @@ class PokemonSummary_Scene
           pbChangePokemon
           @ribbonOffset = 0
           dorefresh = true
+          @playanim = true
         end
       elsif Input.trigger?(Input::DOWN) && @partyindex < @party.length - 1
         oldindex = @partyindex
@@ -1322,6 +1324,7 @@ class PokemonSummary_Scene
           pbChangePokemon
           @ribbonOffset = 0
           dorefresh = true
+          @playanim = true
         end
       elsif Input.trigger?(Input::LEFT) && !@pokemon.egg?
         oldpage = @page
@@ -1332,6 +1335,7 @@ class PokemonSummary_Scene
           pbSEPlay("GUI summary change page")
           @ribbonOffset = 0
           dorefresh = true
+          @playanim = false
         end
       elsif Input.trigger?(Input::RIGHT) && !@pokemon.egg?
         oldpage = @page
@@ -1342,8 +1346,10 @@ class PokemonSummary_Scene
           pbSEPlay("GUI summary change page")
           @ribbonOffset = 0
           dorefresh = true
+          @playanim = false
         end
       end
+      # @playanim = @partyindex != oldindex
       drawPage(@page) if dorefresh
     end
     return @partyindex
