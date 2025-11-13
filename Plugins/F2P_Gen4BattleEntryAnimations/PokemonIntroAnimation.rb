@@ -467,6 +467,40 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setColor(i*speedUp, Color.new(0, 255, 0, v))
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
+    
+    when "BlinkPink" 
+      color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 180, 80, 80, 32, 32, 0]
+      totalDuration = color_values.length
+      l = (totalDuration/10)*speedUp
+      battler.moveXY(l*0, l, starting_x - 10, starting_y)
+      battler.moveXY(l*1, l, starting_x,      starting_y)
+      battler.moveXY(l*2, l, starting_x + 10, starting_y)
+      battler.moveXY(l*3, l, starting_x,      starting_y)
+      battler.moveXY(l*4, l, starting_x - 10, starting_y)
+      battler.moveXY(l*5, l, starting_x,      starting_y)
+      battler.moveXY(l*6, l, starting_x + 10, starting_y)
+      battler.moveXY(l*7, l, starting_x,      starting_y)
+      color_values.each_with_index do |v,i|
+        battler.setColor(i*speedUp, Color.new(255, 152, 255, v))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+    
+    when "BlinkBlack" 
+      color_values   = [ 0, 0, 0, 0, 0, 32, 32, 80, 80, 180, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 225, 180, 80, 80, 32, 32, 0]
+      totalDuration = color_values.length
+      l = (totalDuration/10)*speedUp
+      battler.moveXY(l*0, l, starting_x - 10, starting_y)
+      battler.moveXY(l*1, l, starting_x,      starting_y)
+      battler.moveXY(l*2, l, starting_x + 10, starting_y)
+      battler.moveXY(l*3, l, starting_x,      starting_y)
+      battler.moveXY(l*4, l, starting_x - 10, starting_y)
+      battler.moveXY(l*5, l, starting_x,      starting_y)
+      battler.moveXY(l*6, l, starting_x + 10, starting_y)
+      battler.moveXY(l*7, l, starting_x,      starting_y)
+      color_values.each_with_index do |v,i|
+        battler.setColor(i*speedUp, Color.new(24, 24, 24, v))
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
 
     when "Wiggle"
       totalDuration = 20
