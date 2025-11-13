@@ -355,6 +355,14 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
+    when "ZoomTriple"      
+      zoom_values = [100, 100, 100, 100, 100, 100, 95, 90, 88, 86, 88, 90, 92, 95, 100, 102, 105, 107.5, 108, 107.5, 105, 102, 100, 95, 92, 90, 88, 90, 92, 95, 100, 107.5, 105, 102, 100, 95, 92, 90, 88, 90, 92, 95, 100, 100, 100]
+      totalDuration = zoom_values.length
+      zoom_values.each_with_index do |v,i|
+        battler.setZoomXY(i*speedUp, v, v)
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+    
     when "Glide" # intended for Gligar but unused
       x_values = [0, -1, -2, -3, -4, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 6, 5, 4, 3, 2, 1, 0, 0, 0, 0]
       totalDuration = x_values.length
@@ -470,6 +478,21 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       battler.moveXY(l*4, l, starting_x - 10, starting_y + 10)
       battler.moveXY(l*5, l, starting_x,      starting_y)
       battler.moveXY(l*6, l, starting_x + 10, starting_y + 10)
+      battler.moveXY(l*7, l, starting_x,      starting_y)
+      for i in 0...totalDuration do
+        battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
+      end
+
+    when "WiggleBig"
+      totalDuration = 20
+      l = (totalDuration/8)*speedUp
+      battler.moveXY(l*0, l, starting_x - 20, starting_y + 10)
+      battler.moveXY(l*1, l, starting_x,      starting_y)
+      battler.moveXY(l*2, l, starting_x + 20, starting_y + 10)
+      battler.moveXY(l*3, l, starting_x,      starting_y)
+      battler.moveXY(l*4, l, starting_x - 20, starting_y + 10)
+      battler.moveXY(l*5, l, starting_x,      starting_y)
+      battler.moveXY(l*6, l, starting_x + 20, starting_y + 10)
       battler.moveXY(l*7, l, starting_x,      starting_y)
       for i in 0...totalDuration do
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
