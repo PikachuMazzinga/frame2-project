@@ -507,7 +507,7 @@ module Settings
   # Whether the game will ask you if you want to fully compile every time you
   # start the game (in Debug mode). You will not need to hold Ctrl/Shift to
   # compile anything.
-  PROMPT_TO_COMPILE    = false
+  PROMPT_TO_COMPILE    = true
   # Whether the game will skip the Continue/New Game screen and go straight into
   # a saved game (if there is one) or start a new game (if there isn't). Only
   # applies to playing in Debug mode.

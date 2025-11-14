@@ -191,3 +191,279 @@ Backtrace:
 [[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each'
 [[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each_with_index'
 [[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `update'
+
+=================
+
+[2025-11-14 23:47:03 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Field '-1' is not a positive integer or 0.
+File PBS/pokemon_base_Gen_9_Pack.txt, section MEOWSCARADA, key Moves
+-1,DOUBLETEAM,-1,TRICK,0,FLOWERTRICK,1,LEAFAGE,1,TAILWHIP,1,SCRATCH,7,BITE,10,HONECLAWS,13,MAGICALLEAF,15,QUICKATTACK,20,SEEDBOMB,24,UTURN,29,WORRYSEED,33,SLASH,38,NIGHTSLASH,42,ENERGYBALL,47,PLAYROUG...
+
+
+
+Backtrace:
+[v21.1 Hotfixes] Misc bug fixes.rb:220:in `cast_csv_value'
+001_Compiler.rb:724:in `block (2 levels) in get_csv_record'
+001_Compiler.rb:710:in `each'
+001_Compiler.rb:710:in `block in get_csv_record'
+001_Compiler.rb:708:in `loop'
+001_Compiler.rb:708:in `get_csv_record'
+002_Compiler_CompilePBS.rb:49:in `block (4 levels) in compile_PBS_file_generic'
+002_Compiler_CompilePBS.rb:31:in `each_key'
+002_Compiler_CompilePBS.rb:31:in `block (3 levels) in compile_PBS_file_generic'
+001_Compiler.rb:143:in `block in pbEachFileSection'
+
+=================
+
+[2025-11-14 23:47:14 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2025-11-14 23:48:02 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Undefined value LevelWalk in GameData::Evolution.
+File PBS/pokemon_base_Gen_9_Pack.txt, section PAWMO, key Evolutions
+PAWMOT,LevelWalk,1000
+
+
+
+Backtrace:
+001_Compiler.rb:454:in `checkEnumField'
+[v21.1 Hotfixes] Misc bug fixes.rb:257:in `cast_csv_value'
+001_Compiler.rb:724:in `block (2 levels) in get_csv_record'
+001_Compiler.rb:710:in `each'
+001_Compiler.rb:710:in `block in get_csv_record'
+001_Compiler.rb:708:in `loop'
+001_Compiler.rb:708:in `get_csv_record'
+002_Compiler_CompilePBS.rb:49:in `block (4 levels) in compile_PBS_file_generic'
+002_Compiler_CompilePBS.rb:31:in `each_key'
+002_Compiler_CompilePBS.rb:31:in `block (3 levels) in compile_PBS_file_generic'
+
+=================
+
+[2025-11-14 23:48:06 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2025-11-14 23:48:34 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Undefined value LevelWithPartner in GameData::Evolution.
+File PBS/pokemon_base_Gen_9_Pack.txt, section FINIZEN, key Evolutions
+PALAFIN,LevelWithPartner,38
+
+
+
+Backtrace:
+001_Compiler.rb:454:in `checkEnumField'
+[v21.1 Hotfixes] Misc bug fixes.rb:257:in `cast_csv_value'
+001_Compiler.rb:724:in `block (2 levels) in get_csv_record'
+001_Compiler.rb:710:in `each'
+001_Compiler.rb:710:in `block in get_csv_record'
+001_Compiler.rb:708:in `loop'
+001_Compiler.rb:708:in `get_csv_record'
+002_Compiler_CompilePBS.rb:49:in `block (4 levels) in compile_PBS_file_generic'
+002_Compiler_CompilePBS.rb:31:in `each_key'
+002_Compiler_CompilePBS.rb:31:in `block (3 levels) in compile_PBS_file_generic'
+
+=================
+
+[2025-11-14 23:48:37 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2025-11-14 23:49:00 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Undefined value CollectItems in GameData::Evolution.
+File PBS/pokemon_base_Gen_9_Pack.txt, section GIMMIGHOUL, key Evolutions
+GHOLDENGO,CollectItems,GIMMIGHOULCOIN
+
+
+
+Backtrace:
+001_Compiler.rb:454:in `checkEnumField'
+[v21.1 Hotfixes] Misc bug fixes.rb:257:in `cast_csv_value'
+001_Compiler.rb:724:in `block (2 levels) in get_csv_record'
+001_Compiler.rb:710:in `each'
+001_Compiler.rb:710:in `block in get_csv_record'
+001_Compiler.rb:708:in `loop'
+001_Compiler.rb:708:in `get_csv_record'
+002_Compiler_CompilePBS.rb:49:in `block (4 levels) in compile_PBS_file_generic'
+002_Compiler_CompilePBS.rb:31:in `each_key'
+002_Compiler_CompilePBS.rb:31:in `block (3 levels) in compile_PBS_file_generic'
+
+=================
+
+[2025-11-14 23:49:04 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2025-11-14 23:49:22 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Undefined value LevelUseMoveCount in GameData::Evolution.
+File PBS/pokemon_forms_Gen_9_Pack.txt, section QWILFISH,1, key Evolutions
+OVERQWIL,LevelUseMoveCount,BARBBARRAGE
+
+
+
+Backtrace:
+001_Compiler.rb:454:in `checkEnumField'
+[v21.1 Hotfixes] Misc bug fixes.rb:257:in `cast_csv_value'
+001_Compiler.rb:724:in `block (2 levels) in get_csv_record'
+001_Compiler.rb:710:in `each'
+001_Compiler.rb:710:in `block in get_csv_record'
+001_Compiler.rb:708:in `loop'
+001_Compiler.rb:708:in `get_csv_record'
+002_Compiler_CompilePBS.rb:427:in `block (4 levels) in compile_pokemon_forms'
+002_Compiler_CompilePBS.rb:409:in `each_key'
+002_Compiler_CompilePBS.rb:409:in `block (3 levels) in compile_pokemon_forms'
+
+=================
+
+[2025-11-14 23:49:27 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
+
+=================
+
+[2025-11-14 23:50:01 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Undefined value LevelRecoilDamage in GameData::Evolution.
+File PBS/pokemon_forms_Gen_9_Pack.txt, section BASCULIN,2, key Evolutions
+BASCULEGION,LevelRecoilDamage,294
+
+
+
+Backtrace:
+001_Compiler.rb:454:in `checkEnumField'
+[v21.1 Hotfixes] Misc bug fixes.rb:257:in `cast_csv_value'
+001_Compiler.rb:724:in `block (2 levels) in get_csv_record'
+001_Compiler.rb:710:in `each'
+001_Compiler.rb:710:in `block in get_csv_record'
+001_Compiler.rb:708:in `loop'
+001_Compiler.rb:708:in `get_csv_record'
+002_Compiler_CompilePBS.rb:427:in `block (4 levels) in compile_pokemon_forms'
+002_Compiler_CompilePBS.rb:409:in `each_key'
+002_Compiler_CompilePBS.rb:409:in `block (3 levels) in compile_pokemon_forms'
+
+=================
+
+[2025-11-14 23:50:05 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: RuntimeError
+Message: Unknown exception when compiling.
+
+Backtrace:
+001_Compiler.rb:1114:in `rescue in main'
+001_Compiler.rb:1041:in `main'
+999_Main.rb:35:in `mainFunctionDebug'
+999_Main.rb:18:in `block in mainFunction'
+003_Errors.rb:79:in `pbCriticalCode'
+999_Main.rb:18:in `mainFunction'
+999_Main.rb:51:in `block (2 levels) in load_scripts_from_folder'
+999_Main.rb:50:in `loop'
+999_Main.rb:50:in `block in load_scripts_from_folder'
+Main:35:in `eval'
