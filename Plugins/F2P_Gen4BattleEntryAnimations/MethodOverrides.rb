@@ -325,11 +325,17 @@ end
 module GameData
   class Species
     def self.sprite_name_from_pokemon(pkmn, back = false, anim = false)
-      if back
-        return self.check_graphic_file("Graphics/Pokemon/", pkmn.species, pkmn.form, pkmn.gender, false, pkmn.shadowPokemon?, "Back" + (pkmn.shiny? ? " shiny" : "") + (anim ? "/Frame2" : ""))
+      sideFolder = back ? "Back" : "Front"
+      if pkmn.is_a?(Symbol)
+        return self.check_graphic_file("Graphics/Pokemon/", pkmn, 0, 0, false, false, sideFolder + (anim ? "/Frame2" : ""))
       else
-        return self.check_graphic_file("Graphics/Pokemon/", pkmn.species, pkmn.form, pkmn.gender, false, pkmn.shadowPokemon?, "Front" + (pkmn.shiny? ? " shiny" : "") + (anim ? "/Frame2" : ""))
+        return self.check_graphic_file("Graphics/Pokemon/", pkmn.species, pkmn.form, pkmn.gender, false, pkmn.shadowPokemon?, sideFolder + (pkmn.shiny? ? " shiny" : "") + (anim ? "/Frame2" : ""))
       end
+      # if back
+      #   return self.check_graphic_file("Graphics/Pokemon/", pkmn.species, pkmn.form, pkmn.gender, false, pkmn.shadowPokemon?, "Back" + (pkmn.shiny? ? " shiny" : "") + (anim ? "/Frame2" : ""))
+      # else
+      #   return self.check_graphic_file("Graphics/Pokemon/", pkmn.species, pkmn.form, pkmn.gender, false, pkmn.shadowPokemon?, "Front" + (pkmn.shiny? ? " shiny" : "") + (anim ? "/Frame2" : ""))
+      # end
     end
 
     # ALL THE STUFF BELOW THIS IS UNUSED, LEAVING IT IN CASE IT WILL BE USEFUL

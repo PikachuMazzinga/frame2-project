@@ -923,6 +923,10 @@ class PokemonSummary_Scene
 
   def pbChangePokemon
     @pokemon = @party[@partyindex]
+    @sprites["pokemon"] = PokemonSprite.new(@viewport)
+    @sprites["pokemon"].setOffset(PictureOrigin::CENTER)
+    @sprites["pokemon"].x = 104
+    @sprites["pokemon"].y = 206
     @sprites["pokemon"].setPokemonBitmap(@pokemon)
     @sprites["itemicon"].item = @pokemon.item_id
     pbSEStop

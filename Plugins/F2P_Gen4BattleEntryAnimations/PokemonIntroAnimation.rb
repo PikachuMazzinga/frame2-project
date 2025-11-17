@@ -21,7 +21,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     @nameFrame2 = GameData::Species.sprite_name_from_pokemon(pkmn, back, true)
     @nameFrame2 = @nameFrame1 if @nameFrame2 == nil
     
-    @animData = PokemonIntroAnimationSettings::ANIMATION_DATA[pkmn.species] || PokemonIntroAnimationSettings::DEFAULT_BEHAVIOUR
+    pkmnSpecies = pkmn.is_a?(Symbol) ? pkmn : pkmn.species
+    @animData = PokemonIntroAnimationSettings::ANIMATION_DATA[pkmnSpecies] || PokemonIntroAnimationSettings::DEFAULT_BEHAVIOUR
 
     @animType = @animData[@back ? 2 : 0]
     @animFreq = @animData[@back ? 3 : 1]
@@ -35,26 +36,28 @@ class PokemonIntroAnimation < Battle::Scene::Animation
   def createProcesses
     batSprite  = @sprites[0]
     
-    case batSprite.offset
-    when PictureOrigin::CENTER, PictureOrigin::LEFT, PictureOrigin::RIGHT
-      batSprite.y += batSprite.height / 2
-    when PictureOrigin::BOTTOM, PictureOrigin::BOTTOM_LEFT, PictureOrigin::BOTTOM_RIGHT
-      # do nothing
-    when PictureOrigin::TOP, PictureOrigin::TOP_LEFT, PictureOrigin::TOP_RIGHT
-      batSprite.y += batSprite.height
-    end
-    case batSprite.offset
-    when PictureOrigin::LEFT, PictureOrigin::TOP_LEFT, PictureOrigin::BOTTOM_LEFT
-      batSprite.x += batSprite.width / 2
-    when PictureOrigin::CENTER, PictureOrigin::TOP, PictureOrigin::BOTTOM
-      # do nothing
-    when PictureOrigin::RIGHT, PictureOrigin::TOP_RIGHT, PictureOrigin::BOTTOM_RIGHT
-      batSprite.x -= batSprite.width / 2
-    end
+    # case batSprite.offset
+    # when PictureOrigin::CENTER, PictureOrigin::LEFT, PictureOrigin::RIGHT
+    #   batSprite.y += batSprite.height / 2
+    # when PictureOrigin::BOTTOM, PictureOrigin::BOTTOM_LEFT, PictureOrigin::BOTTOM_RIGHT
+    #   # do nothing
+    # when PictureOrigin::TOP, PictureOrigin::TOP_LEFT, PictureOrigin::TOP_RIGHT
+    #   batSprite.y += batSprite.height
+    # end
+
+    # case batSprite.offset
+    # when PictureOrigin::LEFT, PictureOrigin::TOP_LEFT, PictureOrigin::BOTTOM_LEFT
+    #   batSprite.x += batSprite.width / 2
+    # when PictureOrigin::CENTER, PictureOrigin::TOP, PictureOrigin::BOTTOM
+    #   # do nothing
+    # when PictureOrigin::RIGHT, PictureOrigin::TOP_RIGHT, PictureOrigin::BOTTOM_RIGHT
+    #   batSprite.x -= batSprite.width / 2
+    # end
 
     # batSprite.setOffset(batSprite.offset) if batSprite.respond_to?(:setOffset)
-    # battler    = addSprite(batSprite, batSprite.offset)
-    battler    = addSprite(batSprite, PictureOrigin::BOTTOM)
+    bat_offset = batSprite.offset
+    battler    = addSprite(batSprite, bat_offset)
+    # battler    = addSprite(batSprite, PictureOrigin::BOTTOM)
     
     @starting_x = starting_x = batSprite.x
     @starting_y = starting_y = batSprite.y 
@@ -624,7 +627,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     battler.setAngle(totalDuration, 0)
     battler.setZoomXY(totalDuration, 100, 100)
     battler.setName(totalDuration, path_A)
-    battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
+    # battler.setOrigin(totalDuration,PictureOrigin::BOTTOM)
+    battler.setOrigin(totalDuration,bat_offset)
     battler.setXY(totalDuration, starting_x, starting_y)
     battler.setColor(totalDuration,Color.new(0,0,0,0))
   end
@@ -639,7 +643,8 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     batSprite.x = @starting_x
     batSprite.y = @starting_y
     batSprite.name = @nameFrame1
-    batSprite.setOffset(PictureOrigin::BOTTOM) if batSprite.respond_to?(:setOffset)
+    batSprite.setOffset(batSprite.offset) if batSprite.respond_to?(:setOffset)
+    # batSprite.setOffset(PictureOrigin::BOTTOM) if batSprite.respond_to?(:setOffset)
     batSprite.color = Color.new(0,0,0,0)
     batSprite.zoom_x = batSprite.zoom_y = 1
     batSprite.angle = 0
