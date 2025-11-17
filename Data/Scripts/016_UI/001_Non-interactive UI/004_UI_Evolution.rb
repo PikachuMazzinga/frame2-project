@@ -83,6 +83,7 @@ class PokemonEvolutionScene
   # Opens the evolution screen
   def pbEvolution(cancancel = true)
     pbBGMStop
+    # FRAME2 PROJECT ADDITION
     @sprites["rsprite1"]&.pbPlayIntroAnimation
     @pokemon.play_cry
     pbMessageDisplay(@sprites["msgwindow"], "\\se[]" + _INTL("What?\1\n{1} is evolving!", @pokemon.name)) { pbUpdate }
