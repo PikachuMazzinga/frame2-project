@@ -116,3 +116,13 @@ Pokemon = CHARIZARD,63
     Item = SITRUSBERRY
 Pokemon = BLASTOISE,63
     Item = SITRUSBERRY
+#-------------------------------
+[TUBER_M,Boy]
+LoseText = ...
+Pokemon = YVELTAL,10
+Pokemon = ZYGARDE,10
+#-------------------------------
+[TUBER_F,Boy (female)]
+LoseText = ...
+Pokemon = ZYGARDE,10
+Pokemon = YVELTAL,10

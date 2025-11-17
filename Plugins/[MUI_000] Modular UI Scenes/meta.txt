@@ -1,0 +1,5 @@
+﻿Name       = Modular UI Scenes
+Version    = 2.0.9
+Essentials = 21.1
+Website    = https://eeveeexpo.com/resources/1325/
+Credits    = Lucidious89
