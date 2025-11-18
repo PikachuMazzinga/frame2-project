@@ -551,3 +551,45 @@ Backtrace:
 [[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each_with_index'
 [[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `update'
 007_Battle_Scene_BaseAnimation.rb:58:in `block in update'
+
+=================
+
+[2025-11-18 18:28:59 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `species' for :NIDORANfE:Symbol
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] PokemonIntroAnimation.rb:25:in `initialize'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:260:in `new'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:260:in `pbPlayIntroAnimation'
+010_PictureEx.rb:153:in `call'
+010_PictureEx.rb:153:in `callback'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:136:in `block in update'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each_with_index'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `update'
+007_Battle_Scene_BaseAnimation.rb:58:in `block in update'
+
+=================
+
+[2025-11-18 18:29:42 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `species' for :DODUO:Symbol
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] PokemonIntroAnimation.rb:25:in `initialize'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:260:in `new'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:260:in `pbPlayIntroAnimation'
+010_PictureEx.rb:153:in `call'
+010_PictureEx.rb:153:in `callback'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:136:in `block in update'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each_with_index'
+[[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `update'
+007_Battle_Scene_BaseAnimation.rb:58:in `block in update'

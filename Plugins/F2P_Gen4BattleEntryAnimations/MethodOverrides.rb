@@ -257,7 +257,7 @@ class Battle::Scene::BattlerSprite
 
     # Play Intro animation
     if PokemonIntroAnimationSettings::ENABLED_IN_BATTLE && PokemonIntroAnimationSettings::DEFAULT_BEHAVIOUR != nil
-      @battleAnimations.push(PokemonIntroAnimation.new([self],@viewport,@pkmn.species,@index%2 == 0))
+      @battleAnimations.push(PokemonIntroAnimation.new([self],@viewport,@pkmn,@index%2 == 0))
     end
   end
 
