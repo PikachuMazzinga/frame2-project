@@ -68,20 +68,17 @@ class PokemonIntroAnimation < Battle::Scene::Animation
 
   def createProcesses
     batSprite  = @sprites[0]
-
     @starting_offset = batSprite.offset
     
-    old_offset = batSprite.offset
+    # to avoid src rect not updating after fainting when sending mon with same bitmap as before
+    # more info: https://discord.com/channels/1362498557982019697/1455661648756084937
+    batSprite.src_rect = Rect.new(0, 0, batSprite.width, batSprite.height)
+    
     move_sprite_offset(batSprite, PictureOrigin::BOTTOM)
     battler    = addSprite(batSprite, PictureOrigin::BOTTOM)
     
     @starting_x = starting_x = batSprite.x
     @starting_y = starting_y = batSprite.y
-
-    echoln "---"
-    echoln "NEW OFFSET: #{batSprite.offset}"
-    echoln "OLD OFFSET: #{@starting_offset}"
-    echoln "---"
 
     path_A = @nameFrame1
     path_B = @nameFrame2
