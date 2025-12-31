@@ -64,8 +64,13 @@ Pokemon = MACHOP,19
 #-------------------------------
 [FISHERMAN,Andrew]
 LoseText = Washed out!
-Pokemon = MAGIKARP,14
-Pokemon = MAGIKARP,18
+Pokemon = MAGIKARP,10
+Pokemon = MAGIKARP,10
+Pokemon = MAGIKARP,10
+Pokemon = MAGIKARP,10
+Pokemon = MAGIKARP,10
+Pokemon = MAGIKARP,10
+    Shiny = true
 #-------------------------------
 [BEAUTY,Bridget]
 LoseText = My Skitty!
