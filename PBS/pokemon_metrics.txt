@@ -1,5 +1,5 @@
 ﻿# See the documentation on the wiki to learn how to edit this file.
-#-------------------------------------
+#-------------------------------
 [BULBASAUR]
 BackSprite = -4,0
 FrontSprite = -1,26
@@ -7,7 +7,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [IVYSAUR]
 BackSprite = -9,0
 FrontSprite = 2,22
@@ -15,7 +15,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompSmall,BABA
 BackAnimation = StompSmall,BABA
-#-------------------------------------
+#-------------------------------
 [VENUSAUR]
 BackSprite = 1,0
 FrontSprite = 2,11
@@ -23,7 +23,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [CHARMANDER]
 BackSprite = -6,0
 FrontSprite = 4,19
@@ -31,7 +31,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BABA
 BackAnimation = HopAround,BABA
-#-------------------------------------
+#-------------------------------
 [CHARMELEON]
 BackSprite = -3,0
 FrontSprite = -2,18
@@ -39,7 +39,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [CHARIZARD]
 BackSprite = -2,0
 FrontSprite = 0,3
@@ -47,7 +47,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [SQUIRTLE]
 BackSprite = -3,0
 FrontSprite = 2,20
@@ -55,7 +55,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [WARTORTLE]
 BackSprite = -2,0
 FrontSprite = -4,16
@@ -63,7 +63,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [BLASTOISE]
 BackSprite = -3,0
 FrontSprite = 0,13
@@ -71,7 +71,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [CATERPIE]
 BackSprite = -5,0
 FrontSprite = -3,23
@@ -79,7 +79,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [METAPOD]
 BackSprite = -1,0
 FrontSprite = -1,23
@@ -87,7 +87,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BABAAABABA
 BackAnimation = ShakeSmall,BABAAABABA
-#-------------------------------------
+#-------------------------------
 [BUTTERFREE]
 BackSprite = -10,0
 FrontSprite = 8,-2
@@ -95,7 +95,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABAAABABA
 BackAnimation = FlyVertical,BABAAABABA
-#-------------------------------------
+#-------------------------------
 [WEEDLE]
 BackSprite = 0,0
 FrontSprite = 3,24
@@ -103,7 +103,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [KAKUNA]
 BackSprite = 0,0
 FrontSprite = 0,22
@@ -111,7 +111,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABBAAA
 BackAnimation = HopSmall,BABBAAA
-#-------------------------------------
+#-------------------------------
 [BEEDRILL]
 BackSprite = 9,0
 FrontSprite = -8,1
@@ -119,7 +119,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideVertical,BABBAAA
 BackAnimation = SlideVertical,BABBAAA
-#-------------------------------------
+#-------------------------------
 [PIDGEY]
 BackSprite = -9,0
 FrontSprite = 4,23
@@ -127,7 +127,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [PIDGEOTTO]
 BackSprite = -7,0
 FrontSprite = 8,16
@@ -135,7 +135,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [PIDGEOT]
 BackSprite = 0,0
 FrontSprite = 7,-4
@@ -143,7 +143,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = DoABarrelRoll,BA
 BackAnimation = DoABarrelRoll,BA
-#-------------------------------------
+#-------------------------------
 [RATTATA]
 BackSprite = -5,0
 FrontSprite = -1,22
@@ -151,7 +151,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [RATICATE]
 BackSprite = -7,0
 FrontSprite = -1,14
@@ -159,7 +159,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [SPEAROW]
 BackSprite = -5,0
 FrontSprite = 2,22
@@ -167,7 +167,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [FEAROW]
 BackSprite = 10,0
 FrontSprite = 1,-6
@@ -175,7 +175,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [EKANS]
 BackSprite = -3,0
 FrontSprite = 2,24
@@ -183,7 +183,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [ARBOK]
 BackSprite = 0,0
 FrontSprite = 2,11
@@ -191,7 +191,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [PIKACHU]
 BackSprite = -5,0
 FrontSprite = 4,14
@@ -199,7 +199,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [RAICHU]
 BackSprite = -5,0
 FrontSprite = 11,10
@@ -207,7 +207,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = BlinkYellow,BA
 BackAnimation = BlinkYellow,BA
-#-------------------------------------
+#-------------------------------
 [SANDSHREW]
 BackSprite = -5,0
 FrontSprite = 2,21
@@ -215,7 +215,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [SANDSLASH]
 BackSprite = 0,0
 FrontSprite = -2,18
@@ -223,7 +223,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompSmall,BABA
 BackAnimation = StompSmall,BABA
-#-------------------------------------
+#-------------------------------
 [NIDORANfE]
 BackSprite = 0,0
 FrontSprite = -2,23
@@ -231,7 +231,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [NIDORINA]
 BackSprite = 3,0
 FrontSprite = -2,17
@@ -239,7 +239,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [NIDOQUEEN]
 BackSprite = 0,0
 FrontSprite = 1,8
@@ -247,7 +247,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [NIDORANmA]
 BackSprite = -1,0
 FrontSprite = -2,21
@@ -255,7 +255,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [NIDORINO]
 BackSprite = 1,0
 FrontSprite = -2,21
@@ -263,7 +263,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [NIDOKING]
 BackSprite = 4,0
 FrontSprite = 4,10
@@ -271,7 +271,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [CLEFAIRY]
 BackSprite = 0,0
 FrontSprite = -2,23
@@ -279,7 +279,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [CLEFABLE]
 BackSprite = 4,0
 FrontSprite = 2,18
@@ -287,7 +287,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [VULPIX]
 BackSprite = -6,0
 FrontSprite = 3,19
@@ -295,7 +295,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [NINETALES]
 BackSprite = -3,0
 FrontSprite = 6,13
@@ -303,7 +303,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABBAAA
 BackAnimation = StretchVertical,BABBAAA
-#-------------------------------------
+#-------------------------------
 [JIGGLYPUFF]
 BackSprite = 0,0
 FrontSprite = -1,24
@@ -311,7 +311,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,BB
 BackAnimation = RotateBottom,BB
-#-------------------------------------
+#-------------------------------
 [WIGGLYTUFF]
 BackSprite = 0,0
 FrontSprite = 4,13
@@ -319,7 +319,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [ZUBAT]
 BackSprite = 0,0
 FrontSprite = -2,-1
@@ -327,7 +327,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideVertical,BABA
 BackAnimation = SlideVertical,BABA
-#-------------------------------------
+#-------------------------------
 [GOLBAT]
 BackSprite = 6,0
 FrontSprite = 5,-5
@@ -335,7 +335,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABAAABABA
 BackAnimation = FlyVertical,BABAAABABA
-#-------------------------------------
+#-------------------------------
 [ODDISH]
 BackSprite = 2,0
 FrontSprite = 3,23
@@ -343,7 +343,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [GLOOM]
 BackSprite = 1,0
 FrontSprite = 0,22
@@ -351,7 +351,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [VILEPLUME]
 BackSprite = 0,0
 FrontSprite = 3,16
@@ -359,7 +359,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Boing,BA
 BackAnimation = Boing,BA
-#-------------------------------------
+#-------------------------------
 [PARAS]
 BackSprite = 5,0
 FrontSprite = -3,33
@@ -367,7 +367,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [PARASECT]
 BackSprite = 1,0
 FrontSprite = -3,20
@@ -375,7 +375,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [VENONAT]
 BackSprite = 6,0
 FrontSprite = 1,14
@@ -383,7 +383,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [VENOMOTH]
 BackSprite = -4,0
 FrontSprite = 4,-4
@@ -391,7 +391,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABAAABABA
 BackAnimation = FlyHorizontal,BABAAABABA
-#-------------------------------------
+#-------------------------------
 [DIGLETT]
 BackSprite = 0,0
 FrontSprite = 1,29
@@ -399,7 +399,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,BABA
 BackAnimation = StompBig,BABA
-#-------------------------------------
+#-------------------------------
 [DUGTRIO]
 BackSprite = 1,0
 FrontSprite = 0,23
@@ -407,7 +407,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BABA
 BackAnimation = StompBig,BABA
-#-------------------------------------
+#-------------------------------
 [MEOWTH]
 BackSprite = 3,0
 FrontSprite = 1,18
@@ -415,7 +415,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [PERSIAN]
 BackSprite = -3,0
 FrontSprite = 3,15
@@ -423,7 +423,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [PSYDUCK]
 BackSprite = 0,0
 FrontSprite = 1,20
@@ -431,7 +431,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [GOLDUCK]
 BackSprite = -1,0
 FrontSprite = -1,15
@@ -439,7 +439,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [MANKEY]
 BackSprite = -2,0
 FrontSprite = 3,20
@@ -447,7 +447,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [PRIMEAPE]
 BackSprite = 5,0
 FrontSprite = 3,13
@@ -455,7 +455,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = RotateJump,BABABA
 BackAnimation = RotateJump,BABABA
-#-------------------------------------
+#-------------------------------
 [GROWLITHE]
 BackSprite = -4,0
 FrontSprite = 3,18
@@ -463,7 +463,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [ARCANINE]
 BackSprite = -9,0
 FrontSprite = 4,9
@@ -471,7 +471,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [POLIWAG]
 BackSprite = 0,0
 FrontSprite = 9,23
@@ -479,7 +479,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [POLIWHIRL]
 BackSprite = 10,0
 FrontSprite = 0,20
@@ -487,7 +487,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [POLIWRATH]
 BackSprite = 1,0
 FrontSprite = 1,15
@@ -495,7 +495,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [ABRA]
 BackSprite = 3,0
 FrontSprite = 0,25
@@ -503,7 +503,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [KADABRA]
 BackSprite = 2,0
 FrontSprite = 1,13
@@ -511,7 +511,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [ALAKAZAM]
 BackSprite = 4,0
 FrontSprite = 0,12
@@ -519,7 +519,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,BA
 BackAnimation = Explosion,BA
-#-------------------------------------
+#-------------------------------
 [MACHOP]
 BackSprite = 3,0
 FrontSprite = 1,15
@@ -527,7 +527,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [MACHOKE]
 BackSprite = 7,0
 FrontSprite = -1,9
@@ -535,7 +535,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [MACHAMP]
 BackSprite = 7,0
 FrontSprite = -9,3
@@ -543,7 +543,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BA
 BackAnimation = StompDouble,BA
-#-------------------------------------
+#-------------------------------
 [BELLSPROUT]
 BackSprite = -2,0
 FrontSprite = 1,21
@@ -551,7 +551,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [WEEPINBELL]
 BackSprite = 4,0
 FrontSprite = 5,19
@@ -559,7 +559,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [VICTREEBEL]
 BackSprite = 0,0
 FrontSprite = 2,12
@@ -567,7 +567,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = HopBig,BABA
 BackAnimation = HopBig,BABA
-#-------------------------------------
+#-------------------------------
 [TENTACOOL]
 BackSprite = 9,0
 FrontSprite = -1,0
@@ -575,7 +575,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Fluid,BABA
 BackAnimation = Fluid,BABA
-#-------------------------------------
+#-------------------------------
 [TENTACRUEL]
 BackSprite = 0,0
 FrontSprite = 0,1
@@ -583,7 +583,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyVertical,BABABA
 BackAnimation = FlyVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [GEODUDE]
 BackSprite = -6,0
 FrontSprite = -2,7
@@ -591,7 +591,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABBAAA
 BackAnimation = HopSmall,BABBAAA
-#-------------------------------------
+#-------------------------------
 [GRAVELER]
 BackSprite = -4,0
 FrontSprite = -1,20
@@ -599,7 +599,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [GOLEM]
 BackSprite = 0,0
 FrontSprite = -3,16
@@ -607,7 +607,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [PONYTA]
 BackSprite = 2,0
 FrontSprite = 5,16
@@ -615,7 +615,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [RAPIDASH]
 BackSprite = -7,0
 FrontSprite = 5,8
@@ -623,7 +623,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BABBAAA
 BackAnimation = StretchHorizontal,BABBAAA
-#-------------------------------------
+#-------------------------------
 [SLOWPOKE]
 BackSprite = -4,0
 FrontSprite = 3,29
@@ -631,7 +631,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [SLOWBRO]
 BackSprite = -7,0
 FrontSprite = 6,14
@@ -639,7 +639,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [MAGNEMITE]
 BackSprite = 2,0
 FrontSprite = 1,6
@@ -647,7 +647,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyVertical,BABA
 BackAnimation = FlyVertical,BABA
-#-------------------------------------
+#-------------------------------
 [MAGNETON]
 BackSprite = -3,0
 FrontSprite = 0,-2
@@ -655,7 +655,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [FARFETCHD]
 BackSprite = 4,0
 FrontSprite = 0,19
@@ -663,7 +663,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopBig,BABA
 BackAnimation = HopBig,BABA
-#-------------------------------------
+#-------------------------------
 [DODUO]
 BackSprite = 14,0
 FrontSprite = -10,16
@@ -671,7 +671,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [DODRIO]
 BackSprite = 8,0
 FrontSprite = -2,4
@@ -679,7 +679,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [SEEL]
 BackSprite = -8,0
 FrontSprite = 4,17
@@ -687,7 +687,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [DEWGONG]
 BackSprite = -7,0
 FrontSprite = -1,13
@@ -695,7 +695,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [GRIMER]
 BackSprite = 3,0
 FrontSprite = -6,24
@@ -703,7 +703,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Shlorp,BABA
 BackAnimation = Shlorp,BABA
-#-------------------------------------
+#-------------------------------
 [MUK]
 BackSprite = -2,0
 FrontSprite = 1,12
@@ -711,7 +711,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [SHELLDER]
 BackSprite = -1,0
 FrontSprite = 1,27
@@ -719,7 +719,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [CLOYSTER]
 BackSprite = 0,0
 FrontSprite = -4,4
@@ -727,7 +727,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [GASTLY]
 BackSprite = -1,0
 FrontSprite = 6,-2
@@ -735,7 +735,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABA
 BackAnimation = FlyVertical,BABA
-#-------------------------------------
+#-------------------------------
 [HAUNTER]
 BackSprite = -1,0
 FrontSprite = -1,0
@@ -743,7 +743,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [GENGAR]
 BackSprite = -3,0
 FrontSprite = 0,15
@@ -751,7 +751,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopBig,ABA
 BackAnimation = HopBig,ABA
-#-------------------------------------
+#-------------------------------
 [ONIX]
 BackSprite = 3,0
 FrontSprite = -2,5
@@ -759,7 +759,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,ABA
 BackAnimation = StompBig,ABA
-#-------------------------------------
+#-------------------------------
 [DROWZEE]
 BackSprite = 4,0
 FrontSprite = -3,17
@@ -767,7 +767,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [HYPNO]
 BackSprite = 8,0
 FrontSprite = 2,10
@@ -775,7 +775,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [KRABBY]
 BackSprite = 4,0
 FrontSprite = 2,21
@@ -783,7 +783,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [KINGLER]
 BackSprite = -2,0
 FrontSprite = 3,14
@@ -791,7 +791,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BA
 BackAnimation = StompDouble,BA
-#-------------------------------------
+#-------------------------------
 [VOLTORB]
 BackSprite = 0,0
 FrontSprite = 0,24
@@ -799,7 +799,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [ELECTRODE]
 BackSprite = 0,0
 FrontSprite = 0,17
@@ -807,7 +807,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [EXEGGCUTE]
 BackSprite = 0,0
 FrontSprite = 0,28
@@ -815,7 +815,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [EXEGGUTOR]
 BackSprite = 0,0
 FrontSprite = -1,4
@@ -823,7 +823,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [CUBONE]
 BackSprite = 2,0
 FrontSprite = -2,22
@@ -831,7 +831,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [MAROWAK]
 BackSprite = -2,0
 FrontSprite = -8,19
@@ -839,7 +839,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [HITMONLEE]
 BackSprite = 8,0
 FrontSprite = 2,14
@@ -847,7 +847,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopBig,ABA
 BackAnimation = HopBig,ABA
-#-------------------------------------
+#-------------------------------
 [HITMONCHAN]
 BackSprite = 4,0
 FrontSprite = -1,11
@@ -855,7 +855,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [LICKITUNG]
 BackSprite = -2,0
 FrontSprite = 1,15
@@ -863,7 +863,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [KOFFING]
 BackSprite = -2,0
 FrontSprite = 1,0
@@ -871,7 +871,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABABA
 BackAnimation = FlyVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [WEEZING]
 BackSprite = -2,0
 FrontSprite = -3,-2
@@ -879,7 +879,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [RHYHORN]
 BackSprite = 0,0
 FrontSprite = -1,18
@@ -887,7 +887,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABABA
 BackAnimation = ShakeSmall,BABABA
-#-------------------------------------
+#-------------------------------
 [RHYDON]
 BackSprite = 5,0
 FrontSprite = 2,10
@@ -895,7 +895,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [CHANSEY]
 BackSprite = -1,0
 FrontSprite = 1,19
@@ -903,7 +903,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Boing,ABA
 BackAnimation = Boing,ABA
-#-------------------------------------
+#-------------------------------
 [TANGELA]
 BackSprite = 0,0
 FrontSprite = 0,22
@@ -911,7 +911,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,ABA
 BackAnimation = RotateBottom,ABA
-#-------------------------------------
+#-------------------------------
 [KANGASKHAN]
 BackSprite = 3,0
 FrontSprite = 0,9
@@ -919,7 +919,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [HORSEA]
 BackSprite = 1,0
 FrontSprite = 3,3
@@ -927,7 +927,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [SEADRA]
 BackSprite = -3,0
 FrontSprite = 9,-1
@@ -935,7 +935,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,ABA
 BackAnimation = FlyHorizontal,ABA
-#-------------------------------------
+#-------------------------------
 [GOLDEEN]
 BackSprite = -4,0
 FrontSprite = 5,4
@@ -943,7 +943,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABABABA
 BackAnimation = FlyVertical,BABABABA
-#-------------------------------------
+#-------------------------------
 [SEAKING]
 BackSprite = -8,0
 FrontSprite = 8,-1
@@ -951,7 +951,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABABABA
 BackAnimation = FlyHorizontal,BABABABA
-#-------------------------------------
+#-------------------------------
 [STARYU]
 BackSprite = 3,0
 FrontSprite = 4,10
@@ -959,7 +959,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABABABABA
 BackAnimation = Bounce,BABABABABA
-#-------------------------------------
+#-------------------------------
 [STARMIE]
 BackSprite = 2,0
 FrontSprite = 2,0
@@ -967,7 +967,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABABABABABABABABABA
 BackAnimation = FlyHorizontal,BABABABABABABABABABA
-#-------------------------------------
+#-------------------------------
 [MRMIME]
 BackSprite = 5,0
 FrontSprite = -1,13
@@ -975,7 +975,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Fluid,BA
 BackAnimation = Fluid,BA
-#-------------------------------------
+#-------------------------------
 [SCYTHER]
 BackSprite = -5,0
 FrontSprite = -9,9
@@ -983,7 +983,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [JYNX]
 BackSprite = 3,0
 FrontSprite = -5,18
@@ -991,7 +991,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideHorizontal,BABABABA
 BackAnimation = SlideHorizontal,BABABABA
-#-------------------------------------
+#-------------------------------
 [ELECTABUZZ]
 BackSprite = 0,0
 FrontSprite = 0,13
@@ -999,7 +999,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = HopBig,BABA
 BackAnimation = HopBig,BABA
-#-------------------------------------
+#-------------------------------
 [MAGMAR]
 BackSprite = -1,0
 FrontSprite = -7,11
@@ -1007,7 +1007,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [PINSIR]
 BackSprite = 5,0
 FrontSprite = -3,10
@@ -1015,7 +1015,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [TAUROS]
 BackSprite = -1,0
 FrontSprite = 1,13
@@ -1023,7 +1023,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [MAGIKARP]
 BackSprite = -1,0
 FrontSprite = 2,-1
@@ -1031,7 +1031,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,BABABABA
 BackAnimation = HopAround,BABABABA
-#-------------------------------------
+#-------------------------------
 [GYARADOS]
 BackSprite = 2,0
 FrontSprite = -1,-3
@@ -1039,7 +1039,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [LAPRAS]
 BackSprite = 1,0
 FrontSprite = 1,12
@@ -1047,7 +1047,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = RotateBottom,ABA
 BackAnimation = RotateBottom,ABA
-#-------------------------------------
+#-------------------------------
 [DITTO]
 BackSprite = 0,0
 FrontSprite = 0,29
@@ -1055,7 +1055,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Fluid,BA
 BackAnimation = Fluid,BA
-#-------------------------------------
+#-------------------------------
 [EEVEE]
 BackSprite = -7,0
 FrontSprite = 0,20
@@ -1063,7 +1063,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [VAPOREON]
 BackSprite = 4,0
 FrontSprite = 12,19
@@ -1071,7 +1071,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [JOLTEON]
 BackSprite = -4,0
 FrontSprite = 0,19
@@ -1079,7 +1079,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BBAABABABABA
 BackAnimation = BlinkYellow,BBAABABABABA
-#-------------------------------------
+#-------------------------------
 [FLAREON]
 BackSprite = -7,0
 FrontSprite = 7,17
@@ -1087,7 +1087,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [PORYGON]
 BackSprite = 0,0
 FrontSprite = -1,14
@@ -1095,7 +1095,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,ABA
 BackAnimation = ShakeSmall,ABA
-#-------------------------------------
+#-------------------------------
 [OMANYTE]
 BackSprite = 0,0
 FrontSprite = 2,25
@@ -1103,7 +1103,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABABA
 BackAnimation = SlideHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [OMASTAR]
 BackSprite = 5,0
 FrontSprite = 2,16
@@ -1111,7 +1111,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [KABUTO]
 BackSprite = 0,0
 FrontSprite = 1,26
@@ -1119,7 +1119,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BBAABABABABA
 BackAnimation = FlyHorizontal,BBAABABABABA
-#-------------------------------------
+#-------------------------------
 [KABUTOPS]
 BackSprite = 7,0
 FrontSprite = 2,9
@@ -1127,7 +1127,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,ABA
 BackAnimation = StompBig,ABA
-#-------------------------------------
+#-------------------------------
 [AERODACTYL]
 BackSprite = -4,0
 FrontSprite = 2,-2
@@ -1135,7 +1135,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABAAABABA
 BackAnimation = FlyVertical,BABAAABABA
-#-------------------------------------
+#-------------------------------
 [SNORLAX]
 BackSprite = -1,0
 FrontSprite = 0,11
@@ -1143,7 +1143,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [ARTICUNO]
 BackSprite = 8,0
 FrontSprite = -1,7
@@ -1151,7 +1151,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [ZAPDOS]
 BackSprite = 5,0
 FrontSprite = 0,-6
@@ -1159,7 +1159,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyHorizontal,BABABA
 BackAnimation = FlyHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [MOLTRES]
 BackSprite = 0,0
 FrontSprite = 1,5
@@ -1167,7 +1167,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,BBAABABABABA
 BackAnimation = Explosion,BBAABABABABA
-#-------------------------------------
+#-------------------------------
 [DRATINI]
 BackSprite = -2,0
 FrontSprite = -3,19
@@ -1175,7 +1175,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [DRAGONAIR]
 BackSprite = 2,0
 FrontSprite = -1,10
@@ -1183,7 +1183,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyHorizontal,ABA
 BackAnimation = FlyHorizontal,ABA
-#-------------------------------------
+#-------------------------------
 [DRAGONITE]
 BackSprite = 5,0
 FrontSprite = 6,6
@@ -1191,7 +1191,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [MEWTWO]
 BackSprite = 14,0
 FrontSprite = 3,10
@@ -1199,7 +1199,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [MEW]
 BackSprite = -8,0
 FrontSprite = -9,-3
@@ -1207,7 +1207,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [CHIKORITA]
 BackSprite = -8,0
 FrontSprite = 2,21
@@ -1215,7 +1215,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [BAYLEEF]
 BackSprite = -3,0
 FrontSprite = 1,12
@@ -1223,7 +1223,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [MEGANIUM]
 BackSprite = 0,0
 FrontSprite = 0,4
@@ -1231,7 +1231,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [CYNDAQUIL]
 BackSprite = -8,0
 FrontSprite = 4,20
@@ -1239,7 +1239,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,ABA
 BackAnimation = HopSmall,ABA
-#-------------------------------------
+#-------------------------------
 [QUILAVA]
 BackSprite = -8,0
 FrontSprite = 3,19
@@ -1247,7 +1247,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [TYPHLOSION]
 BackSprite = 0,0
 FrontSprite = -1,3
@@ -1255,7 +1255,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = HopBig,ABABA
 BackAnimation = HopBig,ABABA
-#-------------------------------------
+#-------------------------------
 [TOTODILE]
 BackSprite = -2,0
 FrontSprite = -1,23
@@ -1263,7 +1263,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [CROCONAW]
 BackSprite = -1,0
 FrontSprite = -1,12
@@ -1271,7 +1271,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [FERALIGATR]
 BackSprite = 2,0
 FrontSprite = -6,9
@@ -1279,7 +1279,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,ABA
 BackAnimation = StompBig,ABA
-#-------------------------------------
+#-------------------------------
 [SENTRET]
 BackSprite = 3,0
 FrontSprite = 1,8
@@ -1287,7 +1287,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [FURRET]
 BackSprite = -12,0
 FrontSprite = -2,13
@@ -1295,7 +1295,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [HOOTHOOT]
 BackSprite = 5,0
 FrontSprite = 0,19
@@ -1303,7 +1303,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABABA
 BackAnimation = Bounce,BABABA
-#-------------------------------------
+#-------------------------------
 [NOCTOWL]
 BackSprite = -2,0
 FrontSprite = -1,10
@@ -1311,7 +1311,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [LEDYBA]
 BackSprite = 4,0
 FrontSprite = -1,16
@@ -1319,7 +1319,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,ABA
 BackAnimation = HopSmall,ABA
-#-------------------------------------
+#-------------------------------
 [LEDIAN]
 BackSprite = 1,0
 FrontSprite = -1,12
@@ -1327,7 +1327,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,ABABA
 BackAnimation = Bounce,ABABA
-#-------------------------------------
+#-------------------------------
 [SPINARAK]
 BackSprite = 0,0
 FrontSprite = 1,30
@@ -1335,7 +1335,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [ARIADOS]
 BackSprite = 5,0
 FrontSprite = -2,22
@@ -1343,7 +1343,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = HopBig,ABABA
 BackAnimation = HopBig,ABABA
-#-------------------------------------
+#-------------------------------
 [CROBAT]
 BackSprite = 4,0
 FrontSprite = 4,-2
@@ -1351,7 +1351,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BBAABABABABA
 BackAnimation = FlyVertical,BBAABABABABA
-#-------------------------------------
+#-------------------------------
 [CHINCHOU]
 BackSprite = 5,0
 FrontSprite = 3,9
@@ -1359,7 +1359,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,ABA
 BackAnimation = FlyVertical,ABA
-#-------------------------------------
+#-------------------------------
 [LANTURN]
 BackSprite = 1,0
 FrontSprite = 0,-4
@@ -1367,7 +1367,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,ABABA
 BackAnimation = FlyHorizontal,ABABA
-#-------------------------------------
+#-------------------------------
 [PICHU]
 BackSprite = -5,0
 FrontSprite = 1,23
@@ -1375,7 +1375,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateJump,ABABABA
 BackAnimation = RotateJump,ABABABA
-#-------------------------------------
+#-------------------------------
 [PICHU,2]
 BackSprite = -5,0
 FrontSprite = 3,23
@@ -1383,7 +1383,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateJump,ABABABA
 BackAnimation = RotateJump,ABABABA
-#-------------------------------------
+#-------------------------------
 [CLEFFA]
 BackSprite = 0,0
 FrontSprite = -1,27
@@ -1391,7 +1391,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [IGGLYBUFF]
 BackSprite = 1,0
 FrontSprite = 0,25
@@ -1399,7 +1399,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateBottom,ABABA
 BackAnimation = RotateBottom,ABABA
-#-------------------------------------
+#-------------------------------
 [TOGEPI]
 BackSprite = 2,0
 FrontSprite = 1,26
@@ -1407,7 +1407,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,ABABA
 BackAnimation = HopAround,ABABA
-#-------------------------------------
+#-------------------------------
 [TOGETIC]
 BackSprite = -2,0
 FrontSprite = 1,7
@@ -1415,7 +1415,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideVertical,BABABABA
 BackAnimation = SlideVertical,BABABABA
-#-------------------------------------
+#-------------------------------
 [NATU]
 BackSprite = -5,0
 FrontSprite = 1,27
@@ -1423,7 +1423,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,ABABA
 BackAnimation = HopSmall,ABABA
-#-------------------------------------
+#-------------------------------
 [XATU]
 BackSprite = -3,0
 FrontSprite = 3,14
@@ -1431,7 +1431,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [MAREEP]
 BackSprite = -1,0
 FrontSprite = 0,20
@@ -1439,7 +1439,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateJump,BABABA
 BackAnimation = RotateJump,BABABA
-#-------------------------------------
+#-------------------------------
 [FLAAFFY]
 BackSprite = -3,0
 FrontSprite = 1,16
@@ -1447,7 +1447,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [AMPHAROS]
 BackSprite = 4,0
 FrontSprite = -5,12
@@ -1455,7 +1455,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,ABA
 BackAnimation = ShakeSmall,ABA
-#-------------------------------------
+#-------------------------------
 [BELLOSSOM]
 BackSprite = 0,0
 FrontSprite = 0,24
@@ -1463,7 +1463,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [MARILL]
 BackSprite = -2,0
 FrontSprite = 6,24
@@ -1471,7 +1471,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [AZUMARILL]
 BackSprite = 1,0
 FrontSprite = 4,14
@@ -1479,7 +1479,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [SUDOWOODO]
 BackSprite = 5,0
 FrontSprite = 5,16
@@ -1487,7 +1487,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateJump,BABABA
 BackAnimation = RotateJump,BABABA
-#-------------------------------------
+#-------------------------------
 [POLITOED]
 BackSprite = 4,0
 FrontSprite = 3,15
@@ -1495,7 +1495,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,BABA
 BackAnimation = Explosion,BABA
-#-------------------------------------
+#-------------------------------
 [HOPPIP]
 BackSprite = 9,0
 FrontSprite = 3,-1
@@ -1503,7 +1503,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyVertical,BABA
 BackAnimation = FlyVertical,BABA
-#-------------------------------------
+#-------------------------------
 [SKIPLOOM]
 BackSprite = 2,0
 FrontSprite = 1,7
@@ -1511,7 +1511,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [JUMPLUFF]
 BackSprite = -6,0
 FrontSprite = -1,-5
@@ -1519,7 +1519,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyVertical,BABAAA
 BackAnimation = FlyVertical,BABAAA
-#-------------------------------------
+#-------------------------------
 [AIPOM]
 BackSprite = -11,0
 FrontSprite = 0,15
@@ -1527,7 +1527,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,ABABA
 BackAnimation = HopAround,ABABA
-#-------------------------------------
+#-------------------------------
 [SUNKERN]
 BackSprite = 3,0
 FrontSprite = 1,24
@@ -1535,7 +1535,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateTop,ABABA
 BackAnimation = RotateTop,ABABA
-#-------------------------------------
+#-------------------------------
 [SUNFLORA]
 BackSprite = 0,0
 FrontSprite = 1,17
@@ -1543,7 +1543,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [YANMA]
 BackSprite = -8,0
 FrontSprite = 0,-1
@@ -1551,7 +1551,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BBAABABABABA
 BackAnimation = FlyHorizontal,BBAABABABABA
-#-------------------------------------
+#-------------------------------
 [WOOPER]
 BackSprite = 0,0
 FrontSprite = -1,25
@@ -1559,7 +1559,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,ABABA
 BackAnimation = HopAround,ABABA
-#-------------------------------------
+#-------------------------------
 [QUAGSIRE]
 BackSprite = 6,0
 FrontSprite = 2,16
@@ -1567,7 +1567,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,ABA
 BackAnimation = ShakeSmall,ABA
-#-------------------------------------
+#-------------------------------
 [ESPEON]
 BackSprite = -4,0
 FrontSprite = -4,15
@@ -1575,7 +1575,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [UMBREON]
 BackSprite = 0,0
 FrontSprite = 2,17
@@ -1583,7 +1583,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [MURKROW]
 BackSprite = 0,0
 FrontSprite = 1,1
@@ -1591,7 +1591,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABABA
 BackAnimation = FlyVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [SLOWKING]
 BackSprite = 0,0
 FrontSprite = 2,8
@@ -1599,7 +1599,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [MISDREAVUS]
 BackSprite = -4,0
 FrontSprite = 0,0
@@ -1607,7 +1607,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABABABA
 BackAnimation = FlyHorizontal,BABABABA
-#-------------------------------------
+#-------------------------------
 [UNOWN]
 BackSprite = 0,0
 FrontSprite = 0,8
@@ -1615,7 +1615,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,AA
 BackAnimation = FlyHorizontal,AA
-#-------------------------------------
+#-------------------------------
 [WOBBUFFET]
 BackSprite = -3,0
 FrontSprite = 0,16
@@ -1623,7 +1623,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [GIRAFARIG]
 BackSprite = -3,0
 FrontSprite = 0,10
@@ -1631,7 +1631,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [PINECO]
 BackSprite = 0,0
 FrontSprite = 0,20
@@ -1639,7 +1639,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [FORRETRESS]
 BackSprite = 1,0
 FrontSprite = 0,4
@@ -1647,7 +1647,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,ABA
 BackAnimation = StompDouble,ABA
-#-------------------------------------
+#-------------------------------
 [DUNSPARCE]
 BackSprite = 0,0
 FrontSprite = 5,18
@@ -1655,7 +1655,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyHorizontal,BABABA
 BackAnimation = FlyHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [GLIGAR]
 BackSprite = 2,0
 FrontSprite = -2,0
@@ -1663,7 +1663,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [STEELIX]
 BackSprite = 2,0
 FrontSprite = -4,4
@@ -1671,7 +1671,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABABA
 BackAnimation = StompDouble,BABABA
-#-------------------------------------
+#-------------------------------
 [SNUBBULL]
 BackSprite = 1,0
 FrontSprite = 3,22
@@ -1679,7 +1679,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABABABA
 BackAnimation = HopSmall,BABABABA
-#-------------------------------------
+#-------------------------------
 [GRANBULL]
 BackSprite = 0,0
 FrontSprite = -3,15
@@ -1687,7 +1687,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [QWILFISH]
 BackSprite = -5,0
 FrontSprite = 4,9
@@ -1695,7 +1695,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ZoomDouble,BABA
 BackAnimation = ZoomDouble,BABA
-#-------------------------------------
+#-------------------------------
 [SCIZOR]
 BackSprite = 6,0
 FrontSprite = -4,12
@@ -1703,7 +1703,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = HopBig,ABABA
 BackAnimation = HopBig,ABABA
-#-------------------------------------
+#-------------------------------
 [SHUCKLE]
 BackSprite = 1,0
 FrontSprite = 2,22
@@ -1711,7 +1711,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,ABAAA
 BackAnimation = HopAround,ABAAA
-#-------------------------------------
+#-------------------------------
 [HERACROSS]
 BackSprite = 0,0
 FrontSprite = -2,11
@@ -1719,7 +1719,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompDouble,BA
 BackAnimation = StompDouble,BA
-#-------------------------------------
+#-------------------------------
 [SNEASEL]
 BackSprite = -3,0
 FrontSprite = 0,18
@@ -1727,7 +1727,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [TEDDIURSA]
 BackSprite = 2,0
 FrontSprite = 1,22
@@ -1735,7 +1735,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [URSARING]
 BackSprite = 1,0
 FrontSprite = 0,7
@@ -1743,7 +1743,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [SLUGMA]
 BackSprite = -5,0
 FrontSprite = -1,22
@@ -1751,7 +1751,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [MAGCARGO]
 BackSprite = -1,0
 FrontSprite = 2,16
@@ -1759,7 +1759,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideHorizontal,ABA
 BackAnimation = SlideHorizontal,ABA
-#-------------------------------------
+#-------------------------------
 [SWINUB]
 BackSprite = 0,0
 FrontSprite = -1,31
@@ -1767,7 +1767,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [PILOSWINE]
 BackSprite = 0,0
 FrontSprite = 1,16
@@ -1775,7 +1775,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,ABABA
 BackAnimation = StompDouble,ABABA
-#-------------------------------------
+#-------------------------------
 [CORSOLA]
 BackSprite = -1,0
 FrontSprite = 3,22
@@ -1783,7 +1783,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,ABABA
 BackAnimation = HopAround,ABABA
-#-------------------------------------
+#-------------------------------
 [REMORAID]
 BackSprite = -7,0
 FrontSprite = 1,6
@@ -1791,7 +1791,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateTop,ABABA
 BackAnimation = RotateTop,ABABA
-#-------------------------------------
+#-------------------------------
 [OCTILLERY]
 BackSprite = 4,0
 FrontSprite = 0,20
@@ -1799,7 +1799,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyHorizontal,ABABA
 BackAnimation = FlyHorizontal,ABABA
-#-------------------------------------
+#-------------------------------
 [DELIBIRD]
 BackSprite = 0,0
 FrontSprite = 3,17
@@ -1807,7 +1807,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,AABA
 BackAnimation = Bounce,AABA
-#-------------------------------------
+#-------------------------------
 [MANTINE]
 BackSprite = 0,0
 FrontSprite = 3,-5
@@ -1815,7 +1815,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,ABABA
 BackAnimation = Bounce,ABABA
-#-------------------------------------
+#-------------------------------
 [SKARMORY]
 BackSprite = 4,0
 FrontSprite = 0,10
@@ -1823,7 +1823,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BAA
 BackAnimation = ShakeSmall,BAA
-#-------------------------------------
+#-------------------------------
 [HOUNDOUR]
 BackSprite = -1,0
 FrontSprite = 4,20
@@ -1831,7 +1831,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompSmall,BABA
 BackAnimation = StompSmall,BABA
-#-------------------------------------
+#-------------------------------
 [HOUNDOOM]
 BackSprite = 1,0
 FrontSprite = 6,11
@@ -1839,7 +1839,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [KINGDRA]
 BackSprite = -5,0
 FrontSprite = 0,-7
@@ -1847,7 +1847,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABA
 BackAnimation = FlyVertical,BABA
-#-------------------------------------
+#-------------------------------
 [PHANPY]
 BackSprite = 3,0
 FrontSprite = 0,24
@@ -1855,7 +1855,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [DONPHAN]
 BackSprite = 3,0
 FrontSprite = -10,21
@@ -1863,7 +1863,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BAA
 BackAnimation = StompBig,BAA
-#-------------------------------------
+#-------------------------------
 [PORYGON2]
 BackSprite = 3,0
 FrontSprite = 0,14
@@ -1871,7 +1871,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateTop,ABABA
 BackAnimation = RotateTop,ABABA
-#-------------------------------------
+#-------------------------------
 [STANTLER]
 BackSprite = 3,0
 FrontSprite = -3,6
@@ -1879,7 +1879,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,ABABA
 BackAnimation = StompBig,ABABA
-#-------------------------------------
+#-------------------------------
 [SMEARGLE]
 BackSprite = 5,0
 FrontSprite = -6,16
@@ -1887,7 +1887,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,AABA
 BackAnimation = HopAround,AABA
-#-------------------------------------
+#-------------------------------
 [TYROGUE]
 BackSprite = 4,0
 FrontSprite = -1,19
@@ -1895,7 +1895,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [HITMONTOP]
 BackSprite = 0,0
 FrontSprite = -2,15
@@ -1903,7 +1903,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,ABABA
 BackAnimation = RotateBottom,ABABA
-#-------------------------------------
+#-------------------------------
 [SMOOCHUM]
 BackSprite = 0,0
 FrontSprite = 0,22
@@ -1911,7 +1911,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [ELEKID]
 BackSprite = 9,0
 FrontSprite = 2,22
@@ -1919,7 +1919,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BABABA
 BackAnimation = BlinkYellow,BABABA
-#-------------------------------------
+#-------------------------------
 [MAGBY]
 BackSprite = -1,0
 FrontSprite = 4,21
@@ -1927,7 +1927,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,ABA
 BackAnimation = HopAround,ABA
-#-------------------------------------
+#-------------------------------
 [MILTANK]
 BackSprite = -3,0
 FrontSprite = 8,17
@@ -1935,7 +1935,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,ABABA
 BackAnimation = RotateBottom,ABABA
-#-------------------------------------
+#-------------------------------
 [BLISSEY]
 BackSprite = -2,0
 FrontSprite = 0,14
@@ -1943,7 +1943,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [RAIKOU]
 BackSprite = -4,0
 FrontSprite = 5,12
@@ -1951,7 +1951,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [ENTEI]
 BackSprite = -4,0
 FrontSprite = 4,9
@@ -1959,7 +1959,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABABA
 BackAnimation = StretchVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [SUICUNE]
 BackSprite = 1,0
 FrontSprite = -1,8
@@ -1967,7 +1967,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,ABA
 BackAnimation = ShakeSmall,ABA
-#-------------------------------------
+#-------------------------------
 [LARVITAR]
 BackSprite = -6,0
 FrontSprite = 1,19
@@ -1975,7 +1975,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,ABABA
 BackAnimation = StretchVertical,ABABA
-#-------------------------------------
+#-------------------------------
 [PUPITAR]
 BackSprite = -4,0
 FrontSprite = 1,18
@@ -1983,7 +1983,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompSmall,BA
 BackAnimation = StompSmall,BA
-#-------------------------------------
+#-------------------------------
 [TYRANITAR]
 BackSprite = -3,0
 FrontSprite = 7,8
@@ -1991,7 +1991,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [LUGIA]
 BackSprite = 5,0
 FrontSprite = -2,-3
@@ -1999,7 +1999,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyVertical,ABABA
 BackAnimation = FlyVertical,ABABA
-#-------------------------------------
+#-------------------------------
 [HOOH]
 BackSprite = 3,0
 FrontSprite = 0,-7
@@ -2007,7 +2007,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [CELEBI]
 BackSprite = 0,0
 FrontSprite = 0,3
@@ -2015,7 +2015,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,ABABA
 BackAnimation = FlyHorizontal,ABABA
-#-------------------------------------
+#-------------------------------
 [TREECKO]
 BackSprite = -2,0
 FrontSprite = 3,15
@@ -2023,7 +2023,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,ABABA
 BackAnimation = HopAround,ABABA
-#-------------------------------------
+#-------------------------------
 [GROVYLE]
 BackSprite = 1,0
 FrontSprite = 0,5
@@ -2031,7 +2031,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,ABABA
 BackAnimation = HopAround,ABABA
-#-------------------------------------
+#-------------------------------
 [SCEPTILE]
 BackSprite = 4,0
 FrontSprite = 1,9
@@ -2039,7 +2039,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [TORCHIC]
 BackSprite = -2,0
 FrontSprite = 2,19
@@ -2047,7 +2047,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,AAABABABA
 BackAnimation = HopSmall,AAABABABA
-#-------------------------------------
+#-------------------------------
 [COMBUSKEN]
 BackSprite = 8,0
 FrontSprite = 2,12
@@ -2055,7 +2055,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,BABA
 BackAnimation = Explosion,BABA
-#-------------------------------------
+#-------------------------------
 [BLAZIKEN]
 BackSprite = -6,0
 FrontSprite = -2,11
@@ -2063,7 +2063,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = HopAround,BBBA
 BackAnimation = HopAround,BBBA
-#-------------------------------------
+#-------------------------------
 [MUDKIP]
 BackSprite = -2,0
 FrontSprite = 1,21
@@ -2071,7 +2071,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,BABABABABABA
 BackAnimation = Bounce,BABABABABABA
-#-------------------------------------
+#-------------------------------
 [MARSHTOMP]
 BackSprite = -2,0
 FrontSprite = 2,15
@@ -2079,7 +2079,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateJump,ABABAAA
 BackAnimation = RotateJump,ABABAAA
-#-------------------------------------
+#-------------------------------
 [SWAMPERT]
 BackSprite = 2,0
 FrontSprite = 2,10
@@ -2087,7 +2087,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BAAAAABA
 BackAnimation = ShakeSmall,BAAAAABA
-#-------------------------------------
+#-------------------------------
 [POOCHYENA]
 BackSprite = 5,0
 FrontSprite = 1,21
@@ -2095,7 +2095,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,BBBA
 BackAnimation = HopAround,BBBA
-#-------------------------------------
+#-------------------------------
 [MIGHTYENA]
 BackSprite = 1,0
 FrontSprite = -1,13
@@ -2103,7 +2103,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompSmall,ABBA
 BackAnimation = StompSmall,ABBA
-#-------------------------------------
+#-------------------------------
 [ZIGZAGOON]
 BackSprite = -1,0
 FrontSprite = -5,21
@@ -2111,7 +2111,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,ABABAAA
 BackAnimation = HopSmall,ABABAAA
-#-------------------------------------
+#-------------------------------
 [LINOONE]
 BackSprite = 0,0
 FrontSprite = -1,14
@@ -2119,7 +2119,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ZoomDouble,ABABA
 BackAnimation = ZoomDouble,ABABA
-#-------------------------------------
+#-------------------------------
 [WURMPLE]
 BackSprite = -1,0
 FrontSprite = -2,18
@@ -2127,7 +2127,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [SILCOON]
 BackSprite = -2,0
 FrontSprite = 0,24
@@ -2135,7 +2135,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Fluid,BA
 BackAnimation = Fluid,BA
-#-------------------------------------
+#-------------------------------
 [BEAUTIFLY]
 BackSprite = -10,0
 FrontSprite = 9,1
@@ -2143,7 +2143,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABABABABABA
 BackAnimation = SlideHorizontal,BABABABABABA
-#-------------------------------------
+#-------------------------------
 [CASCOON]
 BackSprite = -2,0
 FrontSprite = 0,22
@@ -2151,7 +2151,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Fluid,BA
 BackAnimation = Fluid,BA
-#-------------------------------------
+#-------------------------------
 [DUSTOX]
 BackSprite = 6,0
 FrontSprite = 1,-6
@@ -2159,7 +2159,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABABABABABA
 BackAnimation = FlyHorizontal,BABABABABABA
-#-------------------------------------
+#-------------------------------
 [LOTAD]
 BackSprite = 0,0
 FrontSprite = 1,27
@@ -2167,7 +2167,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABABA
 BackAnimation = SlideHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [LOMBRE]
 BackSprite = 0,0
 FrontSprite = 0,20
@@ -2175,7 +2175,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [LUDICOLO]
 BackSprite = 4,0
 FrontSprite = -2,8
@@ -2183,7 +2183,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = HopSmall,ABABA
 BackAnimation = HopSmall,ABABA
-#-------------------------------------
+#-------------------------------
 [SEEDOT]
 BackSprite = -1,0
 FrontSprite = 1,22
@@ -2191,7 +2191,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,ABABA
 BackAnimation = Bounce,ABABA
-#-------------------------------------
+#-------------------------------
 [NUZLEAF]
 BackSprite = 2,0
 FrontSprite = 2,17
@@ -2199,7 +2199,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StompSmall,BA
 BackAnimation = StompSmall,BA
-#-------------------------------------
+#-------------------------------
 [SHIFTRY]
 BackSprite = 1,0
 FrontSprite = 6,11
@@ -2207,7 +2207,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [TAILLOW]
 BackSprite = -9,0
 FrontSprite = 5,4
@@ -2215,7 +2215,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyVertical,BABABABABA
 BackAnimation = FlyVertical,BABABABABA
-#-------------------------------------
+#-------------------------------
 [SWELLOW]
 BackSprite = -4,0
 FrontSprite = 5,-5
@@ -2223,7 +2223,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideHorizontal,BABABA
 BackAnimation = SlideHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [WINGULL]
 BackSprite = 2,0
 FrontSprite = 0,0
@@ -2231,7 +2231,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,ABA
 BackAnimation = RotateBottom,ABA
-#-------------------------------------
+#-------------------------------
 [PELIPPER]
 BackSprite = 0,0
 FrontSprite = 0,-6
@@ -2239,7 +2239,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideHorizontal,BABABABABA
 BackAnimation = SlideHorizontal,BABABABABA
-#-------------------------------------
+#-------------------------------
 [RALTS]
 BackSprite = 5,0
 FrontSprite = -1,21
@@ -2247,7 +2247,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABABABABA
 BackAnimation = SlideHorizontal,BABABABABA
-#-------------------------------------
+#-------------------------------
 [KIRLIA]
 BackSprite = 0,0
 FrontSprite = 0,14
@@ -2255,7 +2255,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,ABBA
 BackAnimation = HopAround,ABBA
-#-------------------------------------
+#-------------------------------
 [GARDEVOIR]
 BackSprite = -5,0
 FrontSprite = 0,7
@@ -2263,7 +2263,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [SURSKIT]
 BackSprite = 1,0
 FrontSprite = -1,19
@@ -2271,7 +2271,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [MASQUERAIN]
 BackSprite = 2,0
 FrontSprite = -4,-8
@@ -2279,7 +2279,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideVertical,BABABA
 BackAnimation = SlideVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [SHROOMISH]
 BackSprite = 1,0
 FrontSprite = 0,25
@@ -2287,7 +2287,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,BAAA
 BackAnimation = HopAround,BAAA
-#-------------------------------------
+#-------------------------------
 [BRELOOM]
 BackSprite = -15,0
 FrontSprite = 4,13
@@ -2295,7 +2295,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [SLAKOTH]
 BackSprite = 5,0
 FrontSprite = -2,29
@@ -2303,7 +2303,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABABA
 BackAnimation = StretchVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [VIGOROTH]
 BackSprite = 4,0
 FrontSprite = -4,9
@@ -2311,7 +2311,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateJump,BABABA
 BackAnimation = RotateJump,BABABA
-#-------------------------------------
+#-------------------------------
 [SLAKING]
 BackSprite = 2,0
 FrontSprite = 0,12
@@ -2319,7 +2319,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,ABABA
 BackAnimation = ShakeSmall,ABABA
-#-------------------------------------
+#-------------------------------
 [NINCADA]
 BackSprite = -1,0
 FrontSprite = -1,29
@@ -2327,7 +2327,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [NINJASK]
 BackSprite = 0,0
 FrontSprite = 2,3
@@ -2335,7 +2335,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideVertical,BABABABABABABABABABA
 BackAnimation = SlideVertical,BABABABABABABABABABA
-#-------------------------------------
+#-------------------------------
 [SHEDINJA]
 BackSprite = 0,0
 FrontSprite = 2,1
@@ -2343,7 +2343,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABA
 BackAnimation = FlyVertical,BABA
-#-------------------------------------
+#-------------------------------
 [WHISMUR]
 BackSprite = 7,0
 FrontSprite = 1,21
@@ -2351,7 +2351,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Explosion,BA
 BackAnimation = Explosion,BA
-#-------------------------------------
+#-------------------------------
 [LOUDRED]
 BackSprite = 2,0
 FrontSprite = -2,11
@@ -2359,7 +2359,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompSmall,BABA
 BackAnimation = StompSmall,BABA
-#-------------------------------------
+#-------------------------------
 [EXPLOUD]
 BackSprite = 0,0
 FrontSprite = 0,10
@@ -2367,7 +2367,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompSmall,BA
 BackAnimation = StompSmall,BA
-#-------------------------------------
+#-------------------------------
 [MAKUHITA]
 BackSprite = 4,0
 FrontSprite = 0,17
@@ -2375,7 +2375,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [HARIYAMA]
 BackSprite = 3,0
 FrontSprite = -3,12
@@ -2383,7 +2383,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BA
 BackAnimation = StompDouble,BA
-#-------------------------------------
+#-------------------------------
 [AZURILL]
 BackSprite = -12,0
 FrontSprite = 14,20
@@ -2391,7 +2391,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [NOSEPASS]
 BackSprite = 5,0
 FrontSprite = -2,17
@@ -2399,7 +2399,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,ABA
 BackAnimation = ShakeSmall,ABA
-#-------------------------------------
+#-------------------------------
 [SKITTY]
 BackSprite = -10,0
 FrontSprite = 4,20
@@ -2407,7 +2407,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [DELCATTY]
 BackSprite = 3,0
 FrontSprite = 1,13
@@ -2415,7 +2415,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [SABLEYE]
 BackSprite = 0,0
 FrontSprite = 2,19
@@ -2423,7 +2423,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BABBBA
 BackAnimation = ShakeSmall,BABBBA
-#-------------------------------------
+#-------------------------------
 [MAWILE]
 BackSprite = 2,0
 FrontSprite = -1,17
@@ -2431,7 +2431,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,BABABA
 BackAnimation = Bounce,BABABA
-#-------------------------------------
+#-------------------------------
 [ARON]
 BackSprite = -1,0
 FrontSprite = 2,26
@@ -2439,7 +2439,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,AABABA
 BackAnimation = Bounce,AABABA
-#-------------------------------------
+#-------------------------------
 [LAIRON]
 BackSprite = -1,0
 FrontSprite = 0,23
@@ -2447,7 +2447,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABBBA
 BackAnimation = ShakeSmall,BABBBA
-#-------------------------------------
+#-------------------------------
 [AGGRON]
 BackSprite = 7,0
 FrontSprite = -2,10
@@ -2455,7 +2455,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,AABBA
 BackAnimation = Explosion,AABBA
-#-------------------------------------
+#-------------------------------
 [MEDITITE]
 BackSprite = -2,0
 FrontSprite = 1,22
@@ -2463,7 +2463,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BA
 BackAnimation = FlyHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [MEDICHAM]
 BackSprite = 2,0
 FrontSprite = 3,7
@@ -2471,7 +2471,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BBBA
 BackAnimation = HopAround,BBBA
-#-------------------------------------
+#-------------------------------
 [ELECTRIKE]
 BackSprite = -2,0
 FrontSprite = -3,26
@@ -2479,7 +2479,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [MANECTRIC]
 BackSprite = 2,0
 FrontSprite = 0,11
@@ -2487,7 +2487,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [PLUSLE]
 BackSprite = -12,0
 FrontSprite = 2,19
@@ -2495,7 +2495,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BABA
 BackAnimation = HopAround,BABA
-#-------------------------------------
+#-------------------------------
 [MINUN]
 BackSprite = -3,0
 FrontSprite = 0,20
@@ -2503,7 +2503,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BABA
 BackAnimation = HopAround,BABA
-#-------------------------------------
+#-------------------------------
 [VOLBEAT]
 BackSprite = 0,0
 FrontSprite = 3,0
@@ -2511,7 +2511,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [ILLUMISE]
 BackSprite = 0,0
 FrontSprite = -1,2
@@ -2519,7 +2519,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABABABA
 BackAnimation = SlideHorizontal,BABABABA
-#-------------------------------------
+#-------------------------------
 [ROSELIA]
 BackSprite = 2,0
 FrontSprite = 2,18
@@ -2527,7 +2527,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [GULPIN]
 BackSprite = -1,0
 FrontSprite = 1,25
@@ -2535,7 +2535,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Fluid,BA
 BackAnimation = Fluid,BA
-#-------------------------------------
+#-------------------------------
 [SWALOT]
 BackSprite = -1,0
 FrontSprite = -3,15
@@ -2543,7 +2543,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [CARVANHA]
 BackSprite = -1,0
 FrontSprite = 1,7
@@ -2551,7 +2551,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABABA
 BackAnimation = SlideHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [SHARPEDO]
 BackSprite = -2,0
 FrontSprite = 3,-4
@@ -2559,7 +2559,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABABABABA
 BackAnimation = SlideHorizontal,BABABABABA
-#-------------------------------------
+#-------------------------------
 [WAILMER]
 BackSprite = 0,0
 FrontSprite = 1,18
@@ -2567,7 +2567,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Fluid,BABABA
 BackAnimation = Fluid,BABABA
-#-------------------------------------
+#-------------------------------
 [WAILORD]
 BackSprite = 0,0
 FrontSprite = 1,7
@@ -2575,7 +2575,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyHorizontal,BAAA
 BackAnimation = FlyHorizontal,BAAA
-#-------------------------------------
+#-------------------------------
 [NUMEL]
 BackSprite = 2,0
 FrontSprite = 2,19
@@ -2583,7 +2583,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,ABA
 BackAnimation = StompBig,ABA
-#-------------------------------------
+#-------------------------------
 [CAMERUPT]
 BackSprite = -1,0
 FrontSprite = 0,17
@@ -2591,7 +2591,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABBA
 BackAnimation = StompDouble,BABBA
-#-------------------------------------
+#-------------------------------
 [TORKOAL]
 BackSprite = -2,0
 FrontSprite = 0,12
@@ -2599,7 +2599,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABBA
 BackAnimation = ShakeSmall,BABBA
-#-------------------------------------
+#-------------------------------
 [SPOINK]
 BackSprite = 1,0
 FrontSprite = 3,7
@@ -2607,7 +2607,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,BA
 BackAnimation = Bounce,BA
-#-------------------------------------
+#-------------------------------
 [GRUMPIG]
 BackSprite = -4,0
 FrontSprite = 3,13
@@ -2615,7 +2615,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [SPINDA]
 BackSprite = 0,0
 FrontSprite = 4,15
@@ -2623,7 +2623,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [TRAPINCH]
 BackSprite = 0,0
 FrontSprite = -2,25
@@ -2631,7 +2631,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABABA
 BackAnimation = StretchVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [VIBRAVA]
 BackSprite = -11,0
 FrontSprite = -1,-3
@@ -2639,7 +2639,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideVertical,BABABABABABABA
 BackAnimation = SlideVertical,BABABABABABABA
-#-------------------------------------
+#-------------------------------
 [FLYGON]
 BackSprite = -7,0
 FrontSprite = 11,-4
@@ -2647,7 +2647,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,BA
 BackAnimation = Explosion,BA
-#-------------------------------------
+#-------------------------------
 [CACNEA]
 BackSprite = 0,0
 FrontSprite = -1,25
@@ -2655,7 +2655,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateJump,ABABABAAA
 BackAnimation = RotateJump,ABABABAAA
-#-------------------------------------
+#-------------------------------
 [CACTURNE]
 BackSprite = 7,0
 FrontSprite = 0,9
@@ -2663,7 +2663,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [SWABLU]
 BackSprite = 4,0
 FrontSprite = 0,4
@@ -2671,7 +2671,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,ABA
 BackAnimation = FlyHorizontal,ABA
-#-------------------------------------
+#-------------------------------
 [ALTARIA]
 BackSprite = -10,0
 FrontSprite = 0,-5
@@ -2679,7 +2679,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [ZANGOOSE]
 BackSprite = -1,0
 FrontSprite = 2,10
@@ -2687,7 +2687,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [SEVIPER]
 BackSprite = 4,0
 FrontSprite = 5,9
@@ -2695,7 +2695,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompSmall,BABABABABABABA
 BackAnimation = StompSmall,BABABABABABABA
-#-------------------------------------
+#-------------------------------
 [LUNATONE]
 BackSprite = 1,0
 FrontSprite = 0,-1
@@ -2703,7 +2703,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateTop,BA
 BackAnimation = RotateTop,BA
-#-------------------------------------
+#-------------------------------
 [SOLROCK]
 BackSprite = 2,0
 FrontSprite = 1,-9
@@ -2711,7 +2711,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,ABABABA
 BackAnimation = FlyVertical,ABABABA
-#-------------------------------------
+#-------------------------------
 [BARBOACH]
 BackSprite = 3,0
 FrontSprite = 0,16
@@ -2719,7 +2719,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateJump,ABABABAAA
 BackAnimation = RotateJump,ABABABAAA
-#-------------------------------------
+#-------------------------------
 [WHISCASH]
 BackSprite = -4,0
 FrontSprite = -1,0
@@ -2727,7 +2727,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = RotateJump,ABABABAAA
 BackAnimation = RotateJump,ABABABAAA
-#-------------------------------------
+#-------------------------------
 [CORPHISH]
 BackSprite = 2,0
 FrontSprite = 0,21
@@ -2735,7 +2735,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BAABA
 BackAnimation = ShakeSmall,BAABA
-#-------------------------------------
+#-------------------------------
 [CRAWDAUNT]
 BackSprite = 9,0
 FrontSprite = -1,12
@@ -2743,7 +2743,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,AABABA
 BackAnimation = StretchVertical,AABABA
-#-------------------------------------
+#-------------------------------
 [BALTOY]
 BackSprite = 0,0
 FrontSprite = -1,17
@@ -2751,7 +2751,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [CLAYDOL]
 BackSprite = 1,0
 FrontSprite = 0,2
@@ -2759,7 +2759,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyVertical,BABAAA
 BackAnimation = FlyVertical,BABAAA
-#-------------------------------------
+#-------------------------------
 [LILEEP]
 BackSprite = 5,0
 FrontSprite = 0,16
@@ -2767,7 +2767,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [CRADILY]
 BackSprite = 1,0
 FrontSprite = -3,5
@@ -2775,7 +2775,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [ANORITH]
 BackSprite = 10,0
 FrontSprite = 1,23
@@ -2783,7 +2783,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Fluid,BABA
 BackAnimation = Fluid,BABA
-#-------------------------------------
+#-------------------------------
 [ARMALDO]
 BackSprite = 0,0
 FrontSprite = 4,11
@@ -2791,7 +2791,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BABA
 BackAnimation = StompBig,BABA
-#-------------------------------------
+#-------------------------------
 [FEEBAS]
 BackSprite = -5,0
 FrontSprite = 1,2
@@ -2799,7 +2799,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [MILOTIC]
 BackSprite = -3,0
 FrontSprite = 1,8
@@ -2807,7 +2807,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,BA
 BackAnimation = Explosion,BA
-#-------------------------------------
+#-------------------------------
 [CASTFORM]
 BackSprite = 1,0
 FrontSprite = -2,11
@@ -2815,7 +2815,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [CASTFORM,1]
 BackSprite = 1,0
 FrontSprite = 0,11
@@ -2823,7 +2823,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [CASTFORM,2]
 BackSprite = 1,0
 FrontSprite = 0,11
@@ -2831,7 +2831,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [CASTFORM,3]
 BackSprite = -1,0
 FrontSprite = 0,11
@@ -2839,7 +2839,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [KECLEON]
 BackSprite = 3,0
 FrontSprite = 0,16
@@ -2847,7 +2847,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABABA
 BackAnimation = StretchVertical,ABABA
-#-------------------------------------
+#-------------------------------
 [SHUPPET]
 BackSprite = -4,0
 FrontSprite = 2,3
@@ -2855,7 +2855,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,ABABA
 BackAnimation = FlyVertical,ABABA
-#-------------------------------------
+#-------------------------------
 [BANETTE]
 BackSprite = -6,0
 FrontSprite = 3,15
@@ -2863,7 +2863,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateJump,BABA
 BackAnimation = RotateJump,BABA
-#-------------------------------------
+#-------------------------------
 [DUSKULL]
 BackSprite = 6,0
 FrontSprite = -1,3
@@ -2871,7 +2871,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,ABABA
 BackAnimation = FlyVertical,ABABA
-#-------------------------------------
+#-------------------------------
 [DUSCLOPS]
 BackSprite = 1,0
 FrontSprite = 7,7
@@ -2879,7 +2879,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,BA
 BackAnimation = Explosion,BA
-#-------------------------------------
+#-------------------------------
 [TROPIUS]
 BackSprite = 4,0
 FrontSprite = 7,2
@@ -2887,7 +2887,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [CHIMECHO]
 BackSprite = 9,0
 FrontSprite = 1,6
@@ -2895,7 +2895,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyVertical,BABA
 BackAnimation = FlyVertical,BABA
-#-------------------------------------
+#-------------------------------
 [ABSOL]
 BackSprite = -5,0
 FrontSprite = -1,17
@@ -2903,7 +2903,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeBig,BA
 BackAnimation = ShakeBig,BA
-#-------------------------------------
+#-------------------------------
 [WYNAUT]
 BackSprite = 2,0
 FrontSprite = 1,22
@@ -2911,7 +2911,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,AAABABA
 BackAnimation = HopSmall,AAABABA
-#-------------------------------------
+#-------------------------------
 [SNORUNT]
 BackSprite = -1,0
 FrontSprite = 1,20
@@ -2919,7 +2919,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [GLALIE]
 BackSprite = -5,0
 FrontSprite = 0,3
@@ -2927,7 +2927,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,BA
 BackAnimation = Explosion,BA
-#-------------------------------------
+#-------------------------------
 [SPHEAL]
 BackSprite = -1,0
 FrontSprite = 2,25
@@ -2935,7 +2935,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,BABABA
 BackAnimation = RotateBottom,BABABA
-#-------------------------------------
+#-------------------------------
 [SEALEO]
 BackSprite = 1,0
 FrontSprite = 1,19
@@ -2943,7 +2943,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABABA
 BackAnimation = StretchVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [WALREIN]
 BackSprite = 0,0
 FrontSprite = 1,14
@@ -2951,7 +2951,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [CLAMPERL]
 BackSprite = 0,0
 FrontSprite = 0,23
@@ -2959,7 +2959,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BAAA
 BackAnimation = FlyHorizontal,BAAA
-#-------------------------------------
+#-------------------------------
 [HUNTAIL]
 BackSprite = -3,0
 FrontSprite = 0,-3
@@ -2967,7 +2967,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,BA
 BackAnimation = Explosion,BA
-#-------------------------------------
+#-------------------------------
 [GOREBYSS]
 BackSprite = -4,0
 FrontSprite = 5,-5
@@ -2975,7 +2975,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideVertical,BABABA
 BackAnimation = SlideVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [RELICANTH]
 BackSprite = -7,0
 FrontSprite = 0,0
@@ -2983,7 +2983,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyHorizontal,BABABA
 BackAnimation = FlyHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [LUVDISC]
 BackSprite = -3,0
 FrontSprite = 0,0
@@ -2991,7 +2991,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABABA
 BackAnimation = FlyHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [BAGON]
 BackSprite = 3,0
 FrontSprite = -5,19
@@ -2999,7 +2999,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [SHELGON]
 BackSprite = 0,0
 FrontSprite = -1,18
@@ -3007,7 +3007,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,ABA
 BackAnimation = ShakeSmall,ABA
-#-------------------------------------
+#-------------------------------
 [SALAMENCE]
 BackSprite = -1,0
 FrontSprite = -2,10
@@ -3015,7 +3015,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [BELDUM]
 BackSprite = -6,0
 FrontSprite = 3,12
@@ -3023,7 +3023,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,ABA
 BackAnimation = FlyHorizontal,ABA
-#-------------------------------------
+#-------------------------------
 [METANG]
 BackSprite = 2,0
 FrontSprite = 3,11
@@ -3031,7 +3031,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideVertical,BABA
 BackAnimation = SlideVertical,BABA
-#-------------------------------------
+#-------------------------------
 [METAGROSS]
 BackSprite = 2,0
 FrontSprite = 2,21
@@ -3039,7 +3039,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [REGIROCK]
 BackSprite = 1,0
 FrontSprite = -6,9
@@ -3047,7 +3047,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BA
 BackAnimation = StompDouble,BA
-#-------------------------------------
+#-------------------------------
 [REGICE]
 BackSprite = -3,0
 FrontSprite = 0,8
@@ -3055,7 +3055,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideVertical,BABA
 BackAnimation = SlideVertical,BABA
-#-------------------------------------
+#-------------------------------
 [REGISTEEL]
 BackSprite = 1,0
 FrontSprite = -1,11
@@ -3063,7 +3063,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [LATIAS]
 BackSprite = 5,0
 FrontSprite = -2,-9
@@ -3071,7 +3071,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BBBA
 BackAnimation = FlyHorizontal,BBBA
-#-------------------------------------
+#-------------------------------
 [LATIOS]
 BackSprite = 3,0
 FrontSprite = 0,-5
@@ -3079,7 +3079,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,ABA
 BackAnimation = FlyVertical,ABA
-#-------------------------------------
+#-------------------------------
 [KYOGRE]
 BackSprite = 0,0
 FrontSprite = 4,-4
@@ -3087,7 +3087,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = RotateTop,BABABA
 BackAnimation = RotateTop,BABABA
-#-------------------------------------
+#-------------------------------
 [GROUDON]
 BackSprite = -1,0
 FrontSprite = 2,9
@@ -3095,7 +3095,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,ABA
 BackAnimation = ShakeSmall,ABA
-#-------------------------------------
+#-------------------------------
 [RAYQUAZA]
 BackSprite = 4,0
 FrontSprite = -3,-3
@@ -3103,7 +3103,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BABA
 BackAnimation = StompBig,BABA
-#-------------------------------------
+#-------------------------------
 [JIRACHI]
 BackSprite = -1,0
 FrontSprite = 0,3
@@ -3111,7 +3111,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABABA
 BackAnimation = SlideHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [DEOXYS]
 BackSprite = 0,0
 FrontSprite = 2,7
@@ -3119,7 +3119,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [DEOXYS,1]
 BackSprite = 4,0
 FrontSprite = 1,5
@@ -3127,7 +3127,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [DEOXYS,2]
 BackSprite = 3,0
 FrontSprite = -2,6
@@ -3135,7 +3135,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [DEOXYS,3]
 BackSprite = -4,0
 FrontSprite = -4,4
@@ -3143,7 +3143,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,ABA
 BackAnimation = Explosion,ABA
-#-------------------------------------
+#-------------------------------
 [TURTWIG]
 BackSprite = -3,0
 FrontSprite = 1,20
@@ -3151,7 +3151,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [GROTLE]
 BackSprite = -4,0
 FrontSprite = -4,17
@@ -3159,7 +3159,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [TORTERRA]
 BackSprite = 0,0
 FrontSprite = 1,7
@@ -3167,7 +3167,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [CHIMCHAR]
 BackSprite = 4,0
 FrontSprite = 2,20
@@ -3175,7 +3175,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,ABA
 BackAnimation = StretchHorizontal,ABA
-#-------------------------------------
+#-------------------------------
 [MONFERNO]
 BackSprite = -6,0
 FrontSprite = 10,15
@@ -3183,7 +3183,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,ABAA
 BackAnimation = HopAround,ABAA
-#-------------------------------------
+#-------------------------------
 [INFERNAPE]
 BackSprite = 1,0
 FrontSprite = 0,14
@@ -3191,7 +3191,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BAA
 BackAnimation = StretchHorizontal,BAA
-#-------------------------------------
+#-------------------------------
 [PIPLUP]
 BackSprite = 0,0
 FrontSprite = 1,24
@@ -3199,7 +3199,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [PRINPLUP]
 BackSprite = 2,0
 FrontSprite = 0,13
@@ -3207,7 +3207,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [EMPOLEON]
 BackSprite = 2,0
 FrontSprite = -3,6
@@ -3215,7 +3215,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [STARLY]
 BackSprite = -3,0
 FrontSprite = 3,21
@@ -3223,7 +3223,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [STARAVIA]
 BackSprite = -3,0
 FrontSprite = 2,17
@@ -3231,7 +3231,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [STARAPTOR]
 BackSprite = -5,0
 FrontSprite = 1,11
@@ -3239,7 +3239,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [BIDOOF]
 BackSprite = 0,0
 FrontSprite = -1,24
@@ -3247,7 +3247,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,AB
 BackAnimation = StretchVertical,AB
-#-------------------------------------
+#-------------------------------
 [BIBAREL]
 BackSprite = -6,0
 FrontSprite = 7,15
@@ -3255,7 +3255,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [KRICKETOT]
 BackSprite = 0,0
 FrontSprite = 2,18
@@ -3263,7 +3263,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Explosion,BABA
 BackAnimation = Explosion,BABA
-#-------------------------------------
+#-------------------------------
 [KRICKETUNE]
 BackSprite = 0,0
 FrontSprite = 0,12
@@ -3271,7 +3271,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BBBABABA
 BackAnimation = StretchHorizontal,BBBABABA
-#-------------------------------------
+#-------------------------------
 [SHINX]
 BackSprite = -9,0
 FrontSprite = 1,22
@@ -3279,7 +3279,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [LUXIO]
 BackSprite = 1,0
 FrontSprite = 5,17
@@ -3287,7 +3287,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [LUXRAY]
 BackSprite = 0,0
 FrontSprite = 2,12
@@ -3295,7 +3295,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = BlinkYellow,BA
 BackAnimation = BlinkYellow,BA
-#-------------------------------------
+#-------------------------------
 [BUDEW]
 BackSprite = -1,0
 FrontSprite = 1,18
@@ -3303,7 +3303,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,ABA
 BackAnimation = Bounce,ABA
-#-------------------------------------
+#-------------------------------
 [ROSERADE]
 BackSprite = 8,0
 FrontSprite = 0,11
@@ -3311,7 +3311,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeBig,BA
 BackAnimation = ShakeBig,BA
-#-------------------------------------
+#-------------------------------
 [CRANIDOS]
 BackSprite = 0,0
 FrontSprite = -4,17
@@ -3319,7 +3319,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [RAMPARDOS]
 BackSprite = 0,0
 FrontSprite = 0,3
@@ -3327,7 +3327,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [SHIELDON]
 BackSprite = 0,0
 FrontSprite = 2,22
@@ -3335,7 +3335,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,ABA
 BackAnimation = StretchHorizontal,ABA
-#-------------------------------------
+#-------------------------------
 [BASTIODON]
 BackSprite = -4,0
 FrontSprite = -5,14
@@ -3343,7 +3343,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BBBABA
 BackAnimation = StompBig,BBBABA
-#-------------------------------------
+#-------------------------------
 [BURMY]
 BackSprite = 0,0
 FrontSprite = 0,9
@@ -3351,7 +3351,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [WORMADAM]
 BackSprite = 0,0
 FrontSprite = 0,5
@@ -3359,7 +3359,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [MOTHIM]
 BackSprite = 11,0
 FrontSprite = 4,-1
@@ -3367,7 +3367,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyVertical,BABABABABABABA
 BackAnimation = FlyVertical,BABABABABABABA
-#-------------------------------------
+#-------------------------------
 [COMBEE]
 BackSprite = 1,0
 FrontSprite = 5,4
@@ -3375,7 +3375,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABABABABABABA
 BackAnimation = FlyHorizontal,BABABABABABABA
-#-------------------------------------
+#-------------------------------
 [VESPIQUEN]
 BackSprite = -1,0
 FrontSprite = 0,-4
@@ -3383,7 +3383,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideVertical,BBBABA
 BackAnimation = SlideVertical,BBBABA
-#-------------------------------------
+#-------------------------------
 [PACHIRISU]
 BackSprite = -5,0
 FrontSprite = 4,16
@@ -3391,7 +3391,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BAAA
 BackAnimation = HopAround,BAAA
-#-------------------------------------
+#-------------------------------
 [BUIZEL]
 BackSprite = -12,0
 FrontSprite = 4,16
@@ -3399,7 +3399,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [FLOATZEL]
 BackSprite = 3,0
 FrontSprite = 3,6
@@ -3407,7 +3407,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,ABABA
 BackAnimation = HopAround,ABABA
-#-------------------------------------
+#-------------------------------
 [CHERUBI]
 BackSprite = -3,0
 FrontSprite = 6,25
@@ -3415,7 +3415,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,ABA
 BackAnimation = HopSmall,ABA
-#-------------------------------------
+#-------------------------------
 [CHERRIM]
 BackSprite = -1,0
 FrontSprite = 0,18
@@ -3423,7 +3423,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = ZoomDouble,BABA
 BackAnimation = ZoomDouble,BABA
-#-------------------------------------
+#-------------------------------
 [CHERRIM,1]
 BackSprite = 2,0
 FrontSprite = 2,21
@@ -3431,7 +3431,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = ZoomDouble,BABA
 BackAnimation = ZoomDouble,BABA
-#-------------------------------------
+#-------------------------------
 [SHELLOS]
 BackSprite = 0,0
 FrontSprite = -1,21
@@ -3439,7 +3439,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [GASTRODON]
 BackSprite = -6,0
 FrontSprite = -1,15
@@ -3447,7 +3447,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BBBABABA
 BackAnimation = StretchHorizontal,BBBABABA
-#-------------------------------------
+#-------------------------------
 [AMBIPOM]
 BackSprite = 8,0
 FrontSprite = -1,9
@@ -3455,7 +3455,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BBBABA
 BackAnimation = StretchVertical,BBBABA
-#-------------------------------------
+#-------------------------------
 [DRIFLOON]
 BackSprite = 2,0
 FrontSprite = 4,-5
@@ -3463,7 +3463,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABABA
 BackAnimation = FlyHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [DRIFBLIM]
 BackSprite = -1,0
 FrontSprite = 3,-6
@@ -3471,7 +3471,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateTop,ABA
 BackAnimation = RotateTop,ABA
-#-------------------------------------
+#-------------------------------
 [BUNEARY]
 BackSprite = 8,0
 FrontSprite = -2,7
@@ -3479,7 +3479,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BA
 BackAnimation = HopAround,BA
-#-------------------------------------
+#-------------------------------
 [LOPUNNY]
 BackSprite = -6,0
 FrontSprite = -1,10
@@ -3487,7 +3487,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopBig,ABABA
 BackAnimation = HopBig,ABABA
-#-------------------------------------
+#-------------------------------
 [MISMAGIUS]
 BackSprite = -3,0
 FrontSprite = 1,-3
@@ -3495,7 +3495,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABABA
 BackAnimation = FlyHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [HONCHKROW]
 BackSprite = 2,0
 FrontSprite = 0,14
@@ -3503,7 +3503,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [GLAMEOW]
 BackSprite = -6,0
 FrontSprite = 7,12
@@ -3511,7 +3511,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [PURUGLY]
 BackSprite = 4,0
 FrontSprite = -4,14
@@ -3519,7 +3519,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [CHINGLING]
 BackSprite = 1,0
 FrontSprite = 3,5
@@ -3527,7 +3527,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateBottom,BABABABA
 BackAnimation = RotateBottom,BABABABA
-#-------------------------------------
+#-------------------------------
 [STUNKY]
 BackSprite = -3,0
 FrontSprite = 4,20
@@ -3535,7 +3535,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABA
 BackAnimation = StretchVertical,ABA
-#-------------------------------------
+#-------------------------------
 [SKUNTANK]
 BackSprite = 0,0
 FrontSprite = -3,15
@@ -3543,7 +3543,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BAAA
 BackAnimation = StompBig,BAAA
-#-------------------------------------
+#-------------------------------
 [BRONZOR]
 BackSprite = 1,0
 FrontSprite = 0,11
@@ -3551,7 +3551,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABABA
 BackAnimation = FlyHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [BRONZONG]
 BackSprite = 5,0
 FrontSprite = -2,3
@@ -3559,7 +3559,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyHorizontal,BABABA
 BackAnimation = FlyHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [BONSLY]
 BackSprite = 3,0
 FrontSprite = -3,19
@@ -3567,7 +3567,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BBBA
 BackAnimation = HopAround,BBBA
-#-------------------------------------
+#-------------------------------
 [MIMEJR]
 BackSprite = -1,0
 FrontSprite = 0,13
@@ -3575,7 +3575,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABABA
 BackAnimation = SlideHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [HAPPINY]
 BackSprite = -2,0
 FrontSprite = -1,20
@@ -3583,7 +3583,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BABABA
 BackAnimation = HopAround,BABABA
-#-------------------------------------
+#-------------------------------
 [CHATOT]
 BackSprite = -6,0
 FrontSprite = 0,20
@@ -3591,7 +3591,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BABABA
 BackAnimation = HopAround,BABABA
-#-------------------------------------
+#-------------------------------
 [SPIRITOMB]
 BackSprite = 2,0
 FrontSprite = 2,-2
@@ -3599,7 +3599,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ZoomDouble,BABAAA
 BackAnimation = ZoomDouble,BABAAA
-#-------------------------------------
+#-------------------------------
 [GIBLE]
 BackSprite = -2,0
 FrontSprite = -1,18
@@ -3607,7 +3607,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BBBA
 BackAnimation = StretchVertical,BBBA
-#-------------------------------------
+#-------------------------------
 [GABITE]
 BackSprite = -6,0
 FrontSprite = -2,12
@@ -3615,7 +3615,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompSmall,BBBA
 BackAnimation = StompSmall,BBBA
-#-------------------------------------
+#-------------------------------
 [GARCHOMP]
 BackSprite = 0,0
 FrontSprite = -3,6
@@ -3623,7 +3623,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeBig,BAAA
 BackAnimation = ShakeBig,BAAA
-#-------------------------------------
+#-------------------------------
 [MUNCHLAX]
 BackSprite = -1,0
 FrontSprite = 1,18
@@ -3631,7 +3631,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BBBA
 BackAnimation = StretchVertical,BBBA
-#-------------------------------------
+#-------------------------------
 [RIOLU]
 BackSprite = -9,0
 FrontSprite = -2,19
@@ -3639,7 +3639,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopAround,BAAA
 BackAnimation = HopAround,BAAA
-#-------------------------------------
+#-------------------------------
 [LUCARIO]
 BackSprite = 8,0
 FrontSprite = 1,10
@@ -3647,7 +3647,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABBA
 BackAnimation = StretchVertical,ABBA
-#-------------------------------------
+#-------------------------------
 [HIPPOPOTAS]
 BackSprite = 0,0
 FrontSprite = -1,21
@@ -3655,7 +3655,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BBABA
 BackAnimation = StretchVertical,BBABA
-#-------------------------------------
+#-------------------------------
 [HIPPOWDON]
 BackSprite = 2,0
 FrontSprite = 0,17
@@ -3663,7 +3663,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,ABBA
 BackAnimation = StretchHorizontal,ABBA
-#-------------------------------------
+#-------------------------------
 [SKORUPI]
 BackSprite = -3,0
 FrontSprite = 2,18
@@ -3671,7 +3671,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABABABABABAAA
 BackAnimation = SlideHorizontal,BABABABABABAAA
-#-------------------------------------
+#-------------------------------
 [DRAPION]
 BackSprite = 7,0
 FrontSprite = -11,11
@@ -3679,7 +3679,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,ABBA
 BackAnimation = StompBig,ABBA
-#-------------------------------------
+#-------------------------------
 [CROAGUNK]
 BackSprite = -1,0
 FrontSprite = -3,20
@@ -3687,7 +3687,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,AAABABABA
 BackAnimation = HopSmall,AAABABABA
-#-------------------------------------
+#-------------------------------
 [TOXICROAK]
 BackSprite = 0,0
 FrontSprite = -1,13
@@ -3695,7 +3695,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,ABBBABABA
 BackAnimation = StretchHorizontal,ABBBABABA
-#-------------------------------------
+#-------------------------------
 [CARNIVINE]
 BackSprite = -2,0
 FrontSprite = 3,4
@@ -3703,7 +3703,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,ABABA
 BackAnimation = FlyHorizontal,ABABA
-#-------------------------------------
+#-------------------------------
 [FINNEON]
 BackSprite = -7,0
 FrontSprite = 4,5
@@ -3711,7 +3711,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [LUMINEON]
 BackSprite = -8,0
 FrontSprite = 5,-4
@@ -3719,7 +3719,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABABA
 BackAnimation = FlyVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [MANTYKE]
 BackSprite = -1,0
 FrontSprite = 1,-3
@@ -3727,7 +3727,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideVertical,BABA
 BackAnimation = SlideVertical,BABA
-#-------------------------------------
+#-------------------------------
 [SNOVER]
 BackSprite = 1,0
 FrontSprite = 0,15
@@ -3735,7 +3735,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABABA
 BackAnimation = StretchVertical,ABABA
-#-------------------------------------
+#-------------------------------
 [ABOMASNOW]
 BackSprite = 0,0
 FrontSprite = 0,9
@@ -3743,7 +3743,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BBBA
 BackAnimation = StretchVertical,BBBA
-#-------------------------------------
+#-------------------------------
 [WEAVILE]
 BackSprite = -4,0
 FrontSprite = 2,11
@@ -3751,7 +3751,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [MAGNEZONE]
 BackSprite = 0,0
 FrontSprite = 0,-5
@@ -3759,7 +3759,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = RotateBottom,ABABA
 BackAnimation = RotateBottom,ABABA
-#-------------------------------------
+#-------------------------------
 [LICKILICKY]
 BackSprite = 1,0
 FrontSprite = 2,8
@@ -3767,7 +3767,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,ABBA
 BackAnimation = StretchHorizontal,ABBA
-#-------------------------------------
+#-------------------------------
 [RHYPERIOR]
 BackSprite = 1,0
 FrontSprite = 6,8
@@ -3775,7 +3775,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,ABBA
 BackAnimation = StretchHorizontal,ABBA
-#-------------------------------------
+#-------------------------------
 [TANGROWTH]
 BackSprite = 0,0
 FrontSprite = 3,7
@@ -3783,7 +3783,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,ABABA
 BackAnimation = StretchHorizontal,ABABA
-#-------------------------------------
+#-------------------------------
 [ELECTIVIRE]
 BackSprite = 0,0
 FrontSprite = 1,11
@@ -3791,7 +3791,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = BlinkYellow,ABBA
 BackAnimation = BlinkYellow,ABBA
-#-------------------------------------
+#-------------------------------
 [MAGMORTAR]
 BackSprite = 2,0
 FrontSprite = 0,6
@@ -3799,7 +3799,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,ABBA
 BackAnimation = StretchVertical,ABBA
-#-------------------------------------
+#-------------------------------
 [TOGEKISS]
 BackSprite = -3,0
 FrontSprite = 3,0
@@ -3807,7 +3807,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BA
 BackAnimation = FlyVertical,BA
-#-------------------------------------
+#-------------------------------
 [YANMEGA]
 BackSprite = -1,0
 FrontSprite = 2,-1
@@ -3815,7 +3815,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideHorizontal,BABABABABABA
 BackAnimation = SlideHorizontal,BABABABABABA
-#-------------------------------------
+#-------------------------------
 [LEAFEON]
 BackSprite = -3,0
 FrontSprite = 5,15
@@ -3823,7 +3823,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [GLACEON]
 BackSprite = -3,0
 FrontSprite = -1,15
@@ -3831,7 +3831,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BA
 BackAnimation = StretchVertical,BA
-#-------------------------------------
+#-------------------------------
 [GLISCOR]
 BackSprite = 3,0
 FrontSprite = 0,2
@@ -3839,7 +3839,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,BA
 BackAnimation = RotateBottom,BA
-#-------------------------------------
+#-------------------------------
 [MAMOSWINE]
 BackSprite = -1,0
 FrontSprite = -7,9
@@ -3847,7 +3847,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [PORYGONZ]
 BackSprite = 2,0
 FrontSprite = 0,6
@@ -3855,7 +3855,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABABABA
 BackAnimation = SlideHorizontal,BABABABA
-#-------------------------------------
+#-------------------------------
 [GALLADE]
 BackSprite = 1,0
 FrontSprite = -2,8
@@ -3863,7 +3863,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BA
 BackAnimation = StompDouble,BA
-#-------------------------------------
+#-------------------------------
 [PROBOPASS]
 BackSprite = 5,0
 FrontSprite = 2,12
@@ -3871,7 +3871,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideVertical,BA
 BackAnimation = SlideVertical,BA
-#-------------------------------------
+#-------------------------------
 [DUSKNOIR]
 BackSprite = 5,0
 FrontSprite = -4,2
@@ -3879,7 +3879,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideHorizontal,BABABA
 BackAnimation = SlideHorizontal,BABABA
-#-------------------------------------
+#-------------------------------
 [FROSLASS]
 BackSprite = 6,0
 FrontSprite = 4,2
@@ -3887,7 +3887,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [ROTOM]
 BackSprite = 5,0
 FrontSprite = 0,-1
@@ -3895,7 +3895,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [ROTOM,1]
 BackSprite = 5,0
 FrontSprite = 2,1
@@ -3903,7 +3903,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [ROTOM,2]
 BackSprite = 1,0
 FrontSprite = 0,-1
@@ -3911,7 +3911,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [ROTOM,3]
 BackSprite = 0,0
 FrontSprite = 1,-4
@@ -3919,7 +3919,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [ROTOM,4]
 BackSprite = -4,0
 FrontSprite = -2,2
@@ -3927,7 +3927,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [ROTOM,5]
 BackSprite = 1,0
 FrontSprite = 0,0
@@ -3935,7 +3935,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [UXIE]
 BackSprite = -1,0
 FrontSprite = 0,2
@@ -3943,7 +3943,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABAAA
 BackAnimation = FlyHorizontal,BABAAA
-#-------------------------------------
+#-------------------------------
 [MESPRIT]
 BackSprite = 1,0
 FrontSprite = -3,3
@@ -3951,7 +3951,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateBottom,BABAAA
 BackAnimation = RotateBottom,BABAAA
-#-------------------------------------
+#-------------------------------
 [AZELF]
 BackSprite = 0,0
 FrontSprite = 9,5
@@ -3959,7 +3959,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABAAA
 BackAnimation = FlyHorizontal,BABAAA
-#-------------------------------------
+#-------------------------------
 [DIALGA]
 BackSprite = 1,0
 FrontSprite = -2,6
@@ -3967,7 +3967,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [PALKIA]
 BackSprite = 0,0
 FrontSprite = 4,7
@@ -3975,7 +3975,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BA
 BackAnimation = StompDouble,BA
-#-------------------------------------
+#-------------------------------
 [HEATRAN]
 BackSprite = 2,0
 FrontSprite = -1,20
@@ -3983,7 +3983,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ZoomDouble,BABA
 BackAnimation = ZoomDouble,BABA
-#-------------------------------------
+#-------------------------------
 [REGIGIGAS]
 BackSprite = 0,0
 FrontSprite = -4,7
@@ -3991,7 +3991,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [GIRATINA]
 BackSprite = -6,0
 FrontSprite = -3,7
@@ -3999,7 +3999,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [GIRATINA,1]
 BackSprite = -6,0
 FrontSprite = -2,-8
@@ -4007,7 +4007,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BA
 BackAnimation = ShakeSmall,BA
-#-------------------------------------
+#-------------------------------
 [CRESSELIA]
 BackSprite = -5,0
 FrontSprite = 3,-5
@@ -4015,7 +4015,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideVertical,BABABA
 BackAnimation = SlideVertical,BABABA
-#-------------------------------------
+#-------------------------------
 [PHIONE]
 BackSprite = -9,0
 FrontSprite = 5,4
@@ -4023,7 +4023,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABAAA
 BackAnimation = FlyHorizontal,BABAAA
-#-------------------------------------
+#-------------------------------
 [MANAPHY]
 BackSprite = -9,0
 FrontSprite = 7,3
@@ -4031,7 +4031,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateBottom,BABBAA
 BackAnimation = RotateBottom,BABBAA
-#-------------------------------------
+#-------------------------------
 [DARKRAI]
 BackSprite = 0,0
 FrontSprite = -2,1
@@ -4039,7 +4039,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeBig,BABBAA
 BackAnimation = ShakeBig,BABBAA
-#-------------------------------------
+#-------------------------------
 [SHAYMIN]
 BackSprite = 0,0
 FrontSprite = 0,26
@@ -4047,7 +4047,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,ABABA
 BackAnimation = StretchVertical,ABABA
-#-------------------------------------
+#-------------------------------
 [SHAYMIN,1]
 BackSprite = 0,0
 FrontSprite = 0,16
@@ -4055,7 +4055,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,ABABA
 BackAnimation = StretchVertical,ABABA
-#-------------------------------------
+#-------------------------------
 [ARCEUS]
 BackSprite = -4,0
 FrontSprite = 2,6
@@ -4063,7 +4063,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeBig,BBBA
 BackAnimation = ShakeBig,BBBA
-#-------------------------------------
+#-------------------------------
 [VICTINI]
 BackSprite = 0,0
 FrontSprite = 0,12
@@ -4071,7 +4071,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [SNIVY]
 BackSprite = -2,0
 FrontSprite = 0,18
@@ -4079,7 +4079,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [SERVINE]
 BackSprite = 0,0
 FrontSprite = 0,13
@@ -4087,7 +4087,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [SERPERIOR]
 BackSprite = -3,0
 FrontSprite = -1,8
@@ -4095,7 +4095,7 @@ ShadowX = 0
 ShadowSize = 5
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [TEPIG]
 BackSprite = -4,0
 FrontSprite = 0,19
@@ -4103,7 +4103,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [PIGNITE]
 BackSprite = -1,0
 FrontSprite = 0,13
@@ -4111,7 +4111,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [EMBOAR]
 BackSprite = 1,0
 FrontSprite = 0,6
@@ -4119,7 +4119,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [OSHAWOTT]
 BackSprite = 0,0
 FrontSprite = 0,20
@@ -4127,7 +4127,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [DEWOTT]
 BackSprite = 2,0
 FrontSprite = 0,12
@@ -4135,7 +4135,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [SAMUROTT]
 BackSprite = -1,0
 FrontSprite = 2,4
@@ -4143,7 +4143,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [PATRAT]
 BackSprite = -1,0
 FrontSprite = -2,16
@@ -4151,7 +4151,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [WATCHOG]
 BackSprite = -2,0
 FrontSprite = 0,8
@@ -4159,7 +4159,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [LILLIPUP]
 BackSprite = 1,0
 FrontSprite = -3,17
@@ -4167,7 +4167,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [HERDIER]
 BackSprite = -3,0
 FrontSprite = -4,15
@@ -4175,7 +4175,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopBig,BABA
 BackAnimation = HopBig,BABA
-#-------------------------------------
+#-------------------------------
 [STOUTLAND]
 BackSprite = -1,0
 FrontSprite = 0,11
@@ -4183,7 +4183,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [PURRLOIN]
 BackSprite = 2,0
 FrontSprite = 0,16
@@ -4191,7 +4191,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [LIEPARD]
 BackSprite = 0,0
 FrontSprite = 0,10
@@ -4199,7 +4199,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [PANSAGE]
 BackSprite = 0,0
 FrontSprite = 0,18
@@ -4207,7 +4207,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [SIMISAGE]
 BackSprite = -1,0
 FrontSprite = 3,7
@@ -4215,7 +4215,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = HopBig,BABA
 BackAnimation = HopBig,BABA
-#-------------------------------------
+#-------------------------------
 [PANSEAR]
 BackSprite = 0,0
 FrontSprite = -2,15
@@ -4223,7 +4223,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [SIMISEAR]
 BackSprite = 0,0
 FrontSprite = 0,10
@@ -4231,7 +4231,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [PANPOUR]
 BackSprite = 0,0
 FrontSprite = 0,14
@@ -4239,7 +4239,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [SIMIPOUR]
 BackSprite = 0,0
 FrontSprite = 0,10
@@ -4247,7 +4247,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [MUNNA]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -4255,7 +4255,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [MUSHARNA]
 BackSprite = 6,0
 FrontSprite = -9,-7
@@ -4263,7 +4263,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [PIDOVE]
 BackSprite = -3,0
 FrontSprite = 1,17
@@ -4271,7 +4271,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [TRANQUILL]
 BackSprite = 0,0
 FrontSprite = 0,14
@@ -4279,7 +4279,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [UNFEZANT]
 BackSprite = -3,0
 FrontSprite = 2,8
@@ -4287,7 +4287,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [BLITZLE]
 BackSprite = -6,0
 FrontSprite = -4,11
@@ -4295,7 +4295,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [ZEBSTRIKA]
 BackSprite = 0,0
 FrontSprite = 2,6
@@ -4303,7 +4303,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [ROGGENROLA]
 BackSprite = 0,0
 FrontSprite = 0,23
@@ -4311,7 +4311,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateBottom,B
 BackAnimation = RotateBottom,B
-#-------------------------------------
+#-------------------------------
 [BOLDORE]
 BackSprite = 2,0
 FrontSprite = 0,23
@@ -4319,7 +4319,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompSmall,BA
 BackAnimation = StompSmall,BA
-#-------------------------------------
+#-------------------------------
 [GIGALITH]
 BackSprite = 0,0
 FrontSprite = -2,11
@@ -4327,7 +4327,7 @@ ShadowX = 0
 ShadowSize = 7
 FrontAnimation = StompDouble,BA
 BackAnimation = StompDouble,BA
-#-------------------------------------
+#-------------------------------
 [WOOBAT]
 BackSprite = 2,0
 FrontSprite = 0,2
@@ -4335,7 +4335,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [SWOOBAT]
 BackSprite = -3,0
 FrontSprite = -1,6
@@ -4343,7 +4343,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [DRILBUR]
 BackSprite = 3,0
 FrontSprite = 0,11
@@ -4351,7 +4351,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BA
 BackAnimation = StretchHorizontal,BA
-#-------------------------------------
+#-------------------------------
 [EXCADRILL]
 BackSprite = -1,0
 FrontSprite = 0,23
@@ -4359,7 +4359,7 @@ ShadowX = 0
 ShadowSize = 5
 FrontAnimation = StompSmall,BA
 BackAnimation = StompSmall,BA
-#-------------------------------------
+#-------------------------------
 [AUDINO]
 BackSprite = 2,0
 FrontSprite = 0,11
@@ -4367,7 +4367,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [TIMBURR]
 BackSprite = -1,0
 FrontSprite = 0,16
@@ -4375,7 +4375,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompSmall,BABA
 BackAnimation = StompSmall,BABA
-#-------------------------------------
+#-------------------------------
 [GURDURR]
 BackSprite = 2,0
 FrontSprite = 0,2
@@ -4383,7 +4383,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [CONKELDURR]
 BackSprite = 3,0
 FrontSprite = 4,23
@@ -4391,7 +4391,7 @@ ShadowX = -5
 ShadowSize = 5
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [TYMPOLE]
 BackSprite = 0,0
 FrontSprite = 0,18
@@ -4399,7 +4399,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [PALPITOAD]
 BackSprite = -6,0
 FrontSprite = 0,15
@@ -4407,7 +4407,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [SEISMITOAD]
 BackSprite = 2,0
 FrontSprite = 0,7
@@ -4415,7 +4415,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [THROH]
 BackSprite = 2,0
 FrontSprite = 0,12
@@ -4423,7 +4423,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [SAWK]
 BackSprite = 2,0
 FrontSprite = 0,10
@@ -4431,7 +4431,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [SEWADDLE]
 BackSprite = 0,0
 FrontSprite = 0,18
@@ -4439,7 +4439,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [SWADLOON]
 BackSprite = 1,0
 FrontSprite = 0,16
@@ -4447,7 +4447,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,B
 BackAnimation = ShakeSmall,B
-#-------------------------------------
+#-------------------------------
 [LEAVANNY]
 BackSprite = 0,0
 FrontSprite = -3,2
@@ -4455,7 +4455,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,ABBA
 BackAnimation = StretchVertical,ABBA
-#-------------------------------------
+#-------------------------------
 [VENIPEDE]
 BackSprite = -3,0
 FrontSprite = 1,27
@@ -4463,7 +4463,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [WHIRLIPEDE]
 BackSprite = 4,0
 FrontSprite = -3,18
@@ -4471,7 +4471,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,BBA
 BackAnimation = Bounce,BBA
-#-------------------------------------
+#-------------------------------
 [SCOLIPEDE]
 BackSprite = 2,0
 FrontSprite = -3,10
@@ -4479,7 +4479,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [COTTONEE]
 BackSprite = 0,0
 FrontSprite = -1,16
@@ -4487,7 +4487,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [WHIMSICOTT]
 BackSprite = 0,0
 FrontSprite = 0,16
@@ -4495,7 +4495,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [PETILIL]
 BackSprite = 0,0
 FrontSprite = 0,3
@@ -4503,7 +4503,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideVertical,BABA
 BackAnimation = SlideVertical,BABA
-#-------------------------------------
+#-------------------------------
 [LILLIGANT]
 BackSprite = 1,0
 FrontSprite = 1,8
@@ -4511,7 +4511,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [BASCULIN]
 BackSprite = -7,0
 FrontSprite = 0,9
@@ -4519,7 +4519,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [SANDILE]
 BackSprite = -2,0
 FrontSprite = -3,28
@@ -4527,7 +4527,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [KROKOROK]
 BackSprite = 3,0
 FrontSprite = 5,14
@@ -4535,7 +4535,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompSmall,BABA
 BackAnimation = StompSmall,BABA
-#-------------------------------------
+#-------------------------------
 [KROOKODILE]
 BackSprite = 2,0
 FrontSprite = -2,7
@@ -4543,7 +4543,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [DARUMAKA]
 BackSprite = -2,0
 FrontSprite = 3,22
@@ -4551,7 +4551,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,B
 BackAnimation = RotateBottom,B
-#-------------------------------------
+#-------------------------------
 [DARMANITAN]
 BackSprite = 2,0
 FrontSprite = 0,16
@@ -4559,7 +4559,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = Bounce,BABABABA
 BackAnimation = Bounce,BABABABA
-#-------------------------------------
+#-------------------------------
 [DARMANITAN,1]
 BackSprite = 1,0
 FrontSprite = -5,17
@@ -4567,7 +4567,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABABABA
 BackAnimation = Bounce,BABABABA
-#-------------------------------------
+#-------------------------------
 [MARACTUS]
 BackSprite = 2,0
 FrontSprite = 0,8
@@ -4575,7 +4575,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [DWEBBLE]
 BackSprite = 2,0
 FrontSprite = 0,24
@@ -4583,7 +4583,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [CRUSTLE]
 BackSprite = -1,0
 FrontSprite = 2,13
@@ -4591,7 +4591,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompBig,BABA
 BackAnimation = StompBig,BABA
-#-------------------------------------
+#-------------------------------
 [SCRAGGY]
 BackSprite = 0,0
 FrontSprite = 0,20
@@ -4599,7 +4599,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [SCRAFTY]
 BackSprite = 0,0
 FrontSprite = 0,11
@@ -4607,7 +4607,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [SIGILYPH]
 BackSprite = 7,0
 FrontSprite = -6,3
@@ -4615,7 +4615,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [YAMASK]
 BackSprite = 0,0
 FrontSprite = 2,12
@@ -4623,7 +4623,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [COFAGRIGUS]
 BackSprite = 1,0
 FrontSprite = -5,2
@@ -4631,7 +4631,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [TIRTOUGA]
 BackSprite = 0,0
 FrontSprite = 2,15
@@ -4639,7 +4639,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [CARRACOSTA]
 BackSprite = -1,0
 FrontSprite = -5,15
@@ -4647,7 +4647,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BA
 BackAnimation = StompBig,BA
-#-------------------------------------
+#-------------------------------
 [ARCHEN]
 BackSprite = 0,0
 FrontSprite = 3,23
@@ -4655,7 +4655,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [ARCHEOPS]
 BackSprite = 4,0
 FrontSprite = 0,6
@@ -4663,7 +4663,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideVertical,BABA
 BackAnimation = SlideVertical,BABA
-#-------------------------------------
+#-------------------------------
 [TRUBBISH]
 BackSprite = -1,0
 FrontSprite = 1,25
@@ -4671,7 +4671,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [GARBODOR]
 BackSprite = 5,0
 FrontSprite = -1,16
@@ -4679,7 +4679,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [ZORUA]
 BackSprite = -1,0
 FrontSprite = 0,19
@@ -4687,7 +4687,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [ZOROARK]
 BackSprite = 0,0
 FrontSprite = 0,13
@@ -4695,7 +4695,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [MINCCINO]
 BackSprite = -3,0
 FrontSprite = 0,17
@@ -4703,7 +4703,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [CINCCINO]
 BackSprite = 1,0
 FrontSprite = 0,14
@@ -4711,7 +4711,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [GOTHITA]
 BackSprite = 0,0
 FrontSprite = 0,21
@@ -4719,7 +4719,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [GOTHORITA]
 BackSprite = 0,0
 FrontSprite = 0,14
@@ -4727,7 +4727,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [GOTHITELLE]
 BackSprite = 1,0
 FrontSprite = 0,6
@@ -4735,7 +4735,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [SOLOSIS]
 BackSprite = 0,0
 FrontSprite = 0,9
@@ -4743,7 +4743,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = Fluid,BBA
 BackAnimation = Fluid,BBA
-#-------------------------------------
+#-------------------------------
 [DUOSION]
 BackSprite = 0,0
 FrontSprite = 2,11
@@ -4751,7 +4751,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BBA
 BackAnimation = FlyHorizontal,BBA
-#-------------------------------------
+#-------------------------------
 [REUNICLUS]
 BackSprite = 3,0
 FrontSprite = 2,6
@@ -4759,7 +4759,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,BBA
 BackAnimation = Explosion,BBA
-#-------------------------------------
+#-------------------------------
 [DUCKLETT]
 BackSprite = -4,0
 FrontSprite = 0,22
@@ -4767,7 +4767,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [SWANNA]
 BackSprite = -2,0
 FrontSprite = 1,18
@@ -4775,7 +4775,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [VANILLITE]
 BackSprite = 1,0
 FrontSprite = -1,15
@@ -4783,7 +4783,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [VANILLISH]
 BackSprite = 1,0
 FrontSprite = 0,8
@@ -4791,7 +4791,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [VANILLUXE]
 BackSprite = 0,0
 FrontSprite = 3,6
@@ -4799,7 +4799,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [DEERLING]
 BackSprite = -3,0
 FrontSprite = -2,17
@@ -4807,7 +4807,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [SAWSBUCK]
 BackSprite = 1,0
 FrontSprite = -4,4
@@ -4815,7 +4815,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompSmall,BABA
 BackAnimation = StompSmall,BABA
-#-------------------------------------
+#-------------------------------
 [EMOLGA]
 BackSprite = -4,0
 FrontSprite = 2,20
@@ -4823,7 +4823,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [KARRABLAST]
 BackSprite = 1,0
 FrontSprite = 0,20
@@ -4831,7 +4831,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [ESCAVALIER]
 BackSprite = 3,0
 FrontSprite = 2,5
@@ -4839,7 +4839,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [FOONGUS]
 BackSprite = 0,0
 FrontSprite = 1,23
@@ -4847,7 +4847,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [AMOONGUSS]
 BackSprite = 7,0
 FrontSprite = 0,15
@@ -4855,7 +4855,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [FRILLISH]
 BackSprite = -1,0
 FrontSprite = 0,5
@@ -4863,7 +4863,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [JELLICENT]
 BackSprite = 1,0
 FrontSprite = 0,4
@@ -4871,7 +4871,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ZoomDouble,BABA
 BackAnimation = ZoomDouble,BABA
-#-------------------------------------
+#-------------------------------
 [ALOMOMOLA]
 BackSprite = -2,0
 FrontSprite = 0,-6
@@ -4879,7 +4879,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [JOLTIK]
 BackSprite = 0,0
 FrontSprite = 0,26
@@ -4887,7 +4887,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopBig,BABA
 BackAnimation = HopBig,BABA
-#-------------------------------------
+#-------------------------------
 [GALVANTULA]
 BackSprite = 0,0
 FrontSprite = 0,22
@@ -4895,7 +4895,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [FERROSEED]
 BackSprite = 0,0
 FrontSprite = 0,19
@@ -4903,7 +4903,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [FERROTHORN]
 BackSprite = 0,0
 FrontSprite = 3,2
@@ -4911,7 +4911,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = RotateTop,BABA
 BackAnimation = RotateTop,BABA
-#-------------------------------------
+#-------------------------------
 [KLINK]
 BackSprite = 2,0
 FrontSprite = 0,9
@@ -4919,7 +4919,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [KLANG]
 BackSprite = 1,0
 FrontSprite = 0,0
@@ -4927,7 +4927,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [KLINKLANG]
 BackSprite = 1,0
 FrontSprite = 0,3
@@ -4935,7 +4935,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [TYNAMO]
 BackSprite = -4,0
 FrontSprite = 1,19
@@ -4943,7 +4943,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [EELEKTRIK]
 BackSprite = 0,0
 FrontSprite = 0,11
@@ -4951,7 +4951,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [EELEKTROSS]
 BackSprite = -5,0
 FrontSprite = 0,13
@@ -4959,7 +4959,7 @@ ShadowX = 0
 ShadowSize = 5
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [ELGYEM]
 BackSprite = 0,0
 FrontSprite = 0,5
@@ -4967,7 +4967,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = ZoomDouble,BABA
 BackAnimation = ZoomDouble,BABA
-#-------------------------------------
+#-------------------------------
 [BEHEEYEM]
 BackSprite = -2,0
 FrontSprite = 0,3
@@ -4975,7 +4975,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [LITWICK]
 BackSprite = -1,0
 FrontSprite = -1,23
@@ -4983,7 +4983,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [LAMPENT]
 BackSprite = -1,0
 FrontSprite = 0,8
@@ -4991,7 +4991,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [CHANDELURE]
 BackSprite = -2,0
 FrontSprite = -1,2
@@ -4999,7 +4999,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateTop,BABA
 BackAnimation = RotateTop,BABA
-#-------------------------------------
+#-------------------------------
 [AXEW]
 BackSprite = 1,0
 FrontSprite = 0,22
@@ -5007,7 +5007,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [FRAXURE]
 BackSprite = 0,0
 FrontSprite = 0,14
@@ -5015,7 +5015,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [HAXORUS]
 BackSprite = -1,0
 FrontSprite = -4,10
@@ -5023,7 +5023,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [CUBCHOO]
 BackSprite = -2,0
 FrontSprite = 0,22
@@ -5031,7 +5031,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [BEARTIC]
 BackSprite = -2,0
 FrontSprite = -1,5
@@ -5039,7 +5039,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BABA
 BackAnimation = StompBig,BABA
-#-------------------------------------
+#-------------------------------
 [CRYOGONAL]
 BackSprite = -1,0
 FrontSprite = -3,-7
@@ -5047,7 +5047,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ZoomDouble,BABA
 BackAnimation = ZoomDouble,BABA
-#-------------------------------------
+#-------------------------------
 [SHELMET]
 BackSprite = -4,0
 FrontSprite = 2,22
@@ -5055,7 +5055,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [ACCELGOR]
 BackSprite = -4,0
 FrontSprite = 5,13
@@ -5063,7 +5063,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [STUNFISK]
 BackSprite = -3,0
 FrontSprite = -2,20
@@ -5071,7 +5071,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [MIENFOO]
 BackSprite = -1,0
 FrontSprite = 0,17
@@ -5079,7 +5079,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopBig,BABA
 BackAnimation = HopBig,BABA
-#-------------------------------------
+#-------------------------------
 [MIENSHAO]
 BackSprite = -3,0
 FrontSprite = 0,9
@@ -5087,7 +5087,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [DRUDDIGON]
 BackSprite = 0,0
 FrontSprite = 0,7
@@ -5095,7 +5095,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [GOLETT]
 BackSprite = 1,0
 FrontSprite = 0,11
@@ -5103,7 +5103,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [GOLURK]
 BackSprite = 2,0
 FrontSprite = 2,2
@@ -5111,7 +5111,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [PAWNIARD]
 BackSprite = 2,0
 FrontSprite = -5,17
@@ -5119,7 +5119,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [BISHARP]
 BackSprite = 0,0
 FrontSprite = 0,7
@@ -5127,7 +5127,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [BOUFFALANT]
 BackSprite = -1,0
 FrontSprite = -4,13
@@ -5135,7 +5135,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [RUFFLET]
 BackSprite = 1,0
 FrontSprite = 1,16
@@ -5143,7 +5143,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [BRAVIARY]
 BackSprite = -2,0
 FrontSprite = 5,3
@@ -5151,7 +5151,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,BABA
 BackAnimation = Explosion,BABA
-#-------------------------------------
+#-------------------------------
 [VULLABY]
 BackSprite = 0,0
 FrontSprite = 2,18
@@ -5159,7 +5159,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [MANDIBUZZ]
 BackSprite = 0,0
 FrontSprite = 0,11
@@ -5167,7 +5167,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [HEATMOR]
 BackSprite = 3,0
 FrontSprite = -5,11
@@ -5175,7 +5175,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [DURANT]
 BackSprite = 0,0
 FrontSprite = 0,25
@@ -5183,7 +5183,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [DEINO]
 BackSprite = 0,0
 FrontSprite = -2,18
@@ -5191,7 +5191,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [ZWEILOUS]
 BackSprite = 0,0
 FrontSprite = 0,14
@@ -5199,7 +5199,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [HYDREIGON]
 BackSprite = -2,0
 FrontSprite = 0,0
@@ -5207,7 +5207,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Explosion,BABA
 BackAnimation = Explosion,BABA
-#-------------------------------------
+#-------------------------------
 [LARVESTA]
 BackSprite = 0,0
 FrontSprite = 0,21
@@ -5215,7 +5215,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [VOLCARONA]
 BackSprite = 0,0
 FrontSprite = 3,2
@@ -5223,7 +5223,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [COBALION]
 BackSprite = 0,0
 FrontSprite = 0,5
@@ -5231,7 +5231,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = StompBig,BABA
 BackAnimation = StompBig,BABA
-#-------------------------------------
+#-------------------------------
 [TERRAKION]
 BackSprite = 0,0
 FrontSprite = -5,11
@@ -5239,7 +5239,7 @@ ShadowX = 0
 ShadowSize = 5
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [VIRIZION]
 BackSprite = 0,0
 FrontSprite = -1,7
@@ -5247,7 +5247,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [TORNADUS]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5255,7 +5255,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [TORNADUS,1]
 BackSprite = -2,0
 FrontSprite = 8,11
@@ -5263,7 +5263,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [THUNDURUS]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5271,7 +5271,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [THUNDURUS,1]
 BackSprite = -3,0
 FrontSprite = 2,5
@@ -5279,7 +5279,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [RESHIRAM]
 BackSprite = 2,0
 FrontSprite = 0,11
@@ -5287,7 +5287,7 @@ ShadowX = 0
 ShadowSize = 6
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [ZEKROM]
 BackSprite = 0,0
 FrontSprite = 0,8
@@ -5295,7 +5295,7 @@ ShadowX = 0
 ShadowSize = 6
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [LANDORUS]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5303,7 +5303,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [LANDORUS,1]
 BackSprite = -8,0
 FrontSprite = 3,14
@@ -5311,7 +5311,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [KYUREM]
 BackSprite = -3,0
 FrontSprite = -1,23
@@ -5319,7 +5319,7 @@ ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [KYUREM,1]
 BackSprite = 0,0
 FrontSprite = 5,8
@@ -5327,7 +5327,7 @@ ShadowX = 0
 ShadowSize = 6
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [KYUREM,2]
 BackSprite = -3,0
 FrontSprite = 5,4
@@ -5335,7 +5335,7 @@ ShadowX = 0
 ShadowSize = 6
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [KYUREM,3]
 BackSprite = 0,0
 FrontSprite = 5,8
@@ -5343,7 +5343,7 @@ ShadowX = 0
 ShadowSize = 6
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [KYUREM,4]
 BackSprite = -3,0
 FrontSprite = 5,4
@@ -5351,7 +5351,7 @@ ShadowX = 0
 ShadowSize = 6
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [KELDEO]
 BackSprite = -1,0
 FrontSprite = 0,12
@@ -5359,7 +5359,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [KELDEO,1]
 BackSprite = 1,0
 FrontSprite = 0,19
@@ -5367,7 +5367,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [MELOETTA]
 BackSprite = 0,0
 FrontSprite = 5,12
@@ -5375,7 +5375,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [MELOETTA,1]
 BackSprite = 0,0
 FrontSprite = 1,2
@@ -5383,7 +5383,7 @@ ShadowX = 0
 ShadowSize = 1
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [GENESECT]
 BackSprite = 0,0
 FrontSprite = -6,5
@@ -5391,7 +5391,7 @@ ShadowX = 0
 ShadowSize = 3
 FrontAnimation = ShakeBig,BABA
 BackAnimation = ShakeBig,BABA
-#-------------------------------------
+#-------------------------------
 [CHESPIN]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5399,7 +5399,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [FROAKIE]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5407,7 +5407,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [FLETCHINDER]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5415,7 +5415,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyVertical,BABABABA
 BackAnimation = FlyVertical,BABABABA
-#-------------------------------------
+#-------------------------------
 [PYROAR]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5423,7 +5423,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompSmall,BABA
 BackAnimation = StompSmall,BABA
-#-------------------------------------
+#-------------------------------
 [PANCHAM]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5431,7 +5431,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [DOUBLADE]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5439,7 +5439,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [INKAY]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5447,7 +5447,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [CLAUNCHER]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5455,7 +5455,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [AMAURA]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5463,7 +5463,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [GOOMY]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5471,7 +5471,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = SlideHorizontal,BABA
 BackAnimation = SlideHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [PUMPKABOO]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5479,7 +5479,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [XERNEAS]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5487,7 +5487,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [ROWLET]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5495,7 +5495,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
 BackAnimation = HopSmall,BABA
-#-------------------------------------
+#-------------------------------
 [POPPLIO]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5503,7 +5503,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [YUNGOOS]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5511,7 +5511,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [CRABOMINABLE]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5519,7 +5519,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateJump,BABA
 BackAnimation = RotateJump,BABA
-#-------------------------------------
+#-------------------------------
 [WISHIWASHI]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5527,7 +5527,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [ARAQUANID]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5535,7 +5535,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompSmall,BABA
 BackAnimation = StompSmall,BABA
-#-------------------------------------
+#-------------------------------
 [SALAZZLE]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5543,7 +5543,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [COMFEY]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5551,7 +5551,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [PALOSSAND]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5559,7 +5559,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [TURTONATOR]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5567,7 +5567,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompBig,BABA
 BackAnimation = StompBig,BABA
-#-------------------------------------
+#-------------------------------
 [JANGMOO]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5575,7 +5575,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [TAPUFINI]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5583,7 +5583,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [BUZZWOLE]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5591,7 +5591,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,BABA
 BackAnimation = Explosion,BABA
-#-------------------------------------
+#-------------------------------
 [NECROZMA]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5599,7 +5599,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ShakeSmall,BABA
 BackAnimation = ShakeSmall,BABA
-#-------------------------------------
+#-------------------------------
 [BLACEPHALON]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5607,7 +5607,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,BABA
 BackAnimation = Explosion,BABA
-#-------------------------------------
+#-------------------------------
 [RILLABOOM]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5615,7 +5615,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [INTELEON]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5623,7 +5623,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [BLIPBUG]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5631,7 +5631,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,BABA
 BackAnimation = Explosion,BABA
-#-------------------------------------
+#-------------------------------
 [ELDEGOSS]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5639,7 +5639,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = ZoomDouble,BABA
 BackAnimation = ZoomDouble,BABA
-#-------------------------------------
+#-------------------------------
 [BOLTUND]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5647,7 +5647,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = BlinkYellow,BABA
 BackAnimation = BlinkYellow,BABA
-#-------------------------------------
+#-------------------------------
 [APPLETUN]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5655,7 +5655,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [TOXEL]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5663,7 +5663,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = RotateBottom,BABA
 BackAnimation = RotateBottom,BABA
-#-------------------------------------
+#-------------------------------
 [SINISTEA]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5671,7 +5671,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = FlyHorizontal,BABA
 BackAnimation = FlyHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [MORGREM]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5679,7 +5679,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [MRRIME]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5687,7 +5687,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopAround,BABA
 BackAnimation = HopAround,BABA
-#-------------------------------------
+#-------------------------------
 [SNOM]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5695,7 +5695,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
-#-------------------------------------
+#-------------------------------
 [CUFANT]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5703,7 +5703,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchVertical,BABA
 BackAnimation = StretchVertical,BABA
-#-------------------------------------
+#-------------------------------
 [DURALUDON]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5711,7 +5711,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StompDouble,BABA
 BackAnimation = StompDouble,BABA
-#-------------------------------------
+#-------------------------------
 [ETERNATUS]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5719,7 +5719,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Explosion,BABA
 BackAnimation = Explosion,BABA
-#-------------------------------------
+#-------------------------------
 [GLASTRIER]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5727,7 +5727,7 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = StretchHorizontal,BABA
 BackAnimation = StretchHorizontal,BABA
-#-------------------------------------
+#-------------------------------
 [GRENINJA]
 BackSprite = 0,0
 FrontSprite = 0,0
@@ -5735,3 +5735,443 @@ ShadowX = 0
 ShadowSize = 2
 FrontAnimation = Bounce,BABA
 BackAnimation = Bounce,BABA
+#-------------------------------
+[AEGISLASH]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[ALCREMIE]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[ARCHALUDON]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[AVALUGG]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[BASCULEGION]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[BAXCALIBUR]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[BEWEAR]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[BOUNSWEET]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[CALYREX]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[CARBINK]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[CELESTEELA]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[CHESNAUGHT]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[COPPERAJAH]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[COSMOEM]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[CRAMORANT]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[CYCLIZAR]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[DECIDUEYE]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[DONDOZO]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[DRAGALGE]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[DUDUNSPARCE]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[ENAMORUS]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[ESPURR]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[FIDOUGH]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[FLABEBE]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[FLOETTE]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[FLORGES]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[FOMANTIS]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[FURFROU]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[GIMMIGHOUL]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[GOODRA]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[GRAFAIAI]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[GREAVARD]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[GUMSHOOS]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[HAWLUCHA]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[HOOPA]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[IRONHANDS]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[IRONVALIANT]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[LOKIX]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[LYCANROC]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[MAUSHOLD]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[MEOWSCARADA]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[MILCERY]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[MINIOR]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[MORPEKO]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[MUDBRAY]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[MUNKIDORI]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[NAGANADEL]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[OGERPON]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[OBSTAGOON]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[OINKOLOGNE]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[OKIDOGI]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[ORANGURU]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[ORBEETLE]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[ORICORIO]
+BackSprite = 0,0
+FrontSprite = 0,0
+ShadowX = 0
+ShadowSize = 2
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
+#-------------------------------
+[ORTHWORM]
+BackSprite = 0,0
+FrontSprite = -8,12
+ShadowX = 0
+ShadowSize = 4
+FrontAnimation = ShakeSmall,ABBA
+BackAnimation = ShakeSmall,ABBA
