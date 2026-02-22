@@ -593,3 +593,129 @@ Backtrace:
 [[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `each_with_index'
 [[F2P] Gen 4 Battle Entry Animations] MethodOverrides.rb:49:in `update'
 007_Battle_Scene_BaseAnimation.rb:58:in `block in update'
+
+=================
+
+[2026-01-20 13:45:59 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `doTheRoar' for #<Battle::Battler>
+
+Backtrace:
+003_Battler_ChangeSelf.rb:95:in `pbFaint'
+007_Battler_UseMove.rb:701:in `block in pbProcessMoveHit'
+007_Battler_UseMove.rb:701:in `each'
+007_Battler_UseMove.rb:701:in `pbProcessMoveHit'
+007_Battler_UseMove.rb:409:in `block in pbUseMove'
+007_Battler_UseMove.rb:407:in `times'
+007_Battler_UseMove.rb:407:in `pbUseMove'
+007_Battler_UseMove.rb:51:in `block in pbProcessTurn'
+001_PBDebug.rb:6:in `logonerr'
+007_Battler_UseMove.rb:51:in `pbProcessTurn'
+
+=================
+
+[2026-01-20 13:46:53 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `[]' for nil:NilClass
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] PokemonIntroAnimation.rb:681:in `block in doTheRoar'
+[[F2P] Gen 4 Battle Entry Animations] PokemonIntroAnimation.rb:680:in `each'
+[[F2P] Gen 4 Battle Entry Animations] PokemonIntroAnimation.rb:680:in `doTheRoar'
+003_Battler_ChangeSelf.rb:95:in `pbFaint'
+007_Battler_UseMove.rb:701:in `block in pbProcessMoveHit'
+007_Battler_UseMove.rb:701:in `each'
+007_Battler_UseMove.rb:701:in `pbProcessMoveHit'
+007_Battler_UseMove.rb:409:in `block in pbUseMove'
+007_Battler_UseMove.rb:407:in `times'
+007_Battler_UseMove.rb:407:in `pbUseMove'
+
+=================
+
+[2026-01-20 13:47:56 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `[]' for nil:NilClass
+
+Backtrace:
+001_Battle_Battler.rb:780:in `block in doTheRoar'
+001_Battle_Battler.rb:779:in `each'
+001_Battle_Battler.rb:779:in `doTheRoar'
+003_Battler_ChangeSelf.rb:95:in `pbFaint'
+007_Battler_UseMove.rb:701:in `block in pbProcessMoveHit'
+007_Battler_UseMove.rb:701:in `each'
+007_Battler_UseMove.rb:701:in `pbProcessMoveHit'
+007_Battler_UseMove.rb:409:in `block in pbUseMove'
+007_Battler_UseMove.rb:407:in `times'
+007_Battler_UseMove.rb:407:in `pbUseMove'
+
+=================
+
+[2026-01-20 13:54:40 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `moveZoom' for #<Battle::Battler>
+
+Backtrace:
+004_Scene_PlayAnimations.rb:329:in `block in pbFaintBattler'
+004_Scene_PlayAnimations.rb:327:in `each'
+004_Scene_PlayAnimations.rb:327:in `pbFaintBattler'
+003_Battler_ChangeSelf.rb:72:in `pbFaint'
+007_Battler_UseMove.rb:701:in `block in pbProcessMoveHit'
+007_Battler_UseMove.rb:701:in `each'
+007_Battler_UseMove.rb:701:in `pbProcessMoveHit'
+007_Battler_UseMove.rb:409:in `block in pbUseMove'
+007_Battler_UseMove.rb:407:in `times'
+007_Battler_UseMove.rb:407:in `pbUseMove'
+
+=================
+
+[2026-01-20 14:09:37 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NameError
+Message: undefined local variable or method `i' for #<Battle::Scene>
+
+Backtrace:
+004_Scene_PlayAnimations.rb:330:in `block in pbFaintBattler'
+004_Scene_PlayAnimations.rb:327:in `each'
+004_Scene_PlayAnimations.rb:327:in `pbFaintBattler'
+003_Battler_ChangeSelf.rb:72:in `pbFaint'
+007_Battler_UseMove.rb:701:in `block in pbProcessMoveHit'
+007_Battler_UseMove.rb:701:in `each'
+007_Battler_UseMove.rb:701:in `pbProcessMoveHit'
+007_Battler_UseMove.rb:409:in `block in pbUseMove'
+007_Battler_UseMove.rb:407:in `times'
+007_Battler_UseMove.rb:407:in `pbUseMove'
+
+=================
+
+[2026-01-20 14:10:21 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `setCallback' for #<Battle::Battler>
+
+Backtrace:
+004_Scene_PlayAnimations.rb:330:in `block in pbFaintBattler'
+004_Scene_PlayAnimations.rb:327:in `each'
+004_Scene_PlayAnimations.rb:327:in `pbFaintBattler'
+003_Battler_ChangeSelf.rb:72:in `pbFaint'
+007_Battler_UseMove.rb:701:in `block in pbProcessMoveHit'
+007_Battler_UseMove.rb:701:in `each'
+007_Battler_UseMove.rb:701:in `pbProcessMoveHit'
+007_Battler_UseMove.rb:409:in `block in pbUseMove'
+007_Battler_UseMove.rb:407:in `times'
+007_Battler_UseMove.rb:407:in `pbUseMove'
