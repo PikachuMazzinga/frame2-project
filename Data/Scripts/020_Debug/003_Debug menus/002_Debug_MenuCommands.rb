@@ -1236,6 +1236,19 @@ MenuHandlers.add(:debug_menu, :position_sprites, {
   }
 })
 
+MenuHandlers.add(:debug_menu, :position_sprites_frame2, {
+  "name"        => _INTL("Edit pokemon_frame2.txt"),
+  "parent"      => :pbs_editors_menu,
+  "description" => _INTL("Reposition Pokémon sprites in battle."),
+  "effect"      => proc {
+    pbFadeOutIn do
+      sp = SpritePositioner_Frame2.new
+      sps = SpritePositionerScreen_Frame2.new(sp)
+      sps.pbStart
+    end
+  }
+})
+
 MenuHandlers.add(:debug_menu, :auto_position_sprites, {
   "name"        => _INTL("Auto-set pokemon_metrics.txts"),
   "parent"      => :pbs_editors_menu,

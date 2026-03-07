@@ -33,6 +33,23 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     super(sprites,viewport)
   end
 
+  # TODO REFACTOR
+  def force_anim_data(anim_data)
+    @animData = anim_data
+
+    @animType = @animData[@back ? 2 : 0]
+    @animFreq = @animData[@back ? 3 : 1]
+
+    @animType = @animData[0] if @animType == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
+    @animFreq = @animData[1] if @animFreq == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
+
+    dispose
+    @tempSprites.clear
+    @pictureEx.clear
+    
+    createProcesses
+  end
+
   def get_pivot(sprite, origin)
     x = 0
     y = 0
