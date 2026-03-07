@@ -178,6 +178,7 @@ end
 # These changes allow you to call pbPlayIntroAnimation to PokemonSprites just as you would with a BattlerSprite.
 class PokemonSprite
   attr_reader :offset
+  attr_reader :anim
   # Sets the sprite's filename.  Alias for setBitmap.
   def name
     @name
