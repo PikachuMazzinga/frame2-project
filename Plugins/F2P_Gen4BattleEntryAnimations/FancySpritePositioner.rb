@@ -1,3 +1,15 @@
+MenuHandlers.add(:debug_menu, :position_sprites_frame2, {
+  "name"        => _INTL("[F2P] New Sprite Positioner"),
+  "parent"      => :editors_menu,
+  "description" => _INTL("Reposition sprites and handle animations."),
+  "effect"      => proc {
+    pbFadeOutIn do
+      sp = SpritePositioner_Frame2.new
+      sps = SpritePositionerScreen_Frame2.new(sp)
+      sps.pbStart
+    end
+  }
+})
 
 class AnimationPattern_TextEntry_Keyboard < Window_TextEntry_Keyboard
   def insert(ch)
