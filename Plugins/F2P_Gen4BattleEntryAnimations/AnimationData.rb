@@ -46,8 +46,9 @@ module GameData
             @shadow_x              = hash[:shadow_x]              || 0
             @shadow_size           = hash[:shadow_size]           || 2
             @pbs_file_suffix       = hash[:pbs_file_suffix]       || ""
-            @front_animation       = hash[:front_animation]       || ["ShakeSmall", "ABBA"]
-            @back_animation        = hash[:back_animation]        || ["ShakeSmall", "ABBA"]
+            anim_data = PokemonIntroAnimationSettings::ANIMATION_DATA[@species] || ["ShakeSmall", "ABBA"]
+            @front_animation       = hash[:front_animation]       || [anim_data[0],anim_data[1]]
+            @back_animation        = hash[:back_animation]        || [anim_data[2],anim_data[3]]
           end
 
 

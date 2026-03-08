@@ -1,4 +1,16 @@
 
+class AnimationPattern_TextEntry_Keyboard < Window_TextEntry_Keyboard
+  def insert(ch)
+    ch.upcase!
+    return unless char_valid?(ch)
+    super(ch)
+  end
+  
+  def char_valid?(ch)
+    ['A','B'].include? ch
+  end
+end
+
 #===============================================================================
 #
 #===============================================================================
@@ -112,11 +124,60 @@ class SpritePositioner_Frame2
       refresh
     end
   end
-
+  
   def pbSelectPattern(front)
-    # TODO
+    metrics_data = GameData::SpeciesMetrics.get_species_form(@species, @form)
+    old_pattern = front ? metrics_data.front_animation[1] : metrics_data.back_animation[1]
+    
+    new_pattern = pbGetPatternInput(front)
+
+    return false if new_pattern == old_pattern || new_pattern == ""
+
+    if front
+      metrics_data.front_animation[1] = new_pattern
+    else
+      metrics_data.back_animation[1] = new_pattern
+    end
+    @metricsChanged = true
+    refresh
+
+    return true
   end
 
+  def pbGetPatternInput(front)
+    textinput=AnimationPattern_TextEntry_Keyboard.new("",0,0,332,96,"Write pattern using A and B.",true)
+    Input.text_input = true
+    textinput.x=(Graphics.width)-(textinput.width)
+    textinput.y=(Graphics.height)-(textinput.height)
+    textinput.viewport=@viewport
+    textinput.visible=true
+    textinput.maxlength=32
+    ret=""
+    loop do
+      Graphics.update
+      Input.update
+      self.update
+      if Input.triggerex?(:ESCAPE)
+        break
+      elsif Input.triggerex?(:RETURN)
+        ret=textinput.text
+        break
+      elsif Input.trigger?(Input::SPECIAL)
+        # TODO REFACTOR
+        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
+        @sprites["pokemon_1"].pbPlayIntroAnimation(nil, false)
+        pattern = textinput.text.length > 0 ? textinput.text : "A"
+        echoln pattern
+        @sprites["pokemon_0"].anim.force_anim_data([nil, nil, nil, front ? nil : pattern])
+        @sprites["pokemon_1"].anim.force_anim_data([nil, front ? pattern : nil, nil, nil])
+      end
+      textinput.update
+    end
+    Input.update
+    textinput.dispose
+    return ret
+  end
+  
   def pbSelectAnimation(front)
     # TODO REFACTOR
     animations = [
@@ -188,13 +249,29 @@ class SpritePositioner_Frame2
         # TODO REFACTOR
         @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
         @sprites["pokemon_1"].pbPlayIntroAnimation(nil, false)
-        @sprites["pokemon_0"].anim.force_anim_data([animations[cw.index], "ABAB", nil, nil])
-        @sprites["pokemon_1"].anim.force_anim_data([animations[cw.index], "ABAB", nil, nil])
+        @sprites["pokemon_0"].anim.force_anim_data([nil , nil, front ? nil : animations[cw.index], nil])
+        @sprites["pokemon_1"].anim.force_anim_data([front ? animations[cw.index] : nil, nil, nil, nil])
       end
     end
     cw.dispose
 
-    return ret
+    metrics_data = GameData::SpeciesMetrics.get_species_form(@species, @form)
+    old_anim = front ? metrics_data.front_animation[0] : metrics_data.back_animation[0]
+    new_anim = animations[ret]
+    
+    return false if old_anim == new_anim
+
+    if front
+      metrics_data.front_animation[0] = new_anim
+    else
+      metrics_data.back_animation[0] = new_anim
+    end
+    @metricsChanged = true
+    refresh
+
+    return true
+    
+    return true
   end
 
   def pbChangeSpecies(species, form)
@@ -377,10 +454,13 @@ class SpritePositioner_Frame2
       self.update
       if Input.trigger?(Input::USE)
         pbPlayDecisionSE
-        sub_ret = pbSubMenu(cw.index)
-        next if sub_ret.nil?
-        ret = sub_ret
-        break
+        loop do
+          sub_ret = pbSubMenu(cw.index)
+          break if sub_ret.nil?
+          cw.visible = false
+          pbSetParameter(sub_ret)
+          cw.visible = true
+        end
       elsif Input.trigger?(Input::BACK)
         pbPlayCancelSE
         break
@@ -518,11 +598,6 @@ class SpritePositionerScreen_Frame2
       loop do
         command = @scene.pbMenu
         break if command.nil?
-        loop do
-          par = @scene.pbSetParameter(command)
-          break if !par
-          # command = (command.to_i + 1) % 3
-        end
       end
     end
     @scene.pbClose

@@ -22,26 +22,29 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     @nameFrame2 = @nameFrame1 if @nameFrame2 == nil
     
     pkmnSpecies = pkmn.is_a?(Symbol) ? pkmn : pkmn.species
-    @animData = PokemonIntroAnimationSettings::ANIMATION_DATA[pkmnSpecies] || PokemonIntroAnimationSettings::DEFAULT_BEHAVIOUR
+    metrics = GameData::SpeciesMetrics.get_species_form(pkmn.species, pkmn.form)
+    
+    animData = (@back ? metrics&.back_animation : metrics&.front_animation) || PokemonIntroAnimationSettings::DEFAULT_BEHAVIOUR
 
-    @animType = @animData[@back ? 2 : 0]
-    @animFreq = @animData[@back ? 3 : 1]
+    @animType = animData[0]
+    @animFreq = animData[1]
 
-    @animType = @animData[0] if @animType == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
-    @animFreq = @animData[1] if @animFreq == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
+    @animType = animData[0] if @animType == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
+    @animFreq = animData[1] if @animFreq == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
     
     super(sprites,viewport)
   end
 
   # TODO REFACTOR
-  def force_anim_data(anim_data)
-    @animData = anim_data
+  def force_anim_data(animData)
 
-    @animType = @animData[@back ? 2 : 0]
-    @animFreq = @animData[@back ? 3 : 1]
+    newType = animData[@back ? 2 : 0]
+    @animType = newType if newType != nil
+    newFreq = animData[@back ? 3 : 1]
+    @animFreq = newFreq if newFreq != nil
 
-    @animType = @animData[0] if @animType == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
-    @animFreq = @animData[1] if @animFreq == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
+    @animType = animData[0] if @animType == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
+    @animFreq = animData[1] if @animFreq == nil && PokemonIntroAnimationSettings::DEFAULT_FRONT_BEHAVIOUR_ON_BACK
 
     dispose
     @tempSprites.clear
