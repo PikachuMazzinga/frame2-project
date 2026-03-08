@@ -719,3 +719,150 @@ Backtrace:
 007_Battler_UseMove.rb:409:in `block in pbUseMove'
 007_Battler_UseMove.rb:407:in `times'
 007_Battler_UseMove.rb:407:in `pbUseMove'
+
+=================
+
+[2026-03-08 04:02:29 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: TypeError
+Message: no implicit conversion from nil to integer
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:272:in `pbSelectAnimation'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:370:in `pbSetParameter'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:473:in `block (2 levels) in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `block in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:611:in `block (2 levels) in pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `block in pbStart'
+
+=================
+
+[2026-03-08 04:10:01 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: TypeError
+Message: no implicit conversion from nil to integer
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:272:in `pbSelectAnimation'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:370:in `pbSetParameter'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:473:in `block (2 levels) in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `block in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:611:in `block (2 levels) in pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `block in pbStart'
+
+=================
+
+[2026-03-08 04:16:02 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: TypeError
+Message: no implicit conversion from nil to integer
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:272:in `pbSelectAnimation'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:370:in `pbSetParameter'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:473:in `block (2 levels) in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `block in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:611:in `block (2 levels) in pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `block in pbStart'
+
+=================
+
+[2026-03-08 04:20:28 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: TypeError
+Message: no implicit conversion from nil to integer
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:272:in `pbSelectAnimation'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:370:in `pbSetParameter'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:473:in `block (2 levels) in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `block in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:611:in `block (2 levels) in pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `block in pbStart'
+
+=================
+
+[2026-03-08 04:21:44 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: TypeError
+Message: no implicit conversion from nil to integer
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:272:in `pbSelectAnimation'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:370:in `pbSetParameter'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:473:in `block (2 levels) in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `block in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:611:in `block (2 levels) in pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `block in pbStart'
+
+=================
+
+[2026-03-08 04:22:03 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: TypeError
+Message: no implicit conversion from nil to integer
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:272:in `pbSelectAnimation'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:370:in `pbSetParameter'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:473:in `block (2 levels) in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `block in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:611:in `block (2 levels) in pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `block in pbStart'
+
+=================
+
+[2026-03-08 04:22:41 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: TypeError
+Message: no implicit conversion from nil to integer
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:272:in `pbSelectAnimation'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:370:in `pbSetParameter'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:473:in `block (2 levels) in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:469:in `block in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:462:in `pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:611:in `block (2 levels) in pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `block in pbStart'

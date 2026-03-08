@@ -267,10 +267,12 @@ class SpritePositioner_Frame2
     end
     cw.dispose
 
+    return false if ret == nil
+
     metrics_data = GameData::SpeciesMetrics.get_species_form(@species, @form)
     old_anim = front ? metrics_data.front_animation[0] : metrics_data.back_animation[0]
     new_anim = animations[ret]
-    
+
     return false if old_anim == new_anim
 
     if front
