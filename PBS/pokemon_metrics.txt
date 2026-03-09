@@ -4070,31 +4070,31 @@ FrontSprite = 0,12
 ShadowX = 0
 ShadowSize = 2
 FrontAnimation = HopSmall,BABA
-BackAnimation = HopSmall,BABA
+BackAnimation = Bounce,ABBA
 #-------------------------------
 [SNIVY]
 BackSprite = -2,0
 FrontSprite = 0,18
 ShadowX = 0
 ShadowSize = 1
-FrontAnimation = StretchVertical,BABA
-BackAnimation = StretchVertical,BABA
+FrontAnimation = StretchVertical,ABBBA
+BackAnimation = StretchVertical,ABBBA
 #-------------------------------
 [SERVINE]
 BackSprite = 0,0
 FrontSprite = 0,13
 ShadowX = 0
 ShadowSize = 2
-FrontAnimation = StretchVertical,BABA
-BackAnimation = StretchVertical,BABA
+FrontAnimation = StretchVertical,ABBBA
+BackAnimation = StretchVertical,ABBBA
 #-------------------------------
 [SERPERIOR]
 BackSprite = -3,0
 FrontSprite = -1,8
 ShadowX = 0
 ShadowSize = 5
-FrontAnimation = StretchVertical,BABA
-BackAnimation = StretchVertical,BABA
+FrontAnimation = StretchVertical,ABBBA
+BackAnimation = StretchVertical,ABBBA
 #-------------------------------
 [TEPIG]
 BackSprite = -4,0
@@ -4102,30 +4102,30 @@ FrontSprite = 0,19
 ShadowX = 0
 ShadowSize = 1
 FrontAnimation = HopSmall,BABA
-BackAnimation = HopSmall,BABA
+BackAnimation = Wiggle,B
 #-------------------------------
 [PIGNITE]
 BackSprite = -1,0
 FrontSprite = 0,13
 ShadowX = 0
 ShadowSize = 2
-FrontAnimation = StretchHorizontal,BABA
-BackAnimation = StretchHorizontal,BABA
+FrontAnimation = Bounce,ABBBA
+BackAnimation = BlinkRed,BABA
 #-------------------------------
 [EMBOAR]
 BackSprite = 1,0
-FrontSprite = 0,6
+FrontSprite = 0,15
 ShadowX = 0
 ShadowSize = 4
 FrontAnimation = StompDouble,BABA
-BackAnimation = StompDouble,BABA
+BackAnimation = BlinkRed,AABBAABBAA
 #-------------------------------
 [OSHAWOTT]
 BackSprite = 0,0
 FrontSprite = 0,20
 ShadowX = 0
 ShadowSize = 1
-FrontAnimation = Bounce,BABA
+FrontAnimation = Bounce,ABBA
 BackAnimation = Bounce,BABA
 #-------------------------------
 [DEWOTT]
@@ -4133,24 +4133,24 @@ BackSprite = 2,0
 FrontSprite = 0,12
 ShadowX = 0
 ShadowSize = 2
-FrontAnimation = StretchHorizontal,BABA
-BackAnimation = StretchHorizontal,BABA
+FrontAnimation = StretchHorizontal,ABBA
+BackAnimation = StretchHorizontal,ABBA
 #-------------------------------
 [SAMUROTT]
 BackSprite = -1,0
 FrontSprite = 2,4
 ShadowX = 0
 ShadowSize = 4
-FrontAnimation = StompDouble,BABA
-BackAnimation = StompDouble,BABA
+FrontAnimation = StompDouble,ABBBA
+BackAnimation = StompDouble,ABBBA
 #-------------------------------
 [PATRAT]
 BackSprite = -1,0
 FrontSprite = -2,16
 ShadowX = 0
 ShadowSize = 1
-FrontAnimation = HopSmall,BABA
-BackAnimation = HopSmall,BABA
+FrontAnimation = StretchVertical,BABA
+BackAnimation = Wiggle,BABA
 #-------------------------------
 [WATCHOG]
 BackSprite = -2,0
