@@ -69,6 +69,10 @@ class SpritePositioner_Frame2
     @metricsChanged = false
     refresh
     @starting = true
+    
+    pbChangeSpecies(:BULBASAUR, 0)
+    refresh
+    pbPlayAnimations
   end
 
   def pbClose
@@ -175,9 +179,7 @@ class SpritePositioner_Frame2
         ret=textinput.text
         break
       elsif Input.trigger?(Input::SPECIAL)
-        # TODO REFACTOR
-        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
-        @sprites["pokemon_1"].pbPlayIntroAnimation(nil, false)
+        pbPlayAnimations
         pattern = textinput.text.length > 0 ? textinput.text : "A"
         echoln pattern
         @sprites["pokemon_0"].anim.force_anim_data([nil, nil, nil, front ? nil : pattern])
@@ -258,9 +260,7 @@ class SpritePositioner_Frame2
         pbPlayCancelSE
         break
       elsif Input.trigger?(Input::SPECIAL)
-        # TODO REFACTOR
-        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
-        @sprites["pokemon_1"].pbPlayIntroAnimation(nil, false)
+        pbPlayAnimations
         @sprites["pokemon_0"].anim.force_anim_data([nil , nil, front ? nil : animations[cw.index], nil])
         @sprites["pokemon_1"].anim.force_anim_data([front ? animations[cw.index] : nil, nil, nil, nil])
       end
@@ -452,73 +452,50 @@ class SpritePositioner_Frame2
 
   def pbMenu
     refresh
-    cw = Window_CommandPokemon.new(
-      [_INTL("Edit Sprite Positions"),
-       _INTL("Edit Sprite Shadow"),
-       _INTL("Edit Animation Data")]
-    )
-    cw.x        = Graphics.width - cw.width
-    cw.y        = Graphics.height - cw.height
-    cw.viewport = @viewport
-    ret = nil
+    
     loop do
-      Graphics.update
-      Input.update
-      cw.update
-      self.update
-      if Input.trigger?(Input::USE)
-        pbPlayDecisionSE
-        loop do
-          sub_ret = pbSubMenu(cw.index)
-          break if sub_ret.nil?
-          cw.visible = false
-          pbSetParameter(sub_ret)
-          cw.visible = true
-        end
-      elsif Input.trigger?(Input::BACK)
-        pbPlayCancelSE
-        break
-      elsif Input.trigger?(Input::SPECIAL)
-        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
-        @sprites["pokemon_1"].pbPlayIntroAnimation
-      end
+      sub_ret = pbSubMenu
+      break if sub_ret.nil?
+      pbSetParameter(sub_ret)
     end
-    cw.dispose
-    return ret
+    
+    return nil
   end
 
-  def pbSubMenu(index)
-    data = nil
-    
-    case index
-    when 0
-      data = {
-        :set_back_position => _INTL("Set Ally Position"),
-        :set_front_position => _INTL("Set Enemy Position"),
-        :set_auto_position => _INTL("Auto-Position Sprites"),
-      }
-    when 1
-      data = {
-        :set_shadow_size => _INTL("Set Shadow Size"),
-        :set_shadow_pos => _INTL("Set Shadow Position"),
-      }
-    when 2
-      data = {
-        :set_front_anim => _INTL("Set Front Animation"),
-        :set_front_pattern => _INTL("Set Front Pattern"),
-        :set_back_anim => _INTL("Set Back Animation"),
-        :set_back_pattern => _INTL("Set Back Pattern"),
-      }
-    end
+  def pbSubMenu
+    data = {
+      :set_front_anim => _INTL("Set Front Animation"),
+      :set_front_pattern => _INTL("Set Front Pattern"),
+      :set_back_anim => _INTL("Set Back Animation"),
+      :set_back_pattern => _INTL("Set Back Pattern"),
+      :set_back_position => _INTL("Set Ally Position"),
+      :set_front_position => _INTL("Set Enemy Position"),
+      :set_auto_position => _INTL("Auto-Position Sprites"),
+      :set_shadow_size => _INTL("Set Shadow Size"),
+      :set_shadow_pos => _INTL("Set Shadow Position"),
+    }
     
     return nil if data.nil?
     cw = Window_CommandPokemon.new(data.values)
-
+    cw.height = 160
+    
     refresh
     cw.x        = Graphics.width - cw.width
     cw.y        = Graphics.height - cw.height
     cw.viewport = @viewport
     ret = nil
+
+    allspecies = []
+    GameData::Species.each do |sp|
+      name = (sp.form == 0) ? sp.real_name : _INTL("{1} - {2}", sp.real_name, sp.form_name&.gsub(sp.real_name, "")&.gsub("  ", " "))
+      num = IDConverter.number_by_fspecies(sp)
+      allspecies.push([sp.id, sp.species, sp.form, name, _INTL("{1}_{2}", '%05i' % num, '%03i' % sp.form)]) if name && !name.empty?
+
+    end
+    allspecies.sort! { |a, b| a[4] <=> b[4]}
+    index = @oldSpeciesIndex
+    echoln "INDEX: #{index}"
+    
     loop do
       Graphics.update
       Input.update
@@ -531,9 +508,57 @@ class SpritePositioner_Frame2
       elsif Input.trigger?(Input::BACK)
         pbPlayCancelSE
         break
+      elsif Input.repeat?(Input::LEFT)
+        index -= 1 if index > 0
+        @oldSpeciesIndex = index
+        pbChangeSpecies(allspecies[index][1], allspecies[index][2])
+        refresh
+        pbPlayAnimations
+      elsif Input.repeat?(Input::RIGHT)
+        index += 1 if index < allspecies.length
+        @oldSpeciesIndex = index
+        pbChangeSpecies(allspecies[index][1], allspecies[index][2])
+        refresh
+        pbPlayAnimations
+      elsif Input.triggerex?(:F)
+        search = pbOpenGenericListSearch(allspecies.map { |x| x[3] })
+        next if search.nil? || !search || search.empty?
+        
+        index = nil
+        
+        if search.length == 1
+          index = search[0]
+        else
+          cw2 = Window_CommandPokemon.new(allspecies.values_at(*search).map { |x| x[3] })
+          refresh
+          cw2.x        = Graphics.width - cw2.width
+          cw2.y        = Graphics.height - cw2.height
+          cw2.viewport = @viewport
+          cw2.z = @viewport.z + 99
+
+          loop do
+            Input.update
+            cw2.update
+            Graphics.update
+            if Input.trigger?(Input::USE)
+              index = search[cw2.index]
+              break
+            elsif Input.trigger?(Input::BACK)
+              break
+            end
+          end
+
+          cw2.dispose
+
+          next if index.nil?
+        end
+        
+        @oldSpeciesIndex = index
+        pbChangeSpecies(allspecies[index][1], allspecies[index][2])
+        refresh
+        pbPlayAnimations
       elsif Input.trigger?(Input::SPECIAL)
-        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
-        @sprites["pokemon_1"].pbPlayIntroAnimation
+        pbPlayAnimations
       end
     end
     cw.dispose
@@ -541,58 +566,11 @@ class SpritePositioner_Frame2
     return nil if ret.nil?
     return data.keys[ret]
   end
-
-  def pbChooseSpecies
-    if @starting
-      pbFadeInAndShow(@sprites) { update }
-      @starting = false
-    end
-    cw = Window_CommandPokemonEx.newEmpty(0, 0, 260, 176, @viewport)
-    cw.rowHeight = 24
-    pbSetSmallFont(cw.contents)
-    cw.x = Graphics.width - cw.width
-    cw.y = Graphics.height - cw.height
-    allspecies = []
-    GameData::Species.each do |sp|
-      name = (sp.form == 0) ? sp.real_name : _INTL("{1} - {2}", sp.real_name, sp.form_name&.gsub(sp.real_name, "")&.gsub("  ", " "))
-      num = IDConverter.number_by_fspecies(sp)
-      allspecies.push([sp.id, sp.species, sp.form, name, _INTL("{1}_{2}", '%05i' % num, '%03i' % sp.form)]) if name && !name.empty?
-      # echoln _INTL("{1} > {2}_{3}", sp.real_name, '%04i' % num, sp.form)
-    end
-    allspecies.sort! { |a, b| a[4] <=> b[4]}
-    commands = []
-    allspecies.each { |sp| commands.push(sp[3]) }
-    cw.commands = commands
-    cw.index    = @oldSpeciesIndex
-    ret = false
-    oldindex = -1
-    loop do
-      Graphics.update
-      Input.update
-      cw.update
-      if cw.index != oldindex
-        oldindex = cw.index
-        pbChangeSpecies(allspecies[cw.index][1], allspecies[cw.index][2])
-        refresh
-      end
-      self.update
-      @sprites["pokemon_0"].update
-      if Input.trigger?(Input::BACK)
-        pbChangeSpecies(nil, nil)
-        refresh
-        break
-      elsif Input.trigger?(Input::SPECIAL)
-        @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
-        @sprites["pokemon_1"].pbPlayIntroAnimation
-      elsif Input.trigger?(Input::USE)
-        pbChangeSpecies(allspecies[cw.index][1], allspecies[cw.index][2])
-        ret = true
-        break
-      end
-    end
-    @oldSpeciesIndex = cw.index
-    cw.dispose
-    return ret
+  
+  def pbPlayAnimations(cry = true)
+    @sprites["pokemon_0"].pbPlayIntroAnimation(nil, true)
+    @sprites["pokemon_1"].pbPlayIntroAnimation
+    Pokemon.play_cry(@species, @form) if cry
   end
 end
 
@@ -607,12 +585,8 @@ class SpritePositionerScreen_Frame2
   def pbStart
     @scene.pbOpen
     loop do
-      species = @scene.pbChooseSpecies
-      break if !species
-      loop do
-        command = @scene.pbMenu
-        break if command.nil?
-      end
+      ret = @scene.pbMenu
+      break if ret.nil?
     end
     @scene.pbClose
   end
