@@ -866,3 +866,45 @@ Backtrace:
 [[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:611:in `block (2 levels) in pbStart'
 [[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `loop'
 [[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:610:in `block in pbStart'
+
+=================
+
+[2026-03-17 02:44:30 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `form' for :BULBASAUR:Symbol
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:491:in `block in pbSubMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:489:in `each'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:489:in `pbSubMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:457:in `block in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:456:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:456:in `pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:589:in `block in pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:588:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:588:in `pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:9:in `block (2 levels) in <main>'
+
+=================
+
+[2026-03-17 02:45:44 +0100]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Exception: NoMethodError
+Message: undefined method `form' for :BULBASAUR:Symbol
+
+Backtrace:
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:491:in `block in pbSubMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:489:in `each'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:489:in `pbSubMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:457:in `block in pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:456:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:456:in `pbMenu'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:589:in `block in pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:588:in `loop'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:588:in `pbStart'
+[[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:9:in `block (2 levels) in <main>'
