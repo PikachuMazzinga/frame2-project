@@ -1,4 +1,3 @@
-
 module GameData
     class SpeciesMetrics
         attr_accessor :front_animation
@@ -30,7 +29,7 @@ module GameData
                   :back_animation        => DATA[species].back_animation
                 })
               end
-              return DATA[trial]
+              return DATA[trial] 
             end
             self.register({:id => species}) if !DATA[species]
             return DATA[species]
@@ -50,7 +49,6 @@ module GameData
             @front_animation       = hash[:front_animation]       || [anim_data[0],anim_data[1]]
             @back_animation        = hash[:back_animation]        || [anim_data[2],anim_data[3]]
           end
-
 
     end
 end

@@ -204,7 +204,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
       x_values = [0, 0, 0, -2, 1, -3, 2, -3, 2, -3, 2, -3, 2, 1, 0, -1, 1, -2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       totalDuration = x_values.length
       x_values.each_with_index do |v,i|
-        battler.setXY(i*speedUp, starting_x + (v*2), starting_y)
+        battler.setXY(i*speedUp, starting_x + v, starting_y)
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
@@ -402,7 +402,7 @@ class PokemonIntroAnimation < Battle::Scene::Animation
         battler.setName(i*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
     
-    when "Glide" # intended for Gligar but unused
+    when "Glide"
       totalDuration = 36
       totalDuration.times do |i|
         k = Math.sin(i*(Math::PI*2)/totalDuration) * 20
