@@ -908,3 +908,28 @@ Backtrace:
 [[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:588:in `loop'
 [[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:588:in `pbStart'
 [[F2P] Gen 4 Battle Entry Animations] FancySpritePositioner.rb:9:in `block (2 levels) in <main>'
+
+=================
+
+[2026-04-06 05:34:08 +0200]
+[Pokémon Essentials version 21.1]
+[v21.1 Hotfixes 1.0.3]
+
+Script error in event 17 (coords 22,1), map 3 (Player's house)
+Exception: NameError
+Message: uninitialized constant Interpreter::EnhancedAutoCredits
+
+***Full script:
+$scene = EnhancedAutoCredits.new
+
+Backtrace:
+(eval):1:in `execute_script'
+003_Interpreter.rb:140:in `eval'
+003_Interpreter.rb:140:in `execute_script'
+004_Interpreter_Commands.rb:1177:in `command_355'
+004_Interpreter_Commands.rb:116:in `execute_command'
+003_Interpreter.rb:132:in `block in update'
+003_Interpreter.rb:86:in `loop'
+003_Interpreter.rb:86:in `update'
+002_Scene_Map.rb:167:in `block in update'
+002_Scene_Map.rb:166:in `loop'

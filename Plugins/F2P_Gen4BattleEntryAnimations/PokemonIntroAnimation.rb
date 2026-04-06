@@ -447,11 +447,11 @@ class PokemonIntroAnimation < Battle::Scene::Animation
     when "ThrustRight"
       x_values = [0, 0, 0, -2, 1, -3, 2, -3, 2, -3, 2, -3, 2, 1, 0, -1, 1, -2, 0, 0, 0, 0]
       totalDuration = 8 + x_values.length
-      battler.moveXY(0, (2*speedUp),starting_x - 20, starting_y)
-      battler.moveXY((3*speedUp), (3*speedUp),starting_x + 40, starting_y)
+      battler.moveXY(0, (2*speedUp),starting_x - 10, starting_y)
+      battler.moveXY((3*speedUp), (3*speedUp),starting_x + 30, starting_y)
       battler.moveXY((totalDuration*speedUp), (3*speedUp), starting_x, starting_y)
       x_values.each_with_index do |v,i|
-        battler.setXY((7+i)*speedUp, starting_x + 40 + (v*2), starting_y)
+        battler.setXY((7+i)*speedUp, starting_x + 30 + (v*2), starting_y)
         battler.setName((7+i)*speedUp, getAnimationFrameChar(@animFreq, totalDuration, i) == "A" ? path_A : path_B)
       end
 
